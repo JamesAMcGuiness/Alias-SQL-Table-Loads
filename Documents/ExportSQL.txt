@@ -1,0 +1,173 @@
+******************
+Export For Company
+******************
+SELECT CompanyCode
+,Addr1
+,Addr2
+,City
+,State
+,ZIPCode
+,Phone
+,Website
+FROM Company, LastSync 
+Where Company.LastModDate > LastSync.LastSyncDateTime
+
+******************
+Export For CustCode
+******************
+SELECT CustCode
+      ,CustName
+      ,Phone
+      ,BAddr1
+      ,BAddr2
+      ,BCity
+      ,BState
+      ,BZIPCode
+      ,Website
+      ,QBCustCode
+      ,CustCode_ID
+      ,LastModDate
+  FROM CustCode, LastSync 
+  WHERE LastModDate > LastSync.LastSyncDateTime 
+
+
+
+******************
+Export For CompanyShipTo
+******************
+SELECT Addr1
+,Addr2
+,City
+,State
+,ZIPCode
+,CompanyShipTo_ID
+FROM CompanyShipTo, LastSync 
+Where CompanyShipTo.LastModDate > LastSync.LastSyncDateTime
+
+
+******************
+Export For Contacts
+******************
+SELECT Contact
+,Title
+,Phone
+,EMail
+,Cell_Phone
+,Contacts_ID
+FROM Contacts, LastSync 
+WHERE Contacts.LastModDate > LastSync.LastSyncDateTime
+
+
+
+******************
+Export For Quote
+******************
+SELECT
+ Addr1
+ ,Addr2
+ ,City
+ ,St
+ ,Zip
+ ,SalesID
+ ,CustCode
+ ,ShipVia
+ ,Quote_ID
+ ,ContactName
+ ,InqNum
+ ,TermsCode
+ ,Phone
+ ,FAX
+ ,DateEnt
+ ,Location
+ LastModDate
+  FROM Quote, LastSync 
+  WHERE LastModDate > LastSync.LastSyncDateTime 
+
+
+******************
+Export For QuoteDet
+******************
+SELECT QuoteNo
+  ,PartNo
+  ,ItemNo
+  ,Qty1
+  ,Price1
+  ,Qty2
+  ,Price2
+  ,Qty3
+  ,Price3
+  ,Qty4
+  ,Price4
+  ,Qty5
+  ,Price5
+  ,Qty6
+  ,Price6
+  ,Qty7
+  ,Price7
+  ,Qty8
+  ,Price8
+  ,Descrip
+  ,QuoteDet_ID
+  ,LastModDate
+FROM QuoteDet, LastSync 
+  WHERE LastModDate > LastSync.LastSyncDateTime 
+
+
+
+
+
+???
+************************
+Export For VendorInv
+************************
+
+  SELECT TOP (1000) [InvoiceNo]
+
+
+
+      ,[PeriodNo]
+      ,[ReceiverNo]
+      ,[PymtStatus]
+      ,[VendCode]
+      ,[VendDesc]
+      ,[InvDate]
+      ,[PymtDate]
+      ,[InvoiceTotal]
+      ,[AmtPaidSoFar]
+      ,[CheckNo]
+      ,[APAcct]
+      ,[DiscAcct]
+      ,[VendType]
+      ,[TermsCode]
+      ,[ShipVia]
+      ,[ShippingChgs]
+      ,[FreightAcct]
+      ,[EntBy]
+      ,[DateEnt]
+      ,[Notes]
+      ,[CashDiscAmt]
+      ,[DiscDate]
+      ,[NetDueDate]
+      ,[InvPosted]
+      ,[CurrencyCode]
+      ,[HoldPymt]
+      ,[ExchRate]
+      ,[GSTCode]
+      ,[GSTChgs]
+      ,[GSTAcct]
+      ,[SalesTaxCode]
+      ,[SalesTaxChgs]
+      ,[SalesTaxAcct]
+      ,[ProjPayDate]
+      ,[Exported]
+      ,[VendorInv_ID]
+      ,[AccountingID]
+      ,[LastModDate]
+      ,[LastModUser]
+      ,[InvoiceTotalForeign]
+      ,[AmtPaidSoFarForeign]
+      ,[SalesTaxChgsForeign]
+      ,[ShippingChgsForeign]
+      ,[CashDiscAmtForeign]
+      ,[GSTChgsForeign]
+  FROM [DCS-Shop].[dbo].[VendorInv]
