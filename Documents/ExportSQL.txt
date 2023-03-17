@@ -1,40 +1,53 @@
-******************
-Export For Company
-******************
-SELECT CompanyCode
-,Addr1
+***************************************************************************************************************************
+                                                       Export For Company
+***************************************************************************************************************************
+SELECT Addr1
 ,Addr2
 ,City
 ,State
 ,ZIPCode
 ,Phone
 ,Website
+,CompanyCode
 FROM Company, LastSync 
 Where Company.LastModDate > LastSync.LastSyncDateTime
 
-******************
-Export For CustCode
-******************
-SELECT CustCode
-      ,CustName
-      ,Phone
-      ,BAddr1
+
+
+*****************************************************************************************************************************
+                                                           Export For CustCode (Do we need this???)
+*****************************************************************************************************************************
+SELECT 
+      BAddr1
       ,BAddr2
       ,BCity
       ,BState
       ,BZIPCode
+      ,Phone
       ,Website
-      ,QBCustCode
+      ,CustName
       ,CustCode_ID
-      ,LastModDate
   FROM CustCode, LastSync 
   WHERE LastModDate > LastSync.LastSyncDateTime 
 
 
+For Python Header: Account object External ID ==> E2 Customer Key
+Bill To Street, 
+Bill to Street 2,
+Bill To City, 
+Bill to State,
+Bill To Zip, 
+Phone, 
+Website, 
+Account Name,
+E2 Customer Key 
 
-******************
-Export For CompanyShipTo
-******************
+Questions: I assume we will have an External ID for E2 Customer Key
+CustCode.CustCode_ID = ShipTo.ShipTo_ID (Links the Customer with the Shipping Info)
+
+*****************************************************************************************************************************
+                                                      Export For CompanyShipTo
+*****************************************************************************************************************************
 SELECT Addr1
 ,Addr2
 ,City
@@ -45,9 +58,30 @@ FROM CompanyShipTo, LastSync
 Where CompanyShipTo.LastModDate > LastSync.LastSyncDateTime
 
 
-******************
-Export For Contacts
-******************
+SELECT [SAddr1] ==> Addr1
+      ,[SAddr2] ==> Addr2
+      ,[SCity] ==> City
+      ,[SState] ==> State
+      ,[SZipCode] ==> Zip code 
+	  ,[ShipTo_ID] ==> CompanyShipTo_ID 
+  FROM [dbo].[ShipTo], LastSync 
+Where ShipTo.LastModDate > LastSync.LastSyncDateTime
+
+
+For Python Header: Account object External ID ==> E2 Customer Key
+Ship To Street,  
+Ship To Street 2,
+Ship to City, 
+Ship to State, 
+Ship to Zip Code
+
+Questions: I will use Shipto_Id to link to Account (Customer?)
+
+
+
+*****************************************************************************************************************************
+                                                    Export For Contacts
+*****************************************************************************************************************************
 SELECT Contact
 ,Title
 ,Phone
@@ -58,10 +92,231 @@ FROM Contacts, LastSync
 WHERE Contacts.LastModDate > LastSync.LastSyncDateTime
 
 
+For Python Header: Contact object External ID ==> E2 Contact ID 
+First Name,
+Last Name,
+Email, 
+Phone, 
+Title, 
+Mobile
 
-******************
-Export For Quote
-******************
+
+
+
+
+
+
+
+
+
+
+******************************************************************************************************************
+                                                Export for Billing
+******************************************************************************************************************
+SELECT
+'CustDescforSoldto',
+[CustDesc],
+[ShipToName],
+[SAddr1],
+[SAddr2],
+[SCity],
+[SSt],
+[SZip],
+'InvoiceNo',
+[InvDate],
+'OrderNo',
+[TermsCode],
+'Packing List', 
+'PO Number', 
+'Subtotal', 
+[SalesTaxChgs],
+[ShippingChgs],
+[InvoiceTotal],
+'Paid to Date', 
+'Balance Due', 
+[CustCode],
+[SalesID],
+[CustDesc],
+[InvDate],
+[PymtDate],
+'Quote No' 
+FROM Billing, LastSync 
+Where Billing.LastModDate > LastSync.LastSyncDateTime 
+
+
+For Python Header: Opportunity object External ID ==> E2 Customer Key
+Sold To - Is this the Account Billing Address 
+Ship To Address fields
+Street 
+Street 2
+City
+State
+ZIP
+Invoice number 
+Invoice Date
+Order No. 
+Terms 
+Packing List 
+PO Number
+Subtotal
+Sales Tax
+Shipping Charges
+Invoice Total 
+Paid to Date 
+Balance Due 
+E2 Customer Key 
+E2 Salesman 
+Account name 
+Created Date 
+Quote ID?
+
+
+
+
+
+***************************************************************************************************************************
+                                                   Export For BillingDet
+***************************************************************************************************************************
+SELECT
+ [PartDesc],
+ [QtyShipped],
+ [UnitPrice],
+ [SalesAmt1],
+ [SalesAmt2],
+ [SalesAmt3],
+ [SalesAmt4],
+ [SalesAmt5],
+ [InvItemNo]
+FROM [dbo].[BillingDet], LastSync 
+Where BillingDet.LastModDate > LastSync.LastSyncDateTime
+
+For Python Header: BillingDet object External ID ==> Invoice header ID 
+Item, 
+Quantity,
+Unit Price, 
+Amount, 
+Invoice header ID 
+
+
+
+*****************************************************************************************************************************
+                                                         Export For Orders
+*****************************************************************************************************************************
+
+SELECT
+Sold To ==> ??? ==> LU(Account)
+Ship To  ==> [ShipToName] ==> LU(Account)
+ShipAddr1 ==> [ShipAddr1]
+ShipAddr2==> [ShipAddr2]
+ShipCity ==> [ShipCity]
+ShipSt ==> [ShipSt]
+ShipZIP ==> [ShipZIP]
+OrderNo ==> ???
+DateENT ==> [DateEnt]
+Customer ==> [CustDesc] ==> LU(Account)
+PONum ==> [PONum]
+ShipVia ==> [ShipVia]
+TermsCode ==> [TermsCode]
+FOB ==> ???
+CustCode ==> [CustCode]
+CustDesc ==> [CustDesc]
+FROM [dbo].[Orders], LastSync 
+Where Orders.LastModDate > LastSync.LastSyncDateTime
+
+
+
+SELECT CustCode,
+ShipToName,
+OrderNo,
+DateEnt,
+CustDesc,
+PONum,
+ShipVia,
+TermsCode,
+Status,
+WOPrinted
+FROM Orders, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
+
+
+For Python Header: Orders
+Sold To Account 
+Ship To Account 
+Street 
+Street 2
+City
+State
+ZIP
+Order Number 
+Order Date 
+Account 
+PO Number 
+Ship Via 
+Terms 
+FOB 
+E2 Customer Key 
+Account Salesforce ID
+Status- when it is opene or closed 
+Quote Number 
+
+
+
+
+
+
+*****************************************************************************************************************************
+                                                        Export For OrderDet
+*****************************************************************************************************************************
+SELECT
+ QtyOrdered,
+ FOB,
+ Revision,
+ Status,
+ PartDesc,
+ JobNo
+FROM OrderDet, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
+
+  
+
+
+
+
+
+
+
+
+
+
+*****************************************************************************************************************************
+                                                          Export For Releases
+*****************************************************************************************************************************
+SELECT OrderNo
+      ,JobNo
+      ,PartNo
+      ,PartDesc
+      ,DelType
+      ,Qty
+      ,DueDate
+      ,DateComplete
+      ,DeliveryTicketNo
+      ,Comments
+      ,Releases_ID
+      ,ItemNo
+      ,DestJobNo
+      ,MfgJobNo
+      ,BinLocation
+      ,LotNo
+      ,EDISoftItemNo
+      ,LastModDate
+      ,LastModUser
+  FROM Releases, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
+
+
+
+
+
+*****************************************************************************************************************************
+                                                     Export For Quote
+*****************************************************************************************************************************
 SELECT
  Addr1
  ,Addr2
@@ -84,9 +339,9 @@ SELECT
   WHERE LastModDate > LastSync.LastSyncDateTime 
 
 
-******************
-Export For QuoteDet
-******************
+*****************************************************************************************************************************
+                                                   Export For QuoteDet
+*****************************************************************************************************************************
 SELECT QuoteNo
   ,PartNo
   ,ItemNo
@@ -114,58 +369,6 @@ FROM QuoteDet, LastSync
 
 
 
-************************
-Export For Releases
-************************
-SELECT OrderNo
-      ,JobNo
-      ,PartNo
-      ,PartDesc
-      ,DelType
-      ,Qty
-      ,DueDate
-      ,DateComplete
-      ,DeliveryTicketNo
-      ,Comments
-      ,Releases_ID
-      ,ItemNo
-      ,DestJobNo
-      ,MfgJobNo
-      ,BinLocation
-      ,LotNo
-      ,EDISoftItemNo
-      ,LastModDate
-      ,LastModUser
-  FROM Releases, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
-
-
-************************
-Export For Orders
-************************
-SELECT CustCode,
-ShipToName,
-OrderNo,
-DateEnt,
-CustDesc,
-PONum,
-ShipVia,
-TermsCode,
-Status,
-WOPrinted
-FROM Orders, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
 
 
 
-************************
-Export For OrderDet
-************************
-SELECT
- QtyOrdered,
- FOB,
- Revision,
- Status,
- PartDesc,
- JobNo
-FROM OrderDet, LastSync WHERE LastModDate > LastSync.LastSyncDateTime
-
-  
