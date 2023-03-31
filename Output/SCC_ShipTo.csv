@@ -1,0 +1,164 @@
+﻿SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
+36N 56th st,NULL,Phoenix,AZ,85034,J,Currier,6218,SCC_4890,16:14.2,1,Y,30:08.4,SCC_ShipTo.csv
+3828 N 35th Ave,NULL,Phoenix,AZ,85017,Amalia Arvizu,Castle Steel,6219,SCC_4891,14:32.4,2,Y,30:08.4,SCC_ShipTo.csv
+303A Beeline  ,NULL,Payson,NULL,85541,NULL,Town Of  Payson,6220,SCC_4892,NULL,3,Y,30:08.4,SCC_ShipTo.csv
+406 E. Pioneer St.,NULL,Phoenix,AZ,85040,Accounts Payable,Professional Piping Systems,6221,SCC_4893,26:01.8,4,Y,30:08.4,SCC_ShipTo.csv
+3618 E. LA SALLE STREET  ,NULL,Phoenix,AZ,85040,NULL,FPF Industries,6222,SCC_4894,56:37.6,5,Y,30:08.4,SCC_ShipTo.csv
+3738 E Miami Ave  ,NULL,Phoenix,AZ,85040,NULL,Pioneer Equipment Inc,6223,SCC_4895,15:27.2,6,Y,30:08.4,SCC_ShipTo.csv
+3401 E Weir Ave  ,NULL,Phoenix,AZ,85040,NULL,"FMD Fabrication Service, LLC",6224,SCC_4896,NULL,7,Y,30:08.4,SCC_ShipTo.csv
+2301 West Broadway,NULL,Phoenix,AZ,85041,Greg Rath,OLT Fabrication,6225,SCC_4897,04:01.5,8,Y,30:08.4,SCC_ShipTo.csv
+1042 S. Lewis,NULL,Mesa,AZ,85210,Connie Huston,MMI Industrial & Steel,6226,SCC_4898,15:35.7,9,Y,30:08.4,SCC_ShipTo.csv
+5026 E Beverly Rd,NULL,Phoenix,AZ,85044,NULL,Southwest Metalsmiths,6227,SCC_4899,14:20.6,10,Y,30:08.4,SCC_ShipTo.csv
+724 E Southern Pacific Dr,NULL,Phoenix,AZ,85035,,Capitol Engineering Co.,6228,SCC_4900,59:35.4,11,Y,30:08.4,SCC_ShipTo.csv
+1908 N. Rosemont,NULL,Mesa,AZ,85205,A/P,"Copperstate Construction Services, Inc.",6229,SCC_4901,53:22.1,12,Y,30:08.4,SCC_ShipTo.csv
+1312 E. Kaler Drive,NULL,Phoenix,AZ,85020,NULL,Mountainscapers LLC.,6230,SCC_4902,18:17.9,13,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,A/P,PCL Construction,6232,SCC_4904,11:28.9,14,Y,30:08.4,SCC_ShipTo.csv
+2342 S McClintock Dr,NULL,TEMPE,AZ,85282,NULL,Talis Construction Corp.,6234,SCC_4906,52:49.0,15,Y,30:08.4,SCC_ShipTo.csv
+3003 N Central Ave  Suite1500,Suite1500,Phoenix,AZ,85012,A/P,Schuff Steel,6235,SCC_4907,24:51.9,16,Y,30:08.4,SCC_ShipTo.csv
+21605 N 26th Ave,NULL,Phoenix,AZ,85027,Richard,Advanced Metal Sales LLC,6236,SCC_4908,54:10.4,17,Y,30:08.4,SCC_ShipTo.csv
+1601 Buchanan Road  ,NULL,Evansville,IN,47720,NULL,Separation By Design,6237,SCC_4909,14:49.4,18,Y,30:08.4,SCC_ShipTo.csv
+1138 N Alma School Road  #207,#207,Mesa,AZ,85201,NULL,Layne,6238,SCC_4910,NULL,19,Y,30:08.4,SCC_ShipTo.csv
+201 S. 26th Street  ,NULL,Phoenix,AZ,85034,NULL,Hennesy Mechanical Systems,6239,SCC_4911,NULL,20,Y,30:08.4,SCC_ShipTo.csv
+5343 Mohave Street,NULL,Phoenix,AZ,85043,Caitlin Gauthier,Alstate Steel,6240,SCC_4912,35:43.1,21,Y,30:08.4,SCC_ShipTo.csv
+8743 E. Pecos Rd. Suite #122  ,NULL,Mesa,AZ,85212,NULL,Tenshon,6242,SCC_4914,25:50.4,22,Y,30:08.4,SCC_ShipTo.csv
+"3922 E University Dr, Suite 1",NULL,Phoenix,AZ,85034,NULL,YELLOW JACKET DRILLING,6243,SCC_4915,40:50.7,23,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,DESERT COATING SOLUTION LLC,6244,SCC_4916,21:29.9,24,Y,30:08.4,SCC_ShipTo.csv
+7706 N 71st Ave,NULL,Glendale,AZ,85303,Kenric Freiwald,National Pump Company,6245,SCC_4917,55:03.5,25,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,John Lockett,Pump System AZ,6246,SCC_4918,24:52.3,26,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,4K Painting & Trim,6247,SCC_4919,46:30.1,27,Y,30:08.4,SCC_ShipTo.csv
+1945 W Broadway Rd  ,NULL,Phoenix,AZ,85041,NULL,JV Driver Fabricators,6248,SCC_4920,NULL,28,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,WILL HYDRAULICS,6250,SCC_4921,NULL,29,Y,30:08.4,SCC_ShipTo.csv
+2607 N. Country Club Drive,NULL,Scottsdale,AZ,85256,Lori Brady,Agate Steel,6251,SCC_4922,54:40.0,30,Y,30:08.4,SCC_ShipTo.csv
+3501 E. Broadway Rd  ,NULL,Phoenix,AZ,85040,NULL,"James, Cooke and Hobson, Inc.",6252,SCC_4923,NULL,31,Y,30:08.4,SCC_ShipTo.csv
+1645 W. Buckeye Road  ,NULL,Phoenix,AZ,85007,NULL,Tri Star Industrial Company,6253,SCC_4924,NULL,32,Y,30:08.4,SCC_ShipTo.csv
+3342 E. Wier Ave.  ,NULL,Scottsdale,AZ,85256,NULL,Oil & Gas Process Solutions,6254,SCC_4925,NULL,33,Y,30:08.4,SCC_ShipTo.csv
+1841 S. Horne  ,NULL,Mesa,AZ,85204,Cindy Argyle,"Brahma Group, Inc",6255,SCC_4926,21:11.8,34,Y,30:08.4,SCC_ShipTo.csv
+3240 S. 37th Ave,NULL,Phoenix,AZ,85009,David Cooper,MMI Tank,6256,SCC_4927,35:01.1,35,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,WALTER,6258,SCC_4929,NULL,36,Y,30:08.4,SCC_ShipTo.csv
+8112 West Buckeye Road  ,NULL,Phoenix,AZ,85043,NULL,Bunger Steel,6259,SCC_4930,NULL,37,Y,30:08.4,SCC_ShipTo.csv
+3301 East Tonto Drive,NULL,Phoenix,AZ,85044,Greg Sprinkle,Industrial Inspection & Consul,6260,SCC_4931,12:45.0,38,Y,30:08.4,SCC_ShipTo.csv
+4320 E. Presidio St.  Suite #111,Suite #111,Mesa,AZ,85215,David Melberg,Schuff Steel Management Co.,6261,SCC_4932,35:29.6,39,Y,30:08.4,SCC_ShipTo.csv
+5136 S Desert View Drive  ,NULL,Apache Junction,AZ,85120,NULL,Rolling Plains,6263,SCC_4928,09:40.5,40,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Vic's Welding Co. LLC,6264,SCC_4934,NULL,41,Y,30:08.4,SCC_ShipTo.csv
+4150 E Quartz Circle  ,NULL,Mesa,AZ,85215,NULL,Able Steel Fabricators,6265,SCC_4935,10:05.5,42,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,RMR Fabrication,6266,SCC_4936,58:10.0,43,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,Peroria,AZ,85009,NULL,All Metal Specialties,6267,SCC_4937,NULL,44,Y,30:08.4,SCC_ShipTo.csv
+825 W. Beechcraft St  ,NULL,Casa Grande,AZ,85122,NULL,ACO INC,6268,SCC_4938,NULL,45,Y,30:08.4,SCC_ShipTo.csv
+1725 W 10th Place  ,NULL,Tempe,AZ,85281,NULL,Tru-Stop Inc,6269,SCC_4939,50:25.0,46,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Sparkman Enterprises,6270,SCC_4940,NULL,47,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Ensolutions Inc,6271,SCC_4941,09:07.3,48,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Innovative Industrial,6272,SCC_4942,NULL,49,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,Phoenix,AZ,,NULL,Chris Cartlidge,6273,SCC_4943,NULL,50,Y,30:08.4,SCC_ShipTo.csv
+12266 Branford Street,NULL,Sun Valley,CA,91352,Accounting,Spartan Truck Company,6274,SCC_4944,45:05.3,51,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Rick - MMI,6275,SCC_4945,NULL,52,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,Fire Up Fredom,6276,SCC_4946,07:46.4,53,Y,30:08.4,SCC_ShipTo.csv
+11140 N 136th Ave,NULL,Surprise,AZ,85379,Accounts Payable,Felix Construction,6277,SCC_4947,54:54.1,54,Y,30:08.4,SCC_ShipTo.csv
+501 E Comstock Drive,NULL,Chandler,AZ,85225,Leann Price,KT Fab,6278,SCC_4948,05:17.5,55,Y,30:08.4,SCC_ShipTo.csv
+2439 S 49th Avenue,NULL,Phoenix,AZ,85043,Karen,Magnum Companies,6279,SCC_4949,49:16.7,56,Y,30:08.4,SCC_ShipTo.csv
+1326 W. Industrial Dr,NULL,Coolidge,AZ,85128,Accounts Payable,Felix Construction,6280,SCC_4947,54:54.1,57,Y,30:08.4,SCC_ShipTo.csv
+5100 S 36th Street,NULL,Phoenix,AZ,85040,Dominic Smith,"Phoenix Pumps, Inc.",6281,SCC_4950,56:44.6,58,Y,30:08.4,SCC_ShipTo.csv
+3137 W Lincoln St  ,NULL,Phoenix,AZ,85009,NULL,TRW Steel,6282,SCC_4951,NULL,59,Y,30:08.4,SCC_ShipTo.csv
+1441 N VIP Blvd,NULL,Casa Grande,AZ,85122,NULL,Spartan Truck Company Inc,6283,SCC_4944,45:05.4,60,Y,30:08.4,SCC_ShipTo.csv
+7506 W Madison Street,NULL,Tolleson,AZ,85353,Tim Black,Gicon Pumps & Equipmt,6284,SCC_4952,15:38.2,61,Y,30:08.4,SCC_ShipTo.csv
+450 E Pima Street #2  ,NULL,Phoenix,AZ,85004,NULL,Denali Metalworks,6286,SCC_4954,NULL,62,Y,30:08.4,SCC_ShipTo.csv
+42554 Sante Fe Drive,NULL,Kingman,AZ,86401,NULL,Laron Inc - Kingman,6287,SCC_4955,57:18.6,63,Y,30:08.4,SCC_ShipTo.csv
+3550 S 16th Street,NULL,Phoenix,AZ,85040,NULL,Laron Inc - PHX,6288,SCC_4955,57:18.6,64,Y,30:08.4,SCC_ShipTo.csv
+223 Foster Street  ,NULL,Martinez,CA,94533,NULL,Baja Construction,6290,SCC_4956,NULL,65,Y,30:08.4,SCC_ShipTo.csv
+3530 E Atlanta Ave  ,NULL,Phoenix,AZ,85040,NULL,Tru Metal Solutions,6291,SCC_4957,16:56.4,66,Y,30:08.4,SCC_ShipTo.csv
+1001 S Edward Drive  ,NULL,Tempe,AZ,85281,NULL,SDB Contracting Services,6292,SCC_4958,NULL,67,Y,30:08.4,SCC_ShipTo.csv
+411 East Frye Rd  ,NULL,Chandler,AZ,85225,NULL,Old Castle Infrastructure,6293,SCC_4959,NULL,68,Y,30:08.4,SCC_ShipTo.csv
+  ,NULL,NULL,NULL,NULL,NULL,City of Sedona,6294,SCC_4960,NULL,69,Y,30:08.4,SCC_ShipTo.csv
+4415 W. Magnolia St.,NULL,Phoenix,AZ,85043,Brian Oesterreicher,Rimex,6295,SCC_4961,18:46.2,70,Y,30:08.4,SCC_ShipTo.csv
+754 E Maley St,NULL,Willcox,AZ,85643,Virginia Parish,Simflo Pump,6296,SCC_4962,29:01.4,71,Y,30:08.4,SCC_ShipTo.csv
+735 N 19th Avenue Phoenix  AZ  85009,NULL,NULL,NULL,NULL,NULL,Smith Pipe and Steel,6297,SCC_4963,44:16.8,72,Y,30:08.4,SCC_ShipTo.csv
+3637 E. Anne St.,NULL,NULL,NULL,NULL,NULL,MetalFab AZ,6298,SCC_4964,NULL,73,Y,30:08.4,SCC_ShipTo.csv
+3883 W. Lower Buckeye Rd.,NULL,Phoenix,AZ,85009,Ron Ruff,R.J. Ruff & CO.,6299,SCC_4965,14:28.9,74,Y,30:08.4,SCC_ShipTo.csv
+100 s Roosevelt Avenue,NULL,Chandler,AZ,85226,1st Time invoice Submission,Rogers Corporation,6300,SCC_4966,23:30.0,75,Y,30:08.4,SCC_ShipTo.csv
+2122 S Hardy Drive,NULL,Tempe,AZ,85282,James Hwyward,Schreiber Foods,6301,SCC_4967,02:36.2,76,Y,30:08.4,SCC_ShipTo.csv
+2160 Superstition Blvd,NULL,Apache Junction,AZ,85120,Accounts Payable,Transco Inc,6302,SCC_4968,14:08.1,77,Y,30:08.4,SCC_ShipTo.csv
+4205 W. Lower Buckeye Rd,NULL,Phoenix,AZ,85009,Antonia,S Diamond Steel,6303,SCC_4969,46:12.5,78,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Mountain Scaper,6304,SCC_4902,18:17.9,79,Y,30:08.4,SCC_ShipTo.csv
+3620 S 40th Street,NULL,Phoenix,AZ,85040,NULL,Phoenix Tower Crane,6305,SCC_4971,29:32.1,80,Y,30:08.4,SCC_ShipTo.csv
+2 N. Central Avenue Suite 1600,NULL,Phoenix,AZ,85004,Ric Traeger,Ric Traeger,6306,SCC_4972,NULL,81,Y,30:08.4,SCC_ShipTo.csv
+1881 East University Drive,NULL,Phoenix,AZ,85034,Kim Rivera,Keller Electrical Ind,6307,SCC_4973,18:52.2,82,Y,30:08.4,SCC_ShipTo.csv
+2275 E Ganley Road,NULL,Tucson,AZ,85706,NULL,Caid Industries Inc,6308,SCC_4974,NULL,83,Y,30:08.4,SCC_ShipTo.csv
+14815 S 14th Place,NULL,Phoenix,AZ,85048,NULL,ALDERFER DESIGNS,6309,SCC_4975,11:13.3,84,Y,30:08.4,SCC_ShipTo.csv
+4248 N Craftsman Ct Suite 100,NULL,Scottsdale,AZ,85251,NULL,Nitti Builders,6310,SCC_4976,34:24.9,85,Y,30:08.4,SCC_ShipTo.csv
+3335 W Vernon Ave,NULL,Phoenix,AZ,85009,NULL,Associated Sign Company,6311,SCC_4977,NULL,86,Y,30:08.4,SCC_ShipTo.csv
+5002 S 36th Street,NULL,Phoenix,AZ,85040,NULL,Paragon Power LLC,6312,SCC_4978,06:28.0,87,Y,30:08.4,SCC_ShipTo.csv
+4141 S 36th St Ste 170,NULL,NULL,NULL,NULL,NULL,P3 Construction,6313,SCC_4979,36:22.0,88,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,robert doenges,6314,SCC_4980,14:06.1,89,Y,30:08.4,SCC_ShipTo.csv
+204 S 69th Avenue,NULL,Phoenix,AZ,85043,Dianne Positeri,Pacific Tek,6315,SCC_4981,59:18.3,90,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Todd Whiteley,6316,SCC_4982,13:52.1,91,Y,30:08.4,SCC_ShipTo.csv
+302 S 28TH ST,NULL,phoenix,AZ,85034,NULL,custom pipe Fabrication,6317,SCC_4983,13:16.2,92,Y,30:08.4,SCC_ShipTo.csv
+3120 W Weldon Ave,NULL,Phoenix,AZ,85017,David Svancara,Coin and Professional Equipment Co,6318,SCC_4984,29:13.5,93,Y,30:08.4,SCC_ShipTo.csv
+4640 E Cotton Gin Loop,NULL,Phoenix,AZ,85040,Jesse Resendez,Haydon Building Corp,6319,SCC_4985,13:45.1,94,Y,30:08.4,SCC_ShipTo.csv
+15230 N 75th St Ste 2010,NULL,Scottsdale,AZ,85260,NULL,Bad Elf,6320,SCC_4986,NULL,95,Y,30:08.4,SCC_ShipTo.csv
+4050 W Saturn Way,NULL,Chandler,AZ,85226,NULL,Capital Pump & Equipment,6321,SCC_4987,53:23.7,96,Y,30:08.4,SCC_ShipTo.csv
+2610 S. 21st Street,NULL,Phoenix,AZ,85034,Liza Celaya,Super Radiator Coils,6322,SCC_4988,50:33.8,97,Y,30:08.4,SCC_ShipTo.csv
+317 S THORNTON,NULL,CASA GRANDE,AZ,85193,Accounts Payable,TTX CREW,6323,SCC_4989,33:54.7,98,Y,30:08.4,SCC_ShipTo.csv
+4110 E. Elwood Street,NULL,Phoenix,AZ,85040,NULL,MGC Contractors,6324,SCC_4990,NULL,99,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Design Bits,6326,SCC_4992,NULL,100,Y,30:08.4,SCC_ShipTo.csv
+100 S Price Rd,NULL,Tempe,AZ,85281,Casey Horn,Nesbitt Contracting Co,6327,SCC_4993,29:56.5,101,Y,30:08.4,SCC_ShipTo.csv
+12211 S Gilbert Rd,NULL,Gilbert,AZ,85296,NULL,Campbell Enterprises,6328,SCC_4991,NULL,102,Y,30:08.4,SCC_ShipTo.csv
+55 E Vía Del Cielo,NULL,Wickenburg,AZ,85930,NULL,Dan Reardon,6329,SCC_4994,53:53.2,103,Y,30:08.4,SCC_ShipTo.csv
+7117 E. Orange Blossom Ln,NULL,Paradise Valley,AZ,85251,Zack Causer,Alloy Builders Corporation,6330,SCC_4995,08:17.8,104,Y,30:08.4,SCC_ShipTo.csv
+2205 W. Grant St.,NULL,Phoenix,AZ,85009,A/P,Southwest Water Works Contractors,6331,SCC_4996,58:27.7,105,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,BRIAN,6332,SCC_4997,NULL,106,Y,30:08.4,SCC_ShipTo.csv
+5128 E Ingram St,NULL,Mesa,AZ,85205,NULL,Bold Framing,6333,SCC_4998,NULL,107,Y,30:08.4,SCC_ShipTo.csv
+6029 W Washington St,NULL,Phoenix,AZ,85043,NULL,Phoenix Stair,6334,SCC_4999,NULL,108,Y,30:08.4,SCC_ShipTo.csv
+13A Talbot Ave,NULL,Braddock,PA,15104,Accounts Payable,Phillips Tank & Structure,6335,SCC_5000,49:13.2,109,Y,30:08.4,SCC_ShipTo.csv
+"3625 E Atlanta Ave, Suite #2",NULL,Phoenix,AZ,85040,NULL,"Construction Product  Marketing, LLC",6336,SCC_5001,29:20.5,110,Y,30:08.4,SCC_ShipTo.csv
+840 North Estrella Parkway,NULL,Goodyear,AZ,85338,NULL,3 Minute Express Car Wash,6337,SCC_5002,NULL,111,Y,30:08.4,SCC_ShipTo.csv
+5155 E Eagle Dr. Unit 20561,NULL,Mesa,AZ,85277,NULL,Arizona Pure Custom,6338,SCC_5003,39:13.8,112,Y,30:08.4,SCC_ShipTo.csv
+PO Box 8096,NULL,Phoenix,AZ,85066,NULL,Moreno Welding,6339,SCC_5004,NULL,113,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Levi Gomez,6340,SCC_5005,NULL,114,Y,30:08.4,SCC_ShipTo.csv
+"777 Terrace Avenue, Suite 101",NULL,Hasbrouck Heights,NJ,7604,NULL,WTEC Energy Innovation,6341,SCC_5006,24:25.1,115,Y,30:08.4,SCC_ShipTo.csv
+9452 N. 16th Ave,NULL,Phoenix,AZ,85021,Susan Almanza,"SouthWest Environmental, Inc.",6342,SCC_5007,14:11.1,116,Y,30:08.4,SCC_ShipTo.csv
+3045 S 51st Ave,NULL,Phoenix,AZ,85043,NULL,"MP Environmental Services, Inc.",6343,SCC_5008,NULL,117,Y,30:08.4,SCC_ShipTo.csv
+731 N 19th Ave,NULL,Phoenix,AZ,85009,NULL,Standard Coating Company,6344,SCC_5009,NULL,118,Y,30:08.4,SCC_ShipTo.csv
+3888 E Broadway Road Phoenix AZ,NULL,NULL,AZ,859040,"Kevin""Cole"" Bigelow",Kiewit,6345,SCC_5010,21:43.4,119,Y,30:08.4,SCC_ShipTo.csv
+55 E Via Del Cielo Wickerberg,NULL,Wickerberg,AZ,NULL,Dan Reardon,Horner,6346,SCC_5011,24:32.3,120,Y,30:08.4,SCC_ShipTo.csv
+1002 East Main Street,NULL,El Centro,CA,92243,NULL,EW Corporation Industrial Fabricators and Construc,6347,SCC_5012,NULL,121,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Keller North America,6348,SCC_5013,48:43.3,122,Y,30:08.4,SCC_ShipTo.csv
+4141 E. Raymond St. Suite E,NULL,Phoenix,AZ,85040,NULL,Archer Douglas,6349,SCC_5014,NULL,123,Y,30:08.4,SCC_ShipTo.csv
+701 N Cooper Rd,NULL,Gilbert,AZ,85233,Accounts Payable,Hunter Contracting Co,6350,SCC_5015,03:52.2,124,Y,30:08.4,SCC_ShipTo.csv
+5555 S Packard Ave,NULL,Cudahy,WI,53110,Su Heus,Vilter Manufacturing,6351,SCC_5016,44:36.7,125,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,Victor Vidales,Victor Vidales,6352,SCC_5017,44:20.8,126,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,Accounts Payable,Williamson Development,6353,SCC_5018,45:42.2,127,Y,30:08.4,SCC_ShipTo.csv
+39506,NULL,phoenix,AZ,85086,NULL,Red point Contracting,6354,SCC_5019,NULL,128,Y,30:08.4,SCC_ShipTo.csv
+5555 S Packard Ave,NULL,Cudahy,WI,53110,NULL,Emerson Climate Technologies,6355,SCC_5020,NULL,129,Y,30:08.4,SCC_ShipTo.csv
+6875 W. Galveston St.,NULL,Chandler,AZ,85226,Priscilla Miller,Comfort Systems USA Southwest,6356,SCC_5021,51:14.2,130,Y,30:08.4,SCC_ShipTo.csv
+2410 W Broadway Rd,NULL,Phoenix,AZ,85041,Accounts Payable,Jensen Precast,6357,SCC_5022,18:49.1,131,Y,30:08.4,SCC_ShipTo.csv
+280 E. Germann Rd.,NULL,Gilbert,AZ,85297,Accounts Payable,Silent-Aire,6360,SCC_5025,08:45.0,132,Y,30:08.4,SCC_ShipTo.csv
+1468 S. 1st Avenue,NULL,Thatcher,AZ,85552,Wayne,Allied Machine Works,6361,SCC_5026,48:24.1,133,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Hector Heras,6362,SCC_5027,NULL,134,Y,30:08.4,SCC_ShipTo.csv
+34240 S Old Black Canyon Hwy,NULL,Black Canyon City,AZ,85324,NULL,GrayLeaf Studio,6363,SCC_5028,15:58.2,135,Y,30:08.4,SCC_ShipTo.csv
+731 N 19th Ave,NULL,Phoenix,AZ,85009,NULL,Smith pipe,6364,SCC_5029,NULL,136,Y,30:08.4,SCC_ShipTo.csv
+3045 S. 7th St.,NULL,Phoenix,AZ,85040,NULL,Buesing Corp,6365,SCC_5030,42:41.2,137,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Cavco Pewter,6366,SCC_5031,NULL,138,Y,30:08.4,SCC_ShipTo.csv
+3230 East Broadway Rd,NULL,Phoenix,AZ,85040,Accounts Payable,SRE Environmental,6367,SCC_5032,46:34.0,139,Y,30:08.4,SCC_ShipTo.csv
+2059 Pioneer Hills Rd.,NULL,Globe,AZ,85501,Accounts Payable,"5D Mining & Construction, Inc",6368,SCC_5033,14:33.1,140,Y,30:08.4,SCC_ShipTo.csv
+5430 side Rd,NULL,Prescott,AZ,86301,NULL,Technology Construction,6369,SCC_5034,NULL,141,Y,30:08.4,SCC_ShipTo.csv
+941 W 23rd St,NULL,Tempe,AZ,85282,Stacy Brady,"Summit Process Systems, LLC",6370,SCC_5035,52:02.9,142,Y,30:08.4,SCC_ShipTo.csv
+8137 N 83rd Ave,NULL,Peoria,AZ,85345,NULL,Stellar Steel,6371,SCC_5036,55:08.2,143,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Accutite Fasteners Inc.,6372,SCC_5037,NULL,144,Y,30:08.4,SCC_ShipTo.csv
+164 S. Hamilton Place,NULL,Gilbert,AZ,85233,NULL,American Precision Manufacturing Inc.,6373,SCC_5038,NULL,145,Y,30:08.4,SCC_ShipTo.csv
+620 W Commerce Ave,NULL,Gilbet,AZ,85233,Matt Howard,S & H Steel Co,6374,SCC_5039,56:35.0,146,Y,30:08.4,SCC_ShipTo.csv
+1422 South 21st Drive Dr,NULL,Phoenix,AZ,85009,NULL,D & L Fabricating,6375,SCC_5040,38:11.0,147,Y,30:08.4,SCC_ShipTo.csv
+6527 W Northview Ave,NULL,Glendale,AZ,85303,NULL,Diamond Iron LLC,6376,SCC_5041,NULL,148,Y,30:08.4,SCC_ShipTo.csv
+599 S. Litchfield Road,NULL,Goodyear,AZ,85338,Jonathan Jones,InProduction,6377,SCC_5042,33:22.9,149,Y,30:08.4,SCC_ShipTo.csv
+3065 43rd Avenue,NULL,Phoenix,NULL,85009,NULL,US PIPE,6378,SCC_5043,NULL,150,Y,30:08.4,SCC_ShipTo.csv
+3065 S. 43rd Ave,NULL,Phoenix,AZ,85009,Charles Gregg,U.S. Pipe Fabrication,6379,SCC_5044,NULL,151,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Havana Shade,6380,SCC_5045,NULL,152,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,DENNIS GROUP,6381,SCC_5046,NULL,153,Y,30:08.4,SCC_ShipTo.csv
+23724 N Central Ave,NULL,Phoenix,AZ,85024,Accounts Payable,All Things Metal LLC,6383,SCC_5048,23:37.2,154,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,AZDPS,6384,SCC_5049,01:00.7,155,Y,30:08.4,SCC_ShipTo.csv
+4010 E Illinois St,NULL,Tucson,AZ,85714,NULL,"Smyth Industries, Inc.",6385,SCC_5050,NULL,156,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,city of surprise,6386,SCC_5051,NULL,157,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,Morales Artistic Wrought Iron,6387,SCC_5052,NULL,158,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,NULL,NULL,NULL,NULL,City of Phoenix,6388,SCC_5053,NULL,159,Y,30:08.4,SCC_ShipTo.csv
+3933 East La Salle Street,NULL,Phoenix,AZ,85040,Patrice Minetta,"DNG Construction, LLC",6389,SCC_5054,33:16.4,160,Y,30:08.4,SCC_ShipTo.csv
+529 E Juanita Ave # 6,NULL,Mesa,AZ,85204,Ron Schneider,Aluma Line Inc,6390,SCC_5055,32:07.7,161,Y,30:08.4,SCC_ShipTo.csv
+3965 East Patrick Lane,NULL,Las Vegas,NV,89139,NULL,Slurry Management Systems,6392,SCC_5057,NULL,162,Y,30:08.4,SCC_ShipTo.csv
+NULL,NULL,PHOENIX,AZ,NULL,Roy Hunt,DFT FAB,6393,SCC_5058,30:34.5,163,Y,30:08.4,SCC_ShipTo.csv

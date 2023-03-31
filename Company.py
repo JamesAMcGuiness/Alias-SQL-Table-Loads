@@ -17,18 +17,61 @@ import errorLog
 def logic_to_apply(row):
 
     #The List Of fields we have unique logic for...
-    theColumnList =	["payout__Commission_Batch_Unique_ID__c"]
+    theColumnList =	["LoadForCompany_del"]
 
     for columnname in theColumnList:
 
         #**************************************************************************************
         #
         #**************************************************************************************   
-        if columnname == '<payout__Commission_Batch_Unique_ID__c>':
-            print('We have setup logic for this field: ' + columnname)			                
+        if columnname == 'LoadForCompany_del':
+            print('We have setup logic for this field: ' + columnname)		
+            if row["LoadForCompany_del"] == 'DESERT':
+                row["RecordTypeId"] = os.environ['DesertRTID'] 
+            else:
+                row["RecordTypeId"] = os.environ['StandardRTID'] 
+            	                
         else:
             print('We have not setup logic for this field: ' + columnname)			
 
+        #if columnname == '<Column from Header>':
+            #**************************************************************************************
+            #                                  For Checkboxes
+            #**************************************************************************************              			
+            #if row["Column from Header"] == 'Y':
+            #    row[""] = "True" 
+            #else:
+            #    row[""] = "False" 
+		
+
+            #**************************************************************************************
+            #                                  RecordTypeId
+            #**************************************************************************************              			
+            #row["RecordTypeId"] = os.environ['CBDefaultLOBRTID']
+            #if row["payout__Line_of_Business__c"] == "Advisory":
+            #    row["RecordTypeId"] = os.environ['CBAdvisoryRTID']
+			
+            #else:
+            #    if row["payout__Line_of_Business__c"] == "Insurance":			
+            #        row["RecordTypeId"] = os.environ['CBInsuranceRTID']
+            #*****************************************************************
+            # Date Transformations...
+            #***************************************************************** 					   											
+            #try:
+
+            #*****************************************************************
+            # payout__Statement_Date__c - Transformation to SF Date
+            #***************************************************************** 					   											
+            #    if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
+            #        row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
+            #except ValueError:
+            
+            #    try:
+            #        if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
+            #            row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
+            #            print('Successfully used the 4 digit format!')
+            #    except ValueError:
+            #        print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
 
 
 def post_batch_salesforce(disbursals, bulk, job):
@@ -47,7 +90,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         security_token = tsecurity_token,
         client_id=tclient_id)
     print('****************************************************')						  
-    print('In salesforce_connect_and_upload for Company')						
+    print('In salesforce_connect_and_upload for Customer')						
     print('****************************************************')						  
 
     job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
@@ -70,31 +113,15 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         disbursals = []
         batches    = []    
         count      = 1
-        
+        ignr_head = True
         for row in reader:
+            if ignr_head:
+                ignr_head = False
+                continue
 				
-            #**************************************************************************************
-            #                                  For Checkboxes
-            #**************************************************************************************              			
-            if row["payout__Trail__c_del"] == 'Y':
-                row["payout__X12b1_Batch__c"] = "True" 
-            else:
-                row["payout__X12b1_Batch__c"] = "False" 
-		
-
-            #**************************************************************************************
-            #                                  RecordTypeId
-            #**************************************************************************************              			
-            row["RecordTypeId"] = os.environ['CBDefaultLOBRTID']
-            if row["payout__Line_of_Business__c"] == "Advisory":
-                row["RecordTypeId"] = os.environ['CBAdvisoryRTID']
-			
-            else:
-                if row["payout__Line_of_Business__c"] == "Insurance":			
-                    row["RecordTypeId"] = os.environ['CBInsuranceRTID']
 			
             ############################## To apply any special logic for this client #########################################################################
-            #logic_to_apply(client,row)
+            logic_to_apply(row)
             ################################################################################################################################################### 			
 			
             # For any header columns with _del in them, we want to remove them from processing
@@ -102,24 +129,6 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
                 if "_del" in head or "_Del" in head:
                     row.pop(head)
 
-            #*****************************************************************
-            # Date Transformations...
-            #***************************************************************** 					   											
-            try:
-
-            #*****************************************************************
-            # payout__Statement_Date__c - Transformation to SF Date
-            #***************************************************************** 					   											
-                if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                    row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
-            except ValueError:
-            
-                try:
-                    if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                        row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                        print('Successfully used the 4 digit format!')
-                except ValueError:
-                    print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
 			
             count = count + 1
             disbursals.append(row)

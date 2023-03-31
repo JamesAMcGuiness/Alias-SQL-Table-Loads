@@ -14,15 +14,17 @@ from datetime import datetime as dt
 import errorLog
 #Below are the tables to load from SQL Server
 import Company 
+import Contact
 import CompanyShipTo
-import Contacts
-import VendorInv
-import VendorInvDet
-import Orders
-import WorkCode
+import Billing
+import BillingDet
+import Order
 import OrderDet
+import Release
 import Quote
 import QuoteDet
+import Order
+
 #Below is the Salesforce Config file for connecting to ORG
 import Client_Config
 
@@ -43,8 +45,8 @@ def lambda_handler(key):
         key = key.replace("+", " ")
         
     
-    oathurl          = os.environ.get('oathurl')
-    salesforceobject = Salesfoceconnect(oathurl, payload)
+    oauthurl         = os.environ.get('oauthurl')
+    salesforceobject = Salesfoceconnect(oauthurl, payload)
     token            = salesforceobject.conn_and_get_token()
     
     print('************************************************')
@@ -87,47 +89,80 @@ def lambda_handler(key):
 	
 	
 
-    # Running for Company
-    elif "Company" in key: 
+    # Running for Customer
+    elif "Customer" in key: 
         print('***************************************')    
-        print('Running for COMPANY....')
+        print('Running for Customer....')
+        print('***************************************')    
 
         head, filename = os.path.split(key)
-        object_name = "Acount"
-        ex_id = "AccountID"
+        object_name = "Account"
+        ex_id = "E2_Customer_Key__c"
         
-        header = "CompanyCode__c,Addr1__c,Addr2__c,City__c,State__c,ZIPCode__c,Phone__c,Website__c".split(",")          
+        header = "TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
         
         Company.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
         
     # Running for CompanyShipTo        
-    elif "CompanyShipTo" in key: 
+    elif "ShipTo" in key: 
         print('***************************************')    
         print('Running for CompanyShipTo....')
 
         head, filename = os.path.split(key)
-        object_name = "CompanyShipTo__c"
-        ex_id = "CompanyShipTo_ID"
+        object_name = "Account"
+        ex_id = "E2_Customer_Key__c"
         
-        header = "Addr1__c,Addr2__c,City__c,State__c,ZIPCode__c,CompanyShipTo_ID__c".split(",")          
+        header = "ShippingStreet,ShipAddr2_del,ShippingCity,ShippingState,ShippingPostalCode,Ship_To_Contact__c,Shipping_Address_Company_Name__c,E2_Ship_To_Key__c,E2_Customer_Key__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del".split(",")          
         
         CompanyShipTo.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
     # Running for Contacts        
-    elif "Contacts" in key: 
+    elif "Contact" in key: 
         print('***************************************')    
-        print('Running for CompanyShipTo....')
+        print('Running for Contact....')
 
         head, filename = os.path.split(key)
-        object_name = "CompanyShipTo__c"
-        ex_id = "CompanyShipTo_ID"
+        object_name = "Contact"
+        ex_id = "E2_Contact_ID__c"
         
-        header = "Contact__c,Title__c,Phone__c,EMail__c,Cell_Phone__c,Contacts_ID__c".split(",")          
+        header = "Contact_del,FirstName,LastName,Email,Phone,Title,MobilePhone,E2_Contact_ID__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,Account.E2_Customer_Key__c,LoadForCompany_del".split(",")          
         
-        Contacts.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        Contact.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
+    # Running for Order (Work Order)
+    elif "Order" in key: 
+        print('***************************************')    
+        print('Running for Order....')
+
+        head, filename = os.path.split(key)
+        object_name = "WorkOrder"
+        ex_id = "Order_Number__c"
+        
+        header = "Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c,Account.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
+
+    # Running for OrderDet (Work Order Line Item)
+    elif "OrderDet" in key: 
+        print('***************************************')    
+        print('Running for OrderDet....')
+
+        head, filename = os.path.split(key)
+        object_name = "WorkOrderLineItem"
+        ex_id = "OrderDetId__c"
+        
+        header = "Quanity,Unit,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,Order.Order_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
+
+
 
     # Running for Quote        
     elif "Quote" in key: 
@@ -186,125 +221,6 @@ def create_touch_file():
 		csvFile.close()  
 
 
-def process_Missing_FA_file():
-		print('In process_Missing_FA_file....')
-		destination      = os.environ.get("ip_path")
-		source           = os.environ.get("op_path")
-		backup           = os.environ.get("op_path") + "/Backup"
-		#print(source)
-		#print(destination)
-		#print(os.listdir(source))
-		file_lst = os.listdir(source)
-                
-		#print(file_lst)        
-                
-		os.chdir(destination)
-		for file in file_lst:
-			
-                        
-			if "MISSING_FA" in file:
-				if "ERROR" not in file and "RECORDLOCKS" not in file and "_BATCH" not in file:
-					print('***************************************')    				
-					print('We Found a Missing FA file to process..')
-			
-					try:
-						#print("Found MISSING FA File to move " + file)
-						#print("Source to move " + source)
-						#print("Destination to move " + destination)
-                    
-                    
-						#os.rename(source + "/" + file, destination + "/" + file)
-                                
-						#Move from Output folder to Input folder
-						os.rename(source + "/" + file, destination + "/" + file)
-						#print('Move of Missing FA was successful!')            
-						
-						lambda_handler(file)   
-                    
-						#Move from Input folder
-						os.remove(destination + "/" + file)
-						#os.rename(destination + "/" + file, backup + "/" + file)						
-						
-						print('Move to output folder Move was successful!')
-
-					except FileExistsError:
-						print("file already exists in Input folder")
-						print("removing already exists file")
-						os.remove(source + "/" + file)
-						print("copying ip file")
-						os.rename(source + "/" + file, destination + "/" + file)
-					return                             
-                            
-
-						
-
-def process_Missing_HLD_file():
-		print('***************************************')    
-		print('In process_Missing_HLD_file....')
-		
-		destination      = os.environ.get("ip_path")
-		source           = os.environ.get("op_path")
-		backup           = os.environ.get("op_path") + "/Backup"
-		#print(source)
-		#print(destination)
-		#print(os.listdir(source))
-		file_lst = os.listdir(source)
-                
-		#print(file_lst)        
-                
-		os.chdir(destination)
-		for file in file_lst:
-			
-                        
-			if "MISSING_HOLDING" in file:
-				if "ERROR" not in file and "RECORDLOCKS" not in file and "_BATCH" not in file:
-					print('***************************************')    				
-					print('Found a MISSING HOLDING file to process..')
-			
-					try:
-						#print("Found HLD File to move " + file)
-						#print("Source to move " + source)
-						#print("Destination to move " + destination)
-                    
-                    
-						#os.rename(source + "/" + file, destination + "/" + file)
-                                
-						#Move from Output folder to Input folder
-						os.rename(source + "/" + file, destination + "/" + file)
-						#print('Move of Missing FA was successful!')            
-						
-						
-						
-						print("found the Holding file in the input folder and was named correctly", objtype, file)
-						f = open(file, encoding="latin-1")
-						reader = csv.reader(f)
-						lines = len(list(csv.reader(f)))
-						f.close()
-						if lines == 1:
-							print("Holding Input file is empty.")				
-							 #Move from Input folder
-							os.remove(destination + "/" + file)
-							errorLog.error_bat_job(file, "input file does not have any records")
-							return
-
-						lambda_handler(file)   
-
-						
-						#Move from Input folder
-						os.remove(destination + "/" + file)
-						#os.rename(destination + "/" + file, backup + "/" + file)						
-																		
-						#print('Move from Input folder Move was successful!')
-
-					except FileExistsError:
-						print("file already exists in Input folder")
-						print("removing already exists file")
-						os.remove(source + "/" + file)
-						print("copying ip file")
-						os.rename(source + "/" + file, destination + "/" + file)
-					return 						
-						
-						
 						
 #Not being implemented yet, for fututre release
 def process_RECORDLOCKS_file():
@@ -414,7 +330,7 @@ class Salesfoceconnect:
 
         res = self.session.post(self.login_url, data=self.payload)
         op_json = res.json()
-        print(op_json)
+        #print(op_json)
         try:
             token = op_json['access_token']
         except KeyError as e:
@@ -454,7 +370,7 @@ try:
         input_key_list = ['_COMMISSIONBATCHES','_COMMISSIONS']
         
         #List the files in the desired load order
-        SQLFiles = ['Company.csv','CompanyShipTo.csv','Contacts.csv','VendorInv.csv','VendorInvDet.csv','Orders.csv','WorkCode.csv','OrderDet.csv','Quote.csv','QuoteDet.csv']
+        SQLFiles = ['Customer','Contact','ShipTo','Order']
 
         #For each SQLFile defined, look for that file in the input folder
         for objtype in SQLFiles:
@@ -465,31 +381,32 @@ try:
                  
                  #If the file found is the 
                   if objtype in file:
+                      print('***************************************')
                       print('Found a file to process..' + str(file))
+                      print('***************************************')
                       
-                      f = open(file, encoding="latin-1")
-                      
+                      f      = open(file, encoding="latin-1")
                       reader = csv.reader(f)
-                      lines = len(list(csv.reader(f)))
+                      lines  = len(list(csv.reader(f)))
                       f.close()
                       
                       if lines == 1:
-                           print("input file does not have any records.")	
-                           			
-                           
+                           print('***************************************')
+                           print("input file does not have any records.")
+                           print('***************************************')	
                            os.remove(destination + "/" + file)
+                           
                            errorLog.error_bat_job(file, "input file does not have any records")
                       else:
 
                            lambda_handler(file)
-                        
             
                            try:
-                                print('***************************************')    			
-                                print("File to move" + file)
-                                print("Source to move" + source)
-                                print("Destination to move" + destination)
-                                print('***************************************')    
+                                #print('***************************************')    			
+                                #print("File to move" + file)
+                                #print("Source to move" + source)
+                                #print("Destination to move" + destination)
+                                #print('***************************************')    
                                               
                                 os.rename(source + "/" + file, destination + "/" + file)
                 
@@ -502,8 +419,14 @@ try:
                                 print("copying ip file")
                                 os.rename(source + "/" + file, destination + "/" + file)
 				
-                           print('***************************************')    				
-                           print('Finshed processing the files ' + 'runtype = *' + runtype + '*')     
+                           print('*****************************************')    				
+                           print('SUCCESSFULLY Finshed processing the file ')
+                           print('*****************************************')
+                           print(' ')    				
+                           print(' ')    				
+                           print(' ')    				
+                           
+                               				     
 
 
     else:

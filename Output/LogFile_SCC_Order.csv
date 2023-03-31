@@ -1,0 +1,2 @@
+Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
+DesertPowder,23-03-31-12-01-04-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_SCC_Order.csv,1341,2,0,0.14914243102162564,N,750Dn000004fVFnIAM

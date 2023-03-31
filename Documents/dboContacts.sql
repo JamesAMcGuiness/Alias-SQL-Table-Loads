@@ -1,0 +1,31 @@
+USE [DCS-Shop]
+GO
+
+SELECT [Object]
+      ,[Code]
+      ,[Contact]
+      ,[Title]
+      ,[Phone]
+      ,[FAX]
+      ,[Mobile]
+      ,[EMail]
+      ,[Extension]
+      ,[Comments]
+      ,[IsWebUser]
+      ,[WebPassword]
+      ,[SeeWebJobStatus]
+      ,[SeeWebDollars]
+      ,[ConferencingServer]
+      ,[ConferencingAddress]
+      ,[Contacts_ID]
+      ,[Active]
+      ,[Cell_Phone]
+      ,[SeeWebExecutiveOverview]
+      ,[LastModDate]
+      ,[LastModUser]
+      ,[IsOptedOut]
+      ,[EnterDate]
+  FROM [dbo].[Contacts]
+
+GO
+

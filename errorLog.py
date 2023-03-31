@@ -20,22 +20,19 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
     logfile        = 'LogFile' + '_' + os.path.basename(filename)
     
     lockerrorsfile = 'RECORDLOCKS' + '_' + os.path.basename(filename)
-    MissingFAFile  = 'FILE_OF_MISSING_FA' + '_' + os.path.basename(filename)
-    MissingHoldingFile  = 'FILE_OF_MISSING_HOLDINGS' + '_' + os.path.basename(filename)
+    
 	
     logfile        = os.environ['op_path'] + '\\' + 'logs' + '\\' + logfile    
     errorfile      = os.environ['op_path'] + '\\' + errorfile 
     lockerrorsfile = os.environ['op_path'] + '\\' + lockerrorsfile
-    MissingFAFile  = os.environ['op_path'] + '\\' + MissingFAFile
-    MissingHoldingFile  = os.environ['op_path'] + '\\' + MissingHoldingFile
+    
 
     error       = open(errorfile, "w", encoding=filetype)
     errorLock   = open(lockerrorsfile, "w", encoding=filetype)
 		
     if runtype == '':
         print('***************************************runtype is NORMAL')	
-        errorFA     = open(MissingFAFile, "w", encoding=filetype)
-        errorHLD    = open(MissingHoldingFile, "w", encoding=filetype)
+        
         lf          = open(logfile, "w", encoding=filetype)
     else:	
         print('Runtype is not NORMAL it is: ' + runtype)
@@ -45,12 +42,7 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
                 
         error.write("Error," + header);
         errorLock.write(header);  
-		
-        if runtype == '':		
-            errorFA.write(header);
-            errorHLD.write(header);
-        
-		
+			
         print('===================================================================> in errorLog.py')
     
         
@@ -76,23 +68,6 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
                             #haveLocks = true
                             errorLock.write(line)
                             reclockct = reclockct + 1
-							
-                        if "not found for field payout__Financial_Account_Number__c" in uploadresult.error and runtype =='':
-                            print('runtype was null, and no FA found, write to FA Error File')
-                            #haveLocks = true
-                            errorFA.write(line)
-                            missfact  = missfact   + 1
-                            print('===================================================>Total Missing FA is ' + str(missfact))
-                            print('===================================================>Total Missing HLD is ' + str(misshldct))
-						
-							
-                        if "not found for field payout__FA_Cusip__c" in uploadresult.error and runtype =='':
-                            print('runtype was null, and no Holding found, write to HLD Error File')
-                            #haveLocks = true
-                            errorHLD.write(line)
-                            misshldct  = misshldct   + 1
-                            print('===================================================>Total Missing FA is ' + str(missfact))
-                            print('===================================================>Total Missing HLD is ' + str(misshldct))
 						
                         error.write(uploadresult.error + "," + line)
                     
@@ -110,10 +85,7 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
 
     print('Calling create_Error_Log_File')
     create_Error_Log_File(client,filename,c_time,errorfile,rowsProcessed,errorCt,reclockct,job,filetype)
-    if runtype == '':	
-        errorFA.close()
-        errorHLD.close()   
-        #lf.close()    
+    
 
 def create_Error_Log_File(client,fileName,runTime,errorFile,rowsProcessed,totalErrors,reclockct,job,filetype="utf-8-sig"):
     print('In create_Error_Log_File')

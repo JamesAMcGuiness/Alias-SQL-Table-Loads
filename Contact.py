@@ -16,18 +16,34 @@ import errorLog
 #########################################################################
 def logic_to_apply(row):
 
+    print(row)
     #The List Of fields we have unique logic for...
-    theColumnList =	["payout__Commission_Batch_Unique_ID__c"]
+    theColumnList =	["Contact_del","RecordTypeId"]
 
     for columnname in theColumnList:
 
         #**************************************************************************************
-        #
+        # Split Contact into First and Last Name
         #**************************************************************************************   
-        if columnname == '<payout__Commission_Batch_Unique_ID__c>':
-            print('We have setup logic for this field: ' + columnname)			                
-        else:
-            print('We have not setup logic for this field: ' + columnname)			
+        if columnname == 'Contact_del':
+            #print('We have setup logic for this field: ' + columnname)	
+            row["FirstName"] = row["Contact_del"].split()[0]
+            row["LastName"]  = row["Contact_del"].split()[-1]
+            
+            		                
+        #else:
+            #print('We have not setup logic for this field: ' + columnname)			
+
+        #**************************************************************************************
+        # Set correct RecordTypeId
+        #**************************************************************************************   
+        if columnname == 'RecordTypeId':
+            print('We have setup logic for this field: ' + columnname)		
+            if row["LoadForCompany_del"] == 'DESERT':
+                row["RecordTypeId"] = os.environ['DesertContactRTID']
+            else:
+                row["RecordTypeId"] = os.environ['StandardContactRTID']
+        
 
 
 
@@ -70,31 +86,16 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         disbursals = []
         batches    = []    
         count      = 1
+        ignr_head = True
         
         for row in reader:
+            if ignr_head:
+                ignr_head = False
+                continue
 				
-            #**************************************************************************************
-            #                                  For Checkboxes
-            #**************************************************************************************              			
-            if row["payout__Trail__c_del"] == 'Y':
-                row["payout__X12b1_Batch__c"] = "True" 
-            else:
-                row["payout__X12b1_Batch__c"] = "False" 
-		
-
-            #**************************************************************************************
-            #                                  RecordTypeId
-            #**************************************************************************************              			
-            row["RecordTypeId"] = os.environ['CBDefaultLOBRTID']
-            if row["payout__Line_of_Business__c"] == "Advisory":
-                row["RecordTypeId"] = os.environ['CBAdvisoryRTID']
-			
-            else:
-                if row["payout__Line_of_Business__c"] == "Insurance":			
-                    row["RecordTypeId"] = os.environ['CBInsuranceRTID']
 			
             ############################## To apply any special logic for this client #########################################################################
-            #logic_to_apply(client,row)
+            logic_to_apply(row)
             ################################################################################################################################################### 			
 			
             # For any header columns with _del in them, we want to remove them from processing
@@ -105,21 +106,21 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             #*****************************************************************
             # Date Transformations...
             #***************************************************************** 					   											
-            try:
+            #try:
 
             #*****************************************************************
             # payout__Statement_Date__c - Transformation to SF Date
             #***************************************************************** 					   											
-                if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                    row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
-            except ValueError:
+            #    if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
+            #        row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
+            #except ValueError:
             
-                try:
-                    if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                        row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                        print('Successfully used the 4 digit format!')
-                except ValueError:
-                    print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
+            #    try:
+            #        if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
+            #            row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
+            #            print('Successfully used the 4 digit format!')
+            #    except ValueError:
+            #        print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
 			
             count = count + 1
             disbursals.append(row)

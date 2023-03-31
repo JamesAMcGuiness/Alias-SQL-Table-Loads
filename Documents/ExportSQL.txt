@@ -1,104 +1,235 @@
-***************************************************************************************************************************
-                                                       Export For Company
-***************************************************************************************************************************
-SELECT Addr1
-,Addr2
-,City
-,State
-,ZIPCode
-,Phone
-,Website
-,CompanyCode
-FROM Company, LastSync 
-Where Company.LastModDate > LastSync.LastSyncDateTime
+
+-- Delete Contacts
+Select Id, E2_Contact_ID__c From Contact where (E2_Contact_ID__c like '%DESERT%' or E2_Contact_ID__c like '%STANDARD%')
+
+-- Delete Accounts
+Select Id From Account where (E2_Customer_Key__c like '%DESERT%' or E2_Customer_Key__c like '%STANDARD%')
 
 
 
 *****************************************************************************************************************************
-                                                           Export For CustCode (Do we need this???)
+                                                           Export For DESERT_CustCode
 *****************************************************************************************************************************
 SELECT 
-      BAddr1
-      ,BAddr2
-      ,BCity
-      ,BState
-      ,BZIPCode
-      ,Phone
-      ,Website
-      ,CustName
-      ,CustCode_ID
+	  Count(*) Over() as TotalRows,	
+	  replace(replace(APContact,char(10),''),char(13),'') as APContact,
+	  replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,
+      replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,
+      BCity,
+      BState,
+      BZIPCode,
+      Phone,
+      Website,
+	  replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,
+	  replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,
+      'DESERT_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,
+      LastModDate as PreviousModDate,
+	  row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DESERT_Customer.csv' as Source_File,
+    'DESERT' as LoadForCompany
   FROM CustCode, LastSync 
   WHERE LastModDate > LastSync.LastSyncDateTime 
+  ORDER BY CustCode_ID
+
+*****************************************************************************************************************************
+                                                           Export For STANDARD_CustCode
+*****************************************************************************************************************************
+
+SELECT 
+	  Count(*) Over() as TotalRows,	
+	  replace(replace(APContact,char(10),''),char(13),'') as APContact,
+	  replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,
+      replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,
+      BCity,
+      BState,
+      BZIPCode,
+      Phone,
+      Website,
+	  replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,
+	  replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,
+	  'STANDARD_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,
+      LastModDate as PreviousModDate,
+	  row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'STANDARD_Customer.csv' as Source_File,
+    'STANDARD' as LoadForCompany
+  FROM CustCode
+  ORDER BY CustCode_ID
 
 
-For Python Header: Account object External ID ==> E2 Customer Key
-Bill To Street, 
-Bill to Street 2,
-Bill To City, 
-Bill to State,
-Bill To Zip, 
-Phone, 
-Website, 
-Account Name,
-E2 Customer Key 
+
+
+
+
+For Python Header: Account object External ID ==> E2_Customer_Key__c
+TotalRows_del,
+Ship_To_Contact__c,
+BillingStreet,
+SecondLineOfStreet_del,
+BillingCity,
+BillingState,
+BillingPostalCode,
+Phone,
+Website,
+Name,
+Customer_Code__c,
+E2_Customer_Key__c,
+PreviousModDate,
+RowNum_Of_Source_File_del,
+LoadedByPython_del,
+LoadDate_del,
+Source_File_del
+ 
 
 Questions: I assume we will have an External ID for E2 Customer Key
 CustCode.CustCode_ID = ShipTo.ShipTo_ID (Links the Customer with the Shipping Info)
 
+
+
+
 *****************************************************************************************************************************
-                                                      Export For CompanyShipTo
+                                                    Export For DESERT Contacts
 *****************************************************************************************************************************
-SELECT Addr1
-,Addr2
-,City
-,State
-,ZIPCode
-,CompanyShipTo_ID
-FROM CompanyShipTo, LastSync 
-Where CompanyShipTo.LastModDate > LastSync.LastSyncDateTime
+SELECT c.Contact, 
+' ' as FirstName, 
+' ' as LastName,
+c.EMail,
+c.Phone,
+c.Title,
+c.Cell_Phone,
+'DESERT_' + CONVERT(varchar(100), c.Contacts_ID) as Contacts_ID,
+c.LastModDate as PreviousModDate,
+	  row_number() over(order by(c.Contacts_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DESERT_Contact.csv' as Source_File,
+'DESERT_' + CONVERT(varchar(100), cc.CustCode_ID) as CustCode_ID,
+'DESERT' as LoadForCompany
+FROM Contacts c, LastSync, CustCode cc 
+WHERE c.LastModDate > LastSync.LastSyncDateTime
+AND c.code = cc.custcode
+ORDER BY Contacts_ID
 
 
-SELECT [SAddr1] ==> Addr1
-      ,[SAddr2] ==> Addr2
-      ,[SCity] ==> City
-      ,[SState] ==> State
-      ,[SZipCode] ==> Zip code 
-	  ,[ShipTo_ID] ==> CompanyShipTo_ID 
-  FROM [dbo].[ShipTo], LastSync 
-Where ShipTo.LastModDate > LastSync.LastSyncDateTime
+*****************************************************************************************************************************
+                                                    Export For STANDARD Contacts
+*****************************************************************************************************************************
+SELECT c.Contact, 
+' ' as FirstName, 
+' ' as LastName,
+c.EMail,
+c.Phone,
+c.Title,
+c.Cell_Phone,
+'STANDARD_' + CONVERT(varchar(100), c.Contacts_ID) as Contacts_ID,
+c.LastModDate as PreviousModDate,
+	  row_number() over(order by(c.Contacts_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'STANDARD_Contact.csv' as Source_File,
+'STANDARD_' + CONVERT(varchar(100), cc.CustCode_ID) as CustCode_ID,
+'STANDARD' as LoadForCompany
+FROM Contacts c, LastSync, CustCode cc 
+WHERE c.LastModDate > LastSync.LastSyncDateTime
+AND c.code = cc.custcode
+ORDER BY Contacts_ID
 
 
-For Python Header: Account object External ID ==> E2 Customer Key
-Ship To Street,  
-Ship To Street 2,
-Ship to City, 
-Ship to State, 
-Ship to Zip Code
+
+For Python Header: Contact object External ID ==> E2_Contact_ID__c 
+Name,
+FirstName,
+LastName,
+Email, 
+Phone, 
+Title, 
+MobilePhone,
+E2_Contact__ID__c,
+PreviousModDate,
+RowNum_Of_Source_File,
+LoadedByPython,
+LoadDate,
+Source_File,
+CustCode_ID
+
+
+
+
+**** Will need special python logic in Contacts.py to split the Name into FirstName and LastName
+
+
+
+
+
+
+
+
+
+
+
+*****************************************************************************************************************************
+                                                      Export For DESERT_ShipTo
+*****************************************************************************************************************************
+SELECT 
+st.SAddr1,
+st.SAddr2,
+st.SCity,
+st.SState,
+st.SZipCode,
+st.ShipContact,
+st.ShipToName,
+st.ShipTo_ID,
+'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+st.LastModDate as PreviousModDate,
+row_number() over(order by(ShipTo_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'SCC_ShipTo.csv' as Source_File
+FROM ShipTo st, CustCode cc
+WHERE st.CustCode = cc.CustCode
+
+
+
+
+
+*****************************************************************************************************************************
+                                                      Export For STANDARD_ShipTo
+*****************************************************************************************************************************
+SELECT 
+st.SAddr1,
+st.SAddr2,
+st.SCity,
+st.SState,
+st.SZipCode,
+st.ShipContact,
+st.ShipToName,
+st.ShipTo_ID,
+'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+st.LastModDate as PreviousModDate,
+row_number() over(order by(ShipTo_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DCS_ShipTo.csv' as Source_File
+FROM ShipTo st, CustCode cc
+WHERE st.CustCode = cc.CustCode
+
+
+For Python Header: Account object External ID ==> E2_Customer_Key__c
+ShippingStreet,
+'SecondAddressLine_del',
+ShippingCity,
+ShippingState,
+ShippingPostalCode,
+Ship_To_Contact__c,
+Shipping_Address_Company_Name__c,
+E2_Ship_To_Key__c
 
 Questions: I will use Shipto_Id to link to Account (Customer?)
 
 
-
-*****************************************************************************************************************************
-                                                    Export For Contacts
-*****************************************************************************************************************************
-SELECT Contact
-,Title
-,Phone
-,EMail
-,Cell_Phone
-,Contacts_ID
-FROM Contacts, LastSync 
-WHERE Contacts.LastModDate > LastSync.LastSyncDateTime
-
-
-For Python Header: Contact object External ID ==> E2 Contact ID 
-First Name,
-Last Name,
-Email, 
-Phone, 
-Title, 
-Mobile
 
 
 

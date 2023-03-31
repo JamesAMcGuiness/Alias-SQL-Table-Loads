@@ -1,0 +1,44 @@
+Error,﻿SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --,  ,,NULL,NULL,NULL,Nic Neidenbach,NULL,2005,DCS_3118,00:15.0,1790,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --,  ,,NULL,NULL,NULL,,NULL,2015,DCS_3118,00:15.0,1800,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --,,,NULL,NULL,NULL,Roger Dumont,Southwestern Scale Co.,2647,DCS_4117,13:44.8,2380,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --,,,NULL,NULL,NULL,Roger Dumont,Southwestern Scale,2650,DCS_4117,13:44.8,2383,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --,  ,,,  ,,Chris Willis,Willis Drilling & Pump,3041,DCS_4696,NULL,2737,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --,  ,,,  ,,Scott Willis,Willis Grilling,3042,DCS_4696,NULL,2738,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --,,,,  ,,AP,Allred Metal Products,3147,DCS_185,56:21.7,2828,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --,,,,  ,,AP,Allred,3148,DCS_185,56:21.7,2829,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --,  ,,,  ,,NULL,Martin - Bauer,3192,DCS_2757,NULL,2867,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --,7625 South BoxelderSt  ,,Gilbert,AZ,85298,NULL,Martin - Bauer,3193,DCS_2757,NULL,2868,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --,  ,,,  ,,NULL,Orbatech LLC,4184,DCS_3208,NULL,3634,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --,136 W. Orion St.  ,,Tempe,AZ,85283,NULL,Orbatech LLC,4185,DCS_3208,NULL,3635,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --,12345 NW Grand Avenue  ,,El Mirage,AZ,85335,NULL,Merchant Metals,4280,DCS_2842,NULL,3679,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --,211 Perimeter Center Parkway  Suite 250,Suite 250,Atlanta,GA,30346,Charlene Jablonski,Merchant Metals,4281,DCS_2842,NULL,3680,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --,  ,,,  ,,NULL,JW Marriott Phoenix Desert Rid,4412,DCS_2309,NULL,3735,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --,5350 East Marriott Drive  ,,Phoenix,AZ,85054,Srdjan Kleut,JW Marriott Phoenix Desert Rid,4413,DCS_2309,NULL,3736,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --,  ,,,  ,,NULL,SUNAIR Awning & Solar Screens,4501,DCS_4249,NULL,3782,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --,3803 W. Thomas Rd.  ,,Phoenix,AZ,85019,NULL,"SUNAIR West, Inc.",4502,DCS_4249,NULL,3783,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --,14825 N. 82nd St  ,,Scottsdale,AZ,,NULL,Hubbard Auto,4661,DCS_1706,NULL,3872,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --,14825 N. 82nd Street  ,,Scottsdale,AZ,85260,Mark Hubbard,,4662,DCS_1706,NULL,3873,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --,  ,,,  ,,NULL,Leclerc Foods,4666,DCS_2514,NULL,3874,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --,440 S. 51st Ave  ,,Phoenix,AZ,85043,NULL,Leclerc Foods,4667,DCS_2514,NULL,3875,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --,56th street Dynamite Rd.  ,,Scottsdale,AZ,,NULL,Dan Chinitz,5063,DCS_950,NULL,4093,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --,56th street Dynamite Rd.  ,,Scottsdale,AZ,,NULL,Dan Chinitz,5064,DCS_950,NULL,4094,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --,3325 W. Durango Street  ,,Phoenix,AZ,85009,Assis Dirc.,Maricopa Equipment Service Dep,5068,DCS_2694,NULL,4097,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --,3325 W. Durango St.  ,,Phoenix,AZ,85009,NULL,Maricopa County Equipment Serv,5069,DCS_2694,NULL,4098,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --,3415 S. 36th Street,,Phoenix,AZ,85040,Pat DeYoung,Banner Machine,5083,DCS_423,48:41.8,4107,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --,,,,  ,,Nancy Ruiz,,5084,DCS_423,48:41.8,4108,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,,,,  ,,Jill Bagwell,Stafford Tower Crane,5765,DCS_3391,10:47.9,4491,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,,,,  ,,Jill Bagwell,Stafford Crane,5766,DCS_3391,10:47.9,4492,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,,,,  ,,Jill Bagwell,Stafford Crane Group,5767,DCS_3391,10:47.9,4493,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --,Walk - in,,,  ,,CESAR MUNIVE,Julio Munive,5778,DCS_2293,01:36.9,4499,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --,,,,  ,,CESAR MUNIVE,Cesar Munive,5779,DCS_2293,01:36.9,4500,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --,4415 W. Magnolia St.  ,,Phoenix,AZ,85043,NULL,Rimex,5929,DCS_3670,NULL,4610,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --,  ,,,  ,,NULL,Remix,5930,DCS_3670,NULL,4611,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --,,,,  ,,NULL,Advance Ciructs,6063,DCS_96,37:16.0,4716,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --,304 Rockford Drive,,Tempe,AZ,85281,NULL,Advance Ciructs,6064,DCS_96,37:16.0,4717,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --,  ,NULL,NULL,NULL,NULL,NULL,GE DISTRIBUTION CENTER,6427,DCS_5100,42:30.1,5067,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --,890 N. Industrial Park Ave  ,NULL,Nogales,AZ,85621,Viridiana Diaz,ABB,6430,DCS_5100,42:30.1,5070,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --,  ,NULL,NULL,NULL,NULL,NULL,JHAM ITEM WORK,6717,DCS_5401,00:17.1,5337,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --,  ,NULL,NULL,NULL,NULL,NULL,Jahm Iron Work,6738,DCS_5401,NULL,5354,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --,265 Via Delmonte,NULL,Oceanside,CA,92058,Kent Harle,Stellar Solar,8094,DCS_6738,57:11.3,6676,Y,28:35.4,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --,1442 Alton Pkwy,NULL,Irvine,CA,92614,Kent Harle,Stellar Solar,8095,DCS_6738,57:11.3,6677,Y,28:35.4,DCS_ShipTo.csv
