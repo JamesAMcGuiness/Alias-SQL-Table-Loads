@@ -245,32 +245,28 @@ Questions: I will use Shipto_Id to link to Account (Customer?)
                                                 Export for Billing
 ******************************************************************************************************************
 SELECT
-'CustDescforSoldto',
 [CustDesc],
 [ShipToName],
 [SAddr1],
-[SAddr2],
 [SCity],
 [SSt],
 [SZip],
-'InvoiceNo',
-[InvDate],
-'OrderNo',
-[TermsCode],
-'Packing List', 
-'PO Number', 
+InvoiceNo,
+InvDate,
+WorkCode,
+TermsCode,
 'Subtotal', 
 [SalesTaxChgs],
 [ShippingChgs],
 [InvoiceTotal],
-'Paid to Date', 
+AmtPaidSoFar, 
 'Balance Due', 
-[CustCode],
-[SalesID],
+'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
 [CustDesc],
-[InvDate],
-[PymtDate],
-'Quote No' 
+[DateEnt],
+pymtStatus,
+'Quote No??',
+Billing_ID 
 FROM Billing, LastSync 
 Where Billing.LastModDate > LastSync.LastSyncDateTime 
 

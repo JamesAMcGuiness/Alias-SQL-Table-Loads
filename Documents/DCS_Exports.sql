@@ -70,7 +70,7 @@ WHERE st.CustCode = cc.CustCode
 
 
 
-//********************************************************* DCS Orders *******************************************//
+//********************************************************* DCS Orders (Work Order) *******************************************//
 SELECT 
 o.CustDesc as SoldTo, 
 o.ShipToName, 
@@ -98,7 +98,7 @@ From Orders o, CustCode cc
 Where o.CustCode = cc.CustCode
 
 
-//********************************************************* DCS Orders Detail *******************************************//
+//********************************************************* DCS Orders Detail (Work Order Line Item *******************************************//
 SELECT 
 od.QtyOrdered,
 od.UnitPrice,
@@ -138,8 +138,6 @@ From OrderDet od
 
 
 
-
-
 //********************************************************* DCS Billing *******************************************//
 SELECT
 b.CustDesc,
@@ -150,9 +148,9 @@ b.SCity,
 b.SSt,
 b.SZip,
 b.InvoiceNo,
-b.InvDate,
+CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
 b.WorkCode,
-'TermsCode' as TermCode,
+b.TermsCode,
 'Nofield' as SubTotal,
 b.SalesTaxChgs,
 b.ShippingChgs,
@@ -160,30 +158,57 @@ b.InvoiceTotal,
 b.AmtPaidSoFar,
 'Balance Due' as BalanceDue,
 'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,
 b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID
+b.Billing_ID as E2_Invoice__c
 From Billing b, CustCode cc
 Where b.CustCode = cc.CustCode
 
 
-//********************************************************* DCS Order Detail *******************************************//
-SELECT 
-bd.QtyOrd,
+
+//********************************************************* DCS Billing Detail *******************************************//
+SELECT
+bd.QtyShipped,
 bd.UnitPrice,
+bd.LineTotal,
+bd.InvoiceNo,
 bd.PartDesc,
+bd.PartNo,
+bd.DelTicketNo,
 bd.Revision,
-bd.JobNo,
-'???' as Status,
-'???' as QuoteNo,
-b.Billing_ID,
-b.InvoiceNo as LookupValToOrder,
-row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,
-	  'Y' as LoadedByPython,
-	  GetDate() as LoadDate,
-	  'DCS_OrderDet.csv' as Source_File,
-	  CONVERT(nvarchar,bd.LastModDate, 23) as PreviousModDate
-From BillingDet bd, Billing b
-Where bd.InvoiceNo = b.InvoiceNo
+bd.PONum,
+bd.BillingDet_ID
+FROM BillingDet bd
+
+
+
+//********************************************************* Quote *******************************************//
+SELECT
+q.CustDesc as 'QUOTE_TO', ???
+q.Addr1,
+q.Addr2,
+q.City,
+q.st,
+q.Zip,
+q.QuoteNo,
+q.DateEnt,
+'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+q.QuotedBy,
+q.ShipVia,
+q.ContactName,
+q.InqNum,
+q.TermsCode,
+q.Phone,
+q.FAX,
+'Formula for Total??',
+q.DateEnt,
+q.Quote_ID
+FROM Quote, CustCode cc
+Where q.CustCode = cc.CustCode
+
+
+
+//********************************************************* Quote Detail *******************************************//

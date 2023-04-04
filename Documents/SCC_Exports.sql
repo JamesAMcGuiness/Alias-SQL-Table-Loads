@@ -122,9 +122,7 @@ From OrderDet od
 
 
 
-
-
-//********************************************************* DCS Billing *******************************************//
+//********************************************************* SCC Billing *******************************************//
 SELECT
 b.CustDesc,
 b.ShipToName,
@@ -134,9 +132,9 @@ b.SCity,
 b.SSt,
 b.SZip,
 b.InvoiceNo,
-b.InvDate,
+CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
 b.WorkCode,
-'TermsCode' as TermCode,
+b.TermsCode,
 'Nofield' as SubTotal,
 b.SalesTaxChgs,
 b.ShippingChgs,
@@ -144,12 +142,26 @@ b.InvoiceTotal,
 b.AmtPaidSoFar,
 'Balance Due' as BalanceDue,
 'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,
 b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID
+b.Billing_ID as E2_Invoice__c
 From Billing b, CustCode cc
 Where b.CustCode = cc.CustCode
 
 
+//********************************************************* SCC Billing Detail *******************************************//
+SELECT
+bd.QtyShipped,
+bd.UnitPrice,
+bd.LineTotal,
+bd.InvoiceNo,
+bd.PartDesc,
+bd.PartNo,
+bd.DelTicketNo,
+bd.Revision,
+bd.PONum,
+bd.BillingDet_ID
+FROM BillingDet bd

@@ -25,6 +25,10 @@ def set_env_var():
     os.environ['StandardRTID']        = "012Dn000000F74SIAS"	
     os.environ['DesertContactRTID']   = "012Dn000000F74XIAS"	
     os.environ['StandardContactRTID'] = "012Dn000000F74TIAS"	
+    os.environ['DesertOppRTID']       = "012Dn000000F74cIAC"	
+    os.environ['StandardOppRTID']     = "012Dn000000F74JIAS"	
+    
+    
                 
     #print('Config variables...')
     #print('****************************************')
