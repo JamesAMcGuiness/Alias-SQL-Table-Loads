@@ -1,3 +1,6 @@
+USE [SCC-Shop]
+GO
+
 *****************************************************************************************************************************
                                                            Export For SCC CustCode
 *****************************************************************************************************************************
@@ -131,7 +134,7 @@ b.SAddr2,
 b.SCity,
 b.SSt,
 b.SZip,
-b.InvoiceNo,
+'SCC_' + InvoiceNo as InvoiceNo,
 CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
 b.WorkCode,
 b.TermsCode,
@@ -147,7 +150,12 @@ b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID as E2_Invoice__c
+b.Billing_ID as E2_Invoice__c,
+row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'SCC_Billing.csv' as Source_File,
+	  CONVERT(nvarchar,b.LastModDate, 23) as PreviousModDate
 From Billing b, CustCode cc
 Where b.CustCode = cc.CustCode
 
@@ -157,11 +165,75 @@ SELECT
 bd.QtyShipped,
 bd.UnitPrice,
 bd.LineTotal,
-bd.InvoiceNo,
+'SCC_' + bd.InvoiceNo as InvoiceNo,
 bd.PartDesc,
 bd.PartNo,
 bd.DelTicketNo,
 bd.Revision,
 bd.PONum,
-bd.BillingDet_ID
+bd.BillingDet_ID,
+row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'SCC_BillingDet.csv' as Source_File,
+	  CONVERT(nvarchar,bd.LastModDate, 23) as PreviousModDate
 FROM BillingDet bd
+
+
+//********************************************************* Quote *******************************************//
+SELECT
+q.CustDesc as 'QUOTE_TO', 
+q.Addr1,
+q.Addr2,
+q.City,
+q.st,
+q.Zip,
+'SCC_' + q.QuoteNo as QutoeNo,
+CONVERT(nvarchar,q.DateEnt, 23) as DateENT,
+'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
+q.QuotedBy,
+q.ShipVia,
+q.ContactName,
+q.InqNum,
+q.TermsCode,
+q.Phone,
+q.FAX,
+'Formula for Total??' as Total,
+'SCC_' + CONVERT(nvarchar,Quote_Id) as Quote_ID,
+' ' as RecordTypeId,
+q.CustDesc + ' - ' + q.QuoteNo as Name,
+'Quote' as StageName,
+CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,
+row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'SCC_Quote.csv' as Source_File,
+	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,
+'STANDARD' as LoadForCompany
+FROM Quote q, CustCode cc
+Where q.CustCode = cc.CustCode
+
+
+
+
+//********************************************************* SCC Quote Det *******************************************//
+SELECT
+qd.ItemNo,
+qd.PartNo,
+qd.Qty1,
+qd.Price1,
+qd.JobNo,
+qd.JobNotes,
+qd.QuoteNo,
+qd.Status,
+'SCC_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
+'SCC_' + qd.QuoteNo as LookupValForOpp,
+row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'SCC_QuoteDet.csv' as Source_File,
+	  CONVERT(nvarchar,qd.LastModDate, 23) as PreviousModDate,
+'STANDARD' as LoadForCompany
+FROM QuoteDet qd
+Order by QuoteNo
+

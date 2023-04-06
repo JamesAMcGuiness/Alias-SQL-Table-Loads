@@ -159,6 +159,19 @@ def lambda_handler(key):
         header = "Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c,Account.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id,'Serial',runtype,os.environ["ClientName"])
+    
+
+    elif "BillingDet" in key: 
+        print('***************************************')    
+        print('Running for Billing Detail....')
+
+        head, filename = os.path.split(key)
+        object_name = "BillingDet__c"
+        ex_id = "BillingDet_ID__c"
+        header = "Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
 
@@ -176,17 +189,18 @@ def lambda_handler(key):
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
 
-    elif "BillingDet" in key: 
+    # Running for QuoteLine        
+    elif "QuoteDet" in key: 
         print('***************************************')    
-        print('Running for Billing Detail....')
+        print('Running for Quote Detail....')
 
         head, filename = os.path.split(key)
-        object_name = "BillingDet__c"
-        ex_id = "BillingDet_ID__c "
+        object_name = "QuoteDet__c"
+        ex_id = "QuoteDet_ID__c"
         
-        header = "Quantity__c,Unit_Price__c,Amount__c,Invoice__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,".split(",")
         
-        BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        QuoteDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
     # Running for Quote        
@@ -195,27 +209,15 @@ def lambda_handler(key):
         print('Running for Quote....')
 
         head, filename = os.path.split(key)
-        object_name = "Opportunity__c"
+        object_name = "Opportunity"
         ex_id = "E2_Quote_Key__c"
         
-        header = "Addr1__c ,Addr2__c ,City__c,St__c,Zip__c,SalesID__c,CustCode__c,ShipVia__c,Quote_ID__c,ContactName__c,InqNum__c,TermsCode__c,Phone__c,FAX__c,DateEnt__c,Location__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")
+        header = "Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
-    # Running for QuoteLine        
-    elif "QuoteDet" in key: 
-        print('***************************************')    
-        print('Running for Quote Detail....')
 
-        head, filename = os.path.split(key)
-        object_name = "QuoteDet__c"
-        ex_id = "???"
-        
-        header = "Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status__del,Quote_Detail_Name__c,Quote_Detail_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")
-        
-        QuoteLine.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
     else:
         print(" ............................................. ")
@@ -395,7 +397,7 @@ try:
         input_key_list = ['_COMMISSIONBATCHES','_COMMISSIONS']
         
         #List the files in the desired load order
-        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv']
+        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv','BillingDet.csv','Quote.csv','QuoteDet.csv']
 
         #For each SQLFile defined, look for that file in the input folder
         for objtype in SQLFiles:

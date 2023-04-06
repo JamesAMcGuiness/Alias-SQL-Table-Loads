@@ -78,7 +78,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
     print('In salesforce_connect_and_upload for Billing')						
     print('****************************************************')						  
 
-    job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
+    job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency='Serial')
     
     print(job)
 

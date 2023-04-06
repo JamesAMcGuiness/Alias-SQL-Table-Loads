@@ -17,15 +17,16 @@ import errorLog
 def logic_to_apply(row):
 
     #The List Of fields we have unique logic for...
-    theColumnList =	["payout__Commission_Batch_Unique_ID__c"]
+    theColumnList =	["Unit_Price__c"]
 
     for columnname in theColumnList:
 
         #**************************************************************************************
         #
         #**************************************************************************************   
-        if columnname == '<payout__Commission_Batch_Unique_ID__c>':
-            print('We have setup logic for this field: ' + columnname)			                
+        if columnname == 'Unit_Price__c':
+            if (row["Unit_Price__c"] == None or row["Unit_Price__c"] == 'NULL'):    
+                row["Unit_Price__c"] = 0
         else:
             print('We have not setup logic for this field: ' + columnname)			
 
@@ -79,7 +80,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             
 			
             ############################## To apply any special logic for this client #########################################################################
-            #logic_to_apply(client,row)
+            logic_to_apply(row)
             ################################################################################################################################################### 			
 			
             # For any header columns with _del in them, we want to remove them from processing

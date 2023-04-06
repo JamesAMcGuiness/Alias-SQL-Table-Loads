@@ -1,3 +1,6 @@
+USE [DCS-Shop]
+GO
+
 *****************************************************************************************************************************
                                                            Export For DCS CustCode
 *****************************************************************************************************************************
@@ -147,7 +150,7 @@ b.SAddr2,
 b.SCity,
 b.SSt,
 b.SZip,
-b.InvoiceNo,
+'DCS_' + InvoiceNo as InvoiceNo,
 CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
 b.WorkCode,
 b.TermsCode,
@@ -163,10 +166,14 @@ b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID as E2_Invoice__c
+b.Billing_ID as E2_Invoice__c,
+row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DCS_Billing.csv' as Source_File,
+	  CONVERT(nvarchar,b.LastModDate, 23) as PreviousModDate
 From Billing b, CustCode cc
 Where b.CustCode = cc.CustCode
-
 
 
 //********************************************************* DCS Billing Detail *******************************************//
@@ -174,27 +181,33 @@ SELECT
 bd.QtyShipped,
 bd.UnitPrice,
 bd.LineTotal,
-bd.InvoiceNo,
+'DCS_' + bd.InvoiceNo as InvoiceNo,
 bd.PartDesc,
 bd.PartNo,
 bd.DelTicketNo,
 bd.Revision,
 bd.PONum,
-bd.BillingDet_ID
+bd.BillingDet_ID,
+row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DCS_BillingDet.csv' as Source_File,
+	  CONVERT(nvarchar,bd.LastModDate, 23) as PreviousModDate
 FROM BillingDet bd
+
 
 
 
 //********************************************************* Quote *******************************************//
 SELECT
-q.CustDesc as 'QUOTE_TO', ???
+q.CustDesc as 'QUOTE_TO', 
 q.Addr1,
 q.Addr2,
 q.City,
 q.st,
 q.Zip,
-q.QuoteNo,
-q.DateEnt,
+'DCS_' + q.QuoteNo as QuoteNo,
+CONVERT(nvarchar,q.DateEnt, 23) as DateENT,
 'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
 q.QuotedBy,
 q.ShipVia,
@@ -203,12 +216,40 @@ q.InqNum,
 q.TermsCode,
 q.Phone,
 q.FAX,
-'Formula for Total??',
-q.DateEnt,
-q.Quote_ID
-FROM Quote, CustCode cc
+'Formula for Total??' as Total,
+'DCS_' + CONVERT(nvarchar,Quote_Id) as Quote_ID,
+' ' as RecordTypeId,
+q.CustDesc + ' - ' + q.QuoteNo as Name,
+'Quote' as StageName,
+CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,
+row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DCS_Quote.csv' as Source_File,
+	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,
+'DESERT' as LoadForCompany
+FROM Quote q, CustCode cc
 Where q.CustCode = cc.CustCode
 
 
 
 //********************************************************* Quote Detail *******************************************//
+SELECT
+qd.ItemNo,
+qd.PartNo,
+qd.Qty1,
+qd.Price1,
+qd.JobNo,
+qd.JobNotes,
+qd.QuoteNo,
+qd.Status,
+'DCS_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
+'DCS_'+ qd.QuoteNo as LookupValForOpp,
+row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
+	  'Y' as LoadedByPython,
+	  GetDate() as LoadDate,
+	  'DCS_QuoteDet.csv' as Source_File,
+	  CONVERT(nvarchar,qd.LastModDate, 23) as PreviousModDate,
+'DESERT' as LoadForCompany
+FROM QuoteDet qd
+Order by QuoteNo
