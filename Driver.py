@@ -13,9 +13,9 @@ import datetime
 from datetime import datetime as dt
 import errorLog
 #Below are the tables to load from SQL Server
-import Company 
+import Customer 
 import Contact
-import CompanyShipTo
+import CustomerShipTo
 import Billing
 import BillingDet
 import Order
@@ -101,7 +101,7 @@ def lambda_handler(key):
         
         header = "TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
         
-        Company.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        Customer.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
         
     # Running for CompanyShipTo        
@@ -115,7 +115,7 @@ def lambda_handler(key):
         
         header = "ShippingStreet,ShipAddr2_del,ShippingCity,ShippingState,ShippingPostalCode,Ship_To_Contact__c,Shipping_Address_Company_Name__c,E2_Ship_To_Key__c,E2_Customer_Key__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del".split(",")          
         
-        CompanyShipTo.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        CustomerShipTo.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
     # Running for Contacts        
@@ -127,7 +127,7 @@ def lambda_handler(key):
         object_name = "Contact"
         ex_id = "E2_Contact_ID__c"
         
-        header = "Contact_del,FirstName,LastName,Email,Phone,Title,MobilePhone,E2_Contact_ID__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,Account.E2_Customer_Key__c,LoadForCompany_del".split(",")          
+        header = "Contact_del,FirstName,LastName,Custom_Email__c,Phone,Title,MobilePhone,E2_Contact_ID__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,Account.E2_Customer_Key__c,LoadForCompany_del".split(",")          
         
         Contact.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -142,7 +142,7 @@ def lambda_handler(key):
         object_name = "WorkOrderLineItem"
         ex_id = "OrderDetId__c"
         
-        header = "Quantity,UnitPrice,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "Quantity,UnitPrice,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID,PricebookEntryID,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -183,7 +183,7 @@ def lambda_handler(key):
         object_name = "Billing__c"
         ex_id = "E2_Invoice__c"
         
-        header = "Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -198,7 +198,7 @@ def lambda_handler(key):
         object_name = "QuoteDet__c"
         ex_id = "QuoteDet_ID__c"
         
-        header = "Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,".split(",")
+        header = "Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
         
         QuoteDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -392,9 +392,6 @@ try:
         file_lst = os.listdir(source)
                 
         #print(file_lst)        
-
-        #List all the possible CSV's 
-        input_key_list = ['_COMMISSIONBATCHES','_COMMISSIONS']
         
         #List the files in the desired load order
         SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv','BillingDet.csv','Quote.csv','QuoteDet.csv']
