@@ -117,7 +117,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
                     row.pop(head)
 
             
-            print(row)
+            #print(row)
             count = count + 1
             disbursals.append(row)
             if (count / 10000) == 1:
@@ -142,7 +142,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         theFilePath = os.environ.get("op_path") + '\Trigger.txt'
 
         #Create error file if not     
-        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"latin-1")
+        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"utf-8-sig")
     
 
         #with open(theFilePath,'w') as csvFile:

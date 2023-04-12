@@ -47,7 +47,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         security_token = tsecurity_token,
         client_id=tclient_id)
     print('****************************************************')						  
-    print('In salesforce_connect_and_upload for OrdersDet')						
+    print('In salesforce_connect_and_upload for OrderDet')						
     print('****************************************************')						  
 
     job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
@@ -130,7 +130,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         theFilePath = os.environ.get("op_path") + '\Trigger.txt'
 
         #Create error file if not     
-        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"latin-1")
+        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"utf-8-sig")
     
 
         #with open(theFilePath,'w') as csvFile:

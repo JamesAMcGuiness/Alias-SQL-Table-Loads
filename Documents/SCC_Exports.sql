@@ -49,11 +49,10 @@ c.LastModDate as PreviousModDate,
 'STANDARD' as LoadForCompany
 FROM Contacts c, CustCode cc 
 WHERE c.code = cc.custcode
-and cc.CustCode = 'CURRIER'
 ORDER BY Contacts_ID
 
 
-//********************************************************* ShipTo *******************************************//
+//********************************************************* SCC ShipTo *******************************************//
 SELECT 
 st.SAddr1,
 st.SAddr2,
@@ -64,13 +63,13 @@ st.ShipContact,
 st.ShipToName,
 st.ShipTo_ID,
 'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
-st.LastModDate as PreviousModDate,
+CONVERT(nvarchar,st.LastModDate, 23) as PreviousModDate, 
 row_number() over(order by(ShipTo_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
 	  'SCC_ShipTo.csv' as Source_File
 FROM ShipTo st, CustCode cc
-WHERE st.CustCode = cc.CustCode
+WHERE st.CustCode = cc.CustCode 
 
 
 
@@ -84,7 +83,7 @@ o.ShipAddr2,
 o.ShipCity,
 o.ShipSt,
 o.ShipZIP,
-o.OrderNo, 
+'SCC_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,
 CONVERT(nvarchar,DateENT, 23) as DateENT, 
 o.CustDesc as Customer, 
 o.PONum, 
@@ -108,14 +107,16 @@ Where o.CustCode = cc.CustCode
 //********************************************************* SCC Orders Detail *******************************************//
 SELECT 
 od.QtyOrdered,
-od.UnitPrice,
+ISNULL(od.UnitPrice, 0 ) as UnitPrice, 
 od.PartDesc,
 od.Revision,
 od.JobNo,
 od.Status,
 '???' as QuoteNo,
-od.OrderDet_ID,
+'SCC_' + CONVERT(varchar(100), od.OrderDet_ID) as OrderDet_ID, 
 od.OrderNo as LookupValToOrder,
+'02iDn000000AXurIAG' as DummyAssetID,
+'01uDn000003d5aFIAQ' as DummyPriceBookID,
 row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -136,6 +137,7 @@ b.SSt,
 b.SZip,
 'SCC_' + InvoiceNo as InvoiceNo,
 CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
+'SCC_' + InvoiceNo + ' - ' + CONVERT(nvarchar,b.InvDate,23) as Name,
 b.WorkCode,
 b.TermsCode,
 'Nofield' as SubTotal,
@@ -150,7 +152,7 @@ b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID as E2_Invoice__c,
+'SCC_' + CONVERT(varchar(100), b.Billing_ID) as E2_Invoice__c,
 row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -171,7 +173,7 @@ bd.PartNo,
 bd.DelTicketNo,
 bd.Revision,
 bd.PONum,
-bd.BillingDet_ID,
+'SCC_' + CONVERT(varchar(100), bd.BillingDet_ID) as BillingDet_ID,
 row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -188,7 +190,7 @@ q.Addr2,
 q.City,
 q.st,
 q.Zip,
-'SCC_' + q.QuoteNo as QutoeNo,
+'SCC_' + q.QuoteNo as QuoteNo,
 CONVERT(nvarchar,q.DateEnt, 23) as DateENT,
 'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,
 q.QuotedBy,
@@ -199,7 +201,7 @@ q.TermsCode,
 q.Phone,
 q.FAX,
 'Formula for Total??' as Total,
-'SCC_' + CONVERT(nvarchar,Quote_Id) as Quote_ID,
+'SCC_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,
 ' ' as RecordTypeId,
 q.CustDesc + ' - ' + q.QuoteNo as Name,
 'Quote' as StageName,
@@ -212,6 +214,7 @@ row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,
 'STANDARD' as LoadForCompany
 FROM Quote q, CustCode cc
 Where q.CustCode = cc.CustCode
+and q.CustCode is not null
 
 
 
@@ -226,6 +229,7 @@ qd.JobNo,
 qd.JobNotes,
 qd.QuoteNo,
 qd.Status,
+SUBSTRING(qd.Descrip,1,80) as Name,
 'SCC_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
 'SCC_' + qd.QuoteNo as LookupValForOpp,
 row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
@@ -237,3 +241,6 @@ row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
 FROM QuoteDet qd
 Order by QuoteNo
 
+
+Missing Customer Codes (Exist on Quote, but missing in CustCode)
+Select q.* from Quote q where q.CustCode not in (Select custcode from CustCode) order by QuoteNo

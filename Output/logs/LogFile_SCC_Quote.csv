@@ -1,2 +1,2 @@
-Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
-DesertPowder,23-04-06-09-02-58-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_SCC_Quote.csv,960,1,0,0.10416666666666667,N,750Dn00000661bQIAQ
+﻿Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
+DesertPowder,23-04-11-14-49-22-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_SCC_Quote.csv,969,1,0,0.10319917440660474,N,750Dn0000066NcpIAE

@@ -27,10 +27,7 @@ SELECT
   FROM CustCode
   ORDER BY CustCode_ID
 
-
-
-
-
+   
 //********************************************************* DCS Contact *******************************************//
 SELECT c.Contact, 
 ' ' as FirstName, 
@@ -52,7 +49,7 @@ WHERE c.code = cc.custcode
 ORDER BY Contacts_ID
 
 
-
+//********************************************************* DCS Ship To *******************************************//
 SELECT 
 st.SAddr1,
 st.SAddr2,
@@ -82,7 +79,7 @@ o.ShipAddr2,
 o.ShipCity,
 o.ShipSt,
 o.ShipZIP,
-o.OrderNo, 
+'DCS_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,
 CONVERT(nvarchar,DateENT, 23) as DateENT, 
 o.CustDesc as Customer, 
 o.PONum, 
@@ -104,41 +101,22 @@ Where o.CustCode = cc.CustCode
 //********************************************************* DCS Orders Detail (Work Order Line Item *******************************************//
 SELECT 
 od.QtyOrdered,
-od.UnitPrice,
+ISNULL(od.UnitPrice, 0 ) as UnitPrice, 
 od.PartDesc,
 od.Revision,
 od.JobNo,
 od.Status,
 '???' as QuoteNo,
-od.OrderDet_ID,
+'SCC_' + CONVERT(varchar(100), od.OrderDet_ID) as OrderDet_ID, 
 od.OrderNo as LookupValToOrder,
+'02iDn000000AXurIAG' as DummyAssetID,
+'01uDn000003d5aFIAQ' as DummyPriceBookID,
 row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
 	  'DCS_OrderDet.csv' as Source_File,
 	  CONVERT(nvarchar,od.LastModDate, 23) as PreviousModDate
 From OrderDet od
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //********************************************************* DCS Billing *******************************************//
@@ -152,6 +130,7 @@ b.SSt,
 b.SZip,
 'DCS_' + InvoiceNo as InvoiceNo,
 CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 
+'DCS_' + InvoiceNo + ' - ' + CONVERT(nvarchar,b.InvDate,23) as Name,
 b.WorkCode,
 b.TermsCode,
 'Nofield' as SubTotal,
@@ -166,7 +145,7 @@ b.CustDesc,
 b.DateEnt,
 b.pymtstatus,
 'QuoteNo' as QuoteNo,
-b.Billing_ID as E2_Invoice__c,
+'DCS_' + CONVERT(varchar(100), b.Billing_ID) as E2_Invoice__c,
 row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -187,7 +166,7 @@ bd.PartNo,
 bd.DelTicketNo,
 bd.Revision,
 bd.PONum,
-bd.BillingDet_ID,
+'DCS_' + CONVERT(varchar(100), bd.BillingDet_ID) as BillingDet_ID,
 row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -217,7 +196,7 @@ q.TermsCode,
 q.Phone,
 q.FAX,
 'Formula for Total??' as Total,
-'DCS_' + CONVERT(nvarchar,Quote_Id) as Quote_ID,
+'DCS_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,
 ' ' as RecordTypeId,
 q.CustDesc + ' - ' + q.QuoteNo as Name,
 'Quote' as StageName,
@@ -230,7 +209,8 @@ row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,
 'DESERT' as LoadForCompany
 FROM Quote q, CustCode cc
 Where q.CustCode = cc.CustCode
-
+and q.CustCode is not null
+order by E2_Quote_Key
 
 
 //********************************************************* Quote Detail *******************************************//
@@ -243,6 +223,7 @@ qd.JobNo,
 qd.JobNotes,
 qd.QuoteNo,
 qd.Status,
+SUBSTRING(qd.Descrip,1,80) as Name,
 'DCS_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
 'DCS_'+ qd.QuoteNo as LookupValForOpp,
 row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
@@ -253,3 +234,7 @@ row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
 'DESERT' as LoadForCompany
 FROM QuoteDet qd
 Order by QuoteNo
+
+
+Missing Customer Codes (Exist on Quote, but missing in CustCode)
+Select q.* from Quote q where q.CustCode not in (Select custcode from CustCode) order by QuoteNo

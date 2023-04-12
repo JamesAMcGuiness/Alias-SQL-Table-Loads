@@ -1,1 +1,1 @@
-Error,﻿QtyShipped,UnitPrice,LineTotal,InvoiceNo,PartDesc,PartNo,DelTicketNo,Revision,PONum,BillingDet_ID
+﻿Error,QtyShipped,UnitPrice,LineTotal,InvoiceNo,PartDesc,PartNo,DelTicketNo,Revision,PONum,BillingDet_ID,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate

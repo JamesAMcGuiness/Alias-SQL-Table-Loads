@@ -1,2 +1,2 @@
-Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
-DesertPowder,23-04-04-15-38-37-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_DCS_BillingDet.csv,240355,0,0,0.0,N,750Dn0000065teHIAQ
+﻿Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
+DesertPowder,23-04-11-14-12-49-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_DCS_BillingDet.csv,240651,0,0,0.0,N,750Dn0000066NSWIA2

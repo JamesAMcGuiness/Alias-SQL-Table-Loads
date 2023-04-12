@@ -99,7 +99,7 @@ def lambda_handler(key):
         object_name = "Account"
         ex_id = "E2_Customer_Key__c"
         
-        header = "TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
+        header = "CSV_Row_Num_del,TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
         
         Customer.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])

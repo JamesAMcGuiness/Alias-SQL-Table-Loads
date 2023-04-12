@@ -1,0 +1,190 @@
+***********************************************************************************************************************************
+Customer Load:
+    SCC
+    1. No errors 
+    2. Do we need to concatenate the BAddr1 with BAddr2? Or is just loading BAddr1 ok?
+
+    DCS
+    1. No errors 
+    2. Do we need to concatenate the BAddr1 with BAddr2? Or is just loading BAddr1 ok?
+
+***********************************************************************************************************************************
+
+Contact Load:
+    SCC
+    1. No Errors
+
+    DCS 
+    1. No Errors    
+
+***********************************************************************************************************************************
+
+Ship To Load:
+    SCC 
+    1. 8 Errors - Duplicate Customer's defined 
+Error
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --
+
+
+
+
+    DCS
+    1. 43 Errors - Duplicate Customer's defined 
+Error
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --
+
+***********************************************************************************************************************************
+
+***********************************************************************************************************************************
+Work Order Load:
+
+1. Per Kate: We are not storing a Contact relationship
+2. Do we need to worry about storing a Parent Work Order relationship?
+3. What to load for FOB?.. There is no FOB field in Sql Server 
+
+    SCC 
+    1. 2 Errors for one duplicate
+    
+DUPLICATE_VALUE:Duplicate external id specified: 2209:Order_Number__c --	Schuff Steel Company	Schuff Steel	3003 N Central Ave  Suite1500	NULL	Phoenix	AZ	85012
+DUPLICATE_VALUE:Duplicate external id specified: 2209:Order_Number__c --	Schuff Steel Company	Schuff Steel	3003 N Central Ave  Suite1500	NULL	Phoenix	AZ	85012
+
+    DCS
+    1. 15 Errors
+    Error	ï»¿SoldTo	ShipToName	ShipAddr1	ShipAddr2	ShipCity	ShipSt	ShipZIP	OrderNo
+DUPLICATE_VALUE:Duplicate external id specified: 40066:Order_Number__c --	Dadee Manufacturing, LLC	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40066
+DUPLICATE_VALUE:Duplicate external id specified: 40066:Order_Number__c --	Dadee Manufacturing, Llc	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40066
+DUPLICATE_VALUE:Duplicate external id specified: 40063:Order_Number__c --	Dadee Manufacturing, LLC	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40063
+DUPLICATE_VALUE:Duplicate external id specified: 40063:Order_Number__c --	Dadee Manufacturing, Llc	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40063
+DUPLICATE_VALUE:Duplicate external id specified: 50009:Order_Number__c --	Dadee Manufacturing, LLC	Dadee Manufacturing, Llc      	1824 W. Broadway                                              	                              	Phoenix             	AZ	85041	50009
+DUPLICATE_VALUE:Duplicate external id specified: 50009:Order_Number__c --	Dadee Manufacturing, Llc	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	50009
+DUPLICATE_VALUE:Duplicate external id specified: 39976:Order_Number__c --	K.T. Fabrication, Inc	K.T. Fabrication, Inc	501 E. Comstock Drive  		Chandler	AZ	85225	39976
+DUPLICATE_VALUE:Duplicate external id specified: 39976:Order_Number__c --	K.T. Fabrication, Inc	K.T. Fabrication, Inc	501 E. Comstock Drive  		Chandler	AZ	85225	39976
+DUPLICATE_VALUE:Duplicate external id specified: 36590:Order_Number__c --	Lani Mclure	lAN Mclure	  			  		36590
+DUPLICATE_VALUE:Duplicate external id specified: 36590:Order_Number__c --			9817 E Ironwood Dr.  		Scottsdale	AZ	85258	36590
+DUPLICATE_VALUE:Duplicate external id specified: 40055:Order_Number__c --	Quality Iron Design	Quality Iron Design	Tim Freiland  Quality Iron Design	Quality Iron Design		  		40055
+DUPLICATE_VALUE:Duplicate external id specified: 40055:Order_Number__c --	Quality Iron Design	Quality Iron Design	Tim Freiland  Quality Iron Design	Quality Iron Design		  		40055
+FIELD_INTEGRITY_EXCEPTION:Order Date: invalid date: Wed Jul 21 00:00:00 GMT 9019:Order_Date__c --	S Diamond Steel	S Diamond Steel	4205 W Lower Buckeye Rd  		Phoenix	AZ	85009	71309
+DUPLICATE_VALUE:Duplicate external id specified: 50021:Order_Number__c --	Desert Powder	Desert Powder	  			  		50021
+DUPLICATE_VALUE:Duplicate external id specified: 50021:Order_Number__c --	Desert Powder	Desert Powder                 	                                                              	                              	                    	  	          	50021
+
+***********************************************************************************************************************************
+
+
+***********************************************************************************************************************************
+Work Order Detail Load: Need to talk thru loading Products
+
+
+
+***********************************************************************************************************************************
+Billing Load:
+
+DCC - No Errors
+
+SCC - No Errors
+
+
+1. Should Sub Total be a sum of the Billing Detail rows? (Sum the Amount value in Salesforce?)
+2. Balance Due - Use SalesForce formula (Total - Amt Due)
+3. Can I use Quote ID to load to Quote No?
+4. Loading InvoiceNo to Invoice Header ID, is this ok?
+5. What to load for the Invoice Name?
+
+***********************************************************************************************************************************
+
+
+***********************************************************************************************************************************
+Billing Detail Load:
+
+DCC - No Errors
+
+SCC - No Errors
+***********************************************************************************************************************************
+
+
+***********************************************************************************************************************************
+Quote Load:
+1. How to determine the StageName value (Currently hardcoded to Quote)
+
+
+SCC - 1 Error
+Professional Piping Systems - 14299
+
+ERROR
+'DateENT' is not a valid value for the type xsd:date:Quote_Date__c -- SCC_14299 Customer Key
+
+DCS - 2 errors (Invalid date formats entered)
+Josh Smith                     - 12280
+Southwest Metalsmiths - 10158
+
+Error	
+INVALID_FIELD:Failed to deserialize field at col 6. Due to	 'DateENT' is not a valid value for the type xsd:date:Quote_Date__c --
+INVALID_FIELD:Failed to deserialize field at col 17. Due to	 'NULL' is not a valid value for the type xsd:date:CloseDate --
+
+***********************************************************************************************************************************
+
+
+
+***********************************************************************************************************************************
+Quote Detail Load:
+
+SCC - 32 errors due to the fact that the Customer Code for this Quote is NOT in the CustCode table 
+So cleanup should be that we make sure every Quote has an existing Customer (CustCode) value
+
+DCS -1845 errors due to the fact that there are 427 situations where we are missing the Customer Code for this Quote 
+and is NOT in the CustCode table
+
+1. What to do about Qty1 thru Qty8, Price1 thru Price8, do we just sum up the values?
+2. What to put for the NAME value for Quote Detail?
+3. Is Status of EXP/PEND/WON ok for this or should we be getting the status from somewhere else?
+
+
+***********************************************************************************************************************************

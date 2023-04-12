@@ -146,7 +146,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         theFilePath = os.environ.get("op_path") + '\Trigger.txt'
 
         #Create error file if not     
-        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"latin-1")
+        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"utf-8-sig")
     
 
         #with open(theFilePath,'w') as csvFile:

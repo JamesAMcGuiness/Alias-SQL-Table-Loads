@@ -47,7 +47,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         security_token = tsecurity_token,
         client_id=tclient_id)
     print('****************************************************')						  
-    print('In salesforce_connect_and_upload for QuoteLine')						
+    print('In salesforce_connect_and_upload for QuoteDet')						
     print('****************************************************')						  
 
     job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
@@ -70,28 +70,13 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         disbursals = []
         batches    = []    
         count      = 1
+        ignr_head = True
         
         for row in reader:
-				
-            #**************************************************************************************
-            #                                  For Checkboxes
-            #**************************************************************************************              			
-            if row["payout__Trail__c_del"] == 'Y':
-                row["payout__X12b1_Batch__c"] = "True" 
-            else:
-                row["payout__X12b1_Batch__c"] = "False" 
-		
-
-            #**************************************************************************************
-            #                                  RecordTypeId
-            #**************************************************************************************              			
-            row["RecordTypeId"] = os.environ['CBDefaultLOBRTID']
-            if row["payout__Line_of_Business__c"] == "Advisory":
-                row["RecordTypeId"] = os.environ['CBAdvisoryRTID']
-			
-            else:
-                if row["payout__Line_of_Business__c"] == "Insurance":			
-                    row["RecordTypeId"] = os.environ['CBInsuranceRTID']
+            if ignr_head:
+                ignr_head = False
+                continue					
+            
 			
             ############################## To apply any special logic for this client #########################################################################
             #logic_to_apply(client,row)
@@ -102,24 +87,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
                 if "_del" in head or "_Del" in head:
                     row.pop(head)
 
-            #*****************************************************************
-            # Date Transformations...
-            #***************************************************************** 					   											
-            try:
-
-            #*****************************************************************
-            # payout__Statement_Date__c - Transformation to SF Date
-            #***************************************************************** 					   											
-                if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                    row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
-            except ValueError:
             
-                try:
-                    if row["payout__Statement_Date__c"] != None and row["payout__Statement_Date__c"] != '': 
-                        row["payout__Statement_Date__c"] = datetime.datetime.strptime(row["payout__Statement_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                        print('Successfully used the 4 digit format!')
-                except ValueError:
-                    print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
 			
             count = count + 1
             disbursals.append(row)
@@ -145,7 +113,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         theFilePath = os.environ.get("op_path") + '\Trigger.txt'
 
         #Create error file if not     
-        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"latin-1")
+        errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"utf-8-sig")
     
 
         #with open(theFilePath,'w') as csvFile:

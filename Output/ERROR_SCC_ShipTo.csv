@@ -1,9 +1,9 @@
-Error,﻿SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
-DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,1312 E. Kaler Drive,NULL,Phoenix,AZ,85020,NULL,Mountainscapers LLC.,6230,SCC_4902,18:17.9,13,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,12266 Branford Street,NULL,Sun Valley,CA,91352,Accounting,Spartan Truck Company,6274,SCC_4944,45:05.3,51,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,11140 N 136th Ave,NULL,Surprise,AZ,85379,Accounts Payable,Felix Construction,6277,SCC_4947,54:54.1,54,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,1326 W. Industrial Dr,NULL,Coolidge,AZ,85128,Accounts Payable,Felix Construction,6280,SCC_4947,54:54.1,57,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,1441 N VIP Blvd,NULL,Casa Grande,AZ,85122,NULL,Spartan Truck Company Inc,6283,SCC_4944,45:05.4,60,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,42554 Sante Fe Drive,NULL,Kingman,AZ,86401,NULL,Laron Inc - Kingman,6287,SCC_4955,57:18.6,63,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,3550 S 16th Street,NULL,Phoenix,AZ,85040,NULL,Laron Inc - PHX,6288,SCC_4955,57:18.6,64,Y,30:08.4,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,NULL,NULL,NULL,NULL,NULL,NULL,Mountain Scaper,6304,SCC_4902,18:17.9,79,Y,30:08.4,SCC_ShipTo.csv
+﻿Error,SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,1312 E. Kaler Drive,NULL,Phoenix,AZ,85020,NULL,Mountainscapers LLC.,6230,SCC_4902,5/12/2020,13,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,12266 Branford Street,NULL,Sun Valley,CA,91352,Accounting,Spartan Truck Company,6274,SCC_4944,1/21/2022,51,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,11140 N 136th Ave,NULL,Surprise,AZ,85379,Accounts Payable,Felix Construction,6277,SCC_4947,5/4/2020,54,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,1326 W. Industrial Dr,NULL,Coolidge,AZ,85128,Accounts Payable,Felix Construction,6280,SCC_4947,5/4/2020,57,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,1441 N VIP Blvd,NULL,Casa Grande,AZ,85122,NULL,Spartan Truck Company Inc,6283,SCC_4944,1/21/2022,60,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,42554 Sante Fe Drive,NULL,Kingman,AZ,86401,NULL,Laron Inc - Kingman,6287,SCC_4955,5/18/2020,63,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,3550 S 16th Street,NULL,Phoenix,AZ,85040,NULL,Laron Inc - PHX,6288,SCC_4955,5/18/2020,64,Y,32:44.1,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,NULL,NULL,NULL,NULL,NULL,NULL,Mountain Scaper,6304,SCC_4902,5/12/2020,79,Y,32:44.1,SCC_ShipTo.csv

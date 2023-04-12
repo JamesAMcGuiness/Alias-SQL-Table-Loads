@@ -1,1 +1,1 @@
-﻿QUOTE_TO,Addr1,Addr2,City,st,Zip,QutoeNo,DateENT,E2_Customer_Key,QuotedBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,Quote_ID,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
+﻿QUOTE_TO,Addr1,Addr2,City,st,Zip,QuoteNo,DateENT,E2_Customer_Key,QuotedBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,E2_Quote_Key,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany

@@ -1,2 +1,2 @@
-Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
-DesertPowder,23-04-06-09-00-29-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_DCS_Quote.csv,10082,6,0,0.05951200158698671,N,750Dn00000661ZeIAI
+﻿Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
+DesertPowder,23-04-11-12-56-01-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_DCS_Quote.csv,10093,2,0,0.019815713861091846,N,750Dn0000066NDuIAM

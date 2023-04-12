@@ -1,2 +1,2 @@
-Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
-DesertPowder,23-04-04-14-19-37-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_SCC_Billing.csv,1625,0,0,0.0,N,750Dn0000065tOsIAI
+﻿Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job
+DesertPowder,23-04-11-14-47-28-,c:\MyProjects\Alias-SQL-Table-Loads\Output\ERROR_SCC_Billing.csv,1637,0,0,0.0,N,750Dn0000066NcaIAE

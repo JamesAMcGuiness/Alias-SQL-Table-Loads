@@ -37,9 +37,10 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
     else:	
         print('Runtype is not NORMAL it is: ' + runtype)
 		
-    with open(filename, encoding=filetype) as source:
+    with open(filename, encoding="utf-8-sig") as source:
         header = source.readline();
-                
+        #temp = header.replace("\u2022","")  
+        #print(temp)        
         error.write("Error," + header);
         errorLock.write(header);  
 			
@@ -68,8 +69,11 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
                             #haveLocks = true
                             errorLock.write(line)
                             reclockct = reclockct + 1
-						
-                        error.write(uploadresult.error + "," + line)
+                        
+                        temp1 = uploadresult.error.replace(","," ")
+                        temp2 = temp1.replace("\u2022","")
+                            
+                        error.write(temp2 + "," + line)
                     
     
 		
@@ -84,13 +88,14 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
     errorLock.close()
 
     print('Calling create_Error_Log_File')
-    create_Error_Log_File(client,filename,c_time,errorfile,rowsProcessed,errorCt,reclockct,job,filetype)
+    create_Error_Log_File(client,logfile,c_time,errorfile,rowsProcessed,errorCt,reclockct,job,filetype)
     
 
-def create_Error_Log_File(client,fileName,runTime,errorFile,rowsProcessed,totalErrors,reclockct,job,filetype="utf-8-sig"):
+def create_Error_Log_File(client,logfile,runTime,errorFile,rowsProcessed,totalErrors,reclockct,job,filetype="utf-8-sig"):
     print('In create_Error_Log_File')
 	#print(client,fileName + "," + str(runTime) + "," + errorFile + "," + str(rowsProcessed) + "," + str(totalErrors) + "," + str(myErrorRate) + "," + myWarningFlag)
-    logfile = 'LogFile' + '_' + os.path.basename(fileName)
+    
+    
     header = "Client,LoadDate,ErrorFile,RowsProcessed,TotalErrors,Recordlocks,ErrorRate,WarningFlag,Job"
     
     myErrorRate = 0
