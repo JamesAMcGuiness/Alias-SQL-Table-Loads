@@ -29,7 +29,8 @@ SELECT
 
    
 //********************************************************* DCS Contact *******************************************//
-SELECT c.Contact, 
+SELECT 
+c.Contact, 
 ' ' as FirstName, 
 ' ' as LastName,
 c.EMail,
@@ -70,6 +71,13 @@ WHERE st.CustCode = cc.CustCode
 
 
 
+"SELECT st.SAddr1,st.SAddr2,st.SCity,st.SState,st.SZipCode,st.ShipContact,st.ShipToName,st.ShipTo_ID,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,CONVERT(nvarchar,st.LastModDate, 23) as PreviousModDate,row_number() over(order by(ShipTo_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_ShipTo.csv' as Source_File FROM ShipTo st, CustCode cc WHERE st.CustCode = cc.CustCode" 
+
+
+
+
+
+
 //********************************************************* DCS Orders (Work Order) *******************************************//
 SELECT 
 o.CustDesc as SoldTo, 
@@ -98,6 +106,11 @@ From Orders o, CustCode cc
 Where o.CustCode = cc.CustCode
 
 
+"SELECT o.CustDesc as SoldTo,o.ShipToName,o.ShipAddr1,o.ShipAddr2,o.ShipCity,o.ShipSt,o.ShipZIP,'DCS_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,CONVERT(nvarchar,DateENT, 23) as DateENT,o.CustDesc as Customer,o.PONum,o.ShipVia,o.TermsCode,'FOB???' as FOB,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,o.QuoteNo,row_number() over(order by(cc.CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Order.csv' as Source_File,CONVERT(nvarchar,o.LastModDate, 23) as PreviousModDate From Orders o, CustCode cc Where o.CustCode = cc.CustCode"
+"SELECT o.CustDesc as SoldTo,o.ShipToName,o.ShipAddr1,o.ShipAddr2,o.ShipCity,o.ShipSt,o.ShipZIP,'SCC_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,CONVERT(nvarchar,DateENT, 23) as DateENT,o.CustDesc as Customer,o.PONum,o.ShipVia,o.TermsCode,'FOB???' as FOB,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,o.QuoteNo,row_number() over(order by(cc.CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'SCC_Order.csv' as Source_File,CONVERT(nvarchar,o.LastModDate, 23) as PreviousModDate From Orders o, CustCode cc Where o.CustCode = cc.CustCode"
+
+
+
 //********************************************************* DCS Orders Detail (Work Order Line Item *******************************************//
 SELECT 
 od.QtyOrdered,
@@ -107,10 +120,16 @@ od.Revision,
 od.JobNo,
 od.Status,
 '???' as QuoteNo,
-'SCC_' + CONVERT(varchar(100), od.OrderDet_ID) as OrderDet_ID, 
-od.OrderNo as LookupValToOrder,
+'DCS_' + CONVERT(varchar(100),od.OrderDet_ID) as OrderDet_ID, 
+'DCS_' + CONVERT(varchar(100),od.OrderNo) as LookupValToOrder,
 '02iDn000000AXurIAG' as DummyAssetID,
 '01uDn000003d5aFIAQ' as DummyPriceBookID,
+CASE WHEN od.WorkCode is Null
+		THEN 'DUMMY'
+	WHEN od.WorkCode = ''
+		THEN 'DUMMY'
+	ELSE od.WorkCode
+END as WorkCode,
 row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -226,6 +245,12 @@ qd.Status,
 SUBSTRING(qd.Descrip,1,80) as Name,
 'DCS_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
 'DCS_'+ qd.QuoteNo as LookupValForOpp,
+CASE WHEN qd.WorkCode is Null
+		THEN 'DUMMY'
+	WHEN qd.WorkCode = ''
+		THEN 'DUMMY'
+	ELSE qd.WorkCode
+END as WorkCode,
 row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -238,3 +263,5 @@ Order by QuoteNo
 
 Missing Customer Codes (Exist on Quote, but missing in CustCode)
 Select q.* from Quote q where q.CustCode not in (Select custcode from CustCode) order by QuoteNo
+
+Select Distinct WorkCode from QuoteDet

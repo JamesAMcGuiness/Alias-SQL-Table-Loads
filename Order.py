@@ -90,24 +90,25 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             #*****************************************************************
             # Date Transformations...
             #***************************************************************** 					   											
-            try:
+            #try:
 
             #*****************************************************************
             # payout__Statement_Date__c - Transformation to SF Date
             #***************************************************************** 					   											
-                if row["Order_Date__c"] != None and row["Order_Date__c"] != '': 
-                    row["Order_Date__c"] = datetime.datetime.strptime(row["Order_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
-            except ValueError:
+            #    if row["Order_Date__c"] != None and row["Order_Date__c"] != '': 
+            #        row["Order_Date__c"] = datetime.datetime.strptime(row["Order_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
+            #except ValueError:
             
-                try:
-                    if row["Order_Date__c"] != None and row["Order_Date__c"] != '': 
-                        row["Order_Date__c"] = datetime.datetime.strptime(row["Order_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                        #print('Successfully used the 4 digit format!')
-                except ValueError:
-                    print("Date ValueERROR for Order_Date__c! *" + row["Order_Date__c"] + "*")
+            #    try:
+            #        if row["Order_Date__c"] != None and row["Order_Date__c"] != '': 
+            #            row["Order_Date__c"] = datetime.datetime.strptime(row["Order_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
+            #            #print('Successfully used the 4 digit format!')
+            #    except ValueError:
+            #        print("Date ValueERROR for Order_Date__c! *" + row["Order_Date__c"] + "*")
 			
             count = count + 1
             disbursals.append(row)
+            #print(row)
             if (count / 10000) == 1:
                 batches.append(post_batch_salesforce(disbursals, bulk, job))
                 count = 1

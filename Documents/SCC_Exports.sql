@@ -25,9 +25,12 @@ SELECT
 	  'SCC_Customer.csv' as Source_File,
     'STANDARD' as LoadForCompany
   FROM CustCode
-  ORDER BY CustCode_ID
+    ORDER BY CustCode_ID
 
 
+//* 
+SELECT Count(*) Over() as TotalRows,replace(replace(APContact,char(10),''),char(13),'') as APContact,replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,BCity,BState,BZIPCode,Phone,Website,replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,'SCC_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,LastModDate as PreviousModDate,row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'SCC_Customer.csv' as Source_File,'STANDARD' as LoadForCompany FROM CustCode ORDER BY CustCode_ID
+*//
 
 
 
@@ -113,16 +116,23 @@ od.Revision,
 od.JobNo,
 od.Status,
 '???' as QuoteNo,
-'SCC_' + CONVERT(varchar(100), od.OrderDet_ID) as OrderDet_ID, 
-od.OrderNo as LookupValToOrder,
+'SCC_' + CONVERT(varchar(100),od.OrderDet_ID) as OrderDet_ID, 
+'SCC_' + CONVERT(varchar(100),od.OrderNo) as LookupValToOrder,
 '02iDn000000AXurIAG' as DummyAssetID,
 '01uDn000003d5aFIAQ' as DummyPriceBookID,
+CASE WHEN od.WorkCode is Null
+		THEN 'DUMMY'
+	WHEN od.WorkCode = ''
+		THEN 'DUMMY'
+	ELSE od.WorkCode
+END as WorkCode,
 row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
 	  'SCC_OrderDet.csv' as Source_File,
 	  CONVERT(nvarchar,od.LastModDate, 23) as PreviousModDate
 From OrderDet od
+
 
 
 
@@ -232,6 +242,12 @@ qd.Status,
 SUBSTRING(qd.Descrip,1,80) as Name,
 'SCC_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
 'SCC_' + qd.QuoteNo as LookupValForOpp,
+CASE WHEN qd.WorkCode is Null
+		THEN 'Dummy'
+	WHEN qd.WorkCode = ''
+		THEN 'Dummy'
+	ELSE qd.WorkCode
+END as WorkCode,
 row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
 	  'Y' as LoadedByPython,
 	  GetDate() as LoadDate,
@@ -241,6 +257,8 @@ row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,
 FROM QuoteDet qd
 Order by QuoteNo
 
+
+Select Distinct WorkCode from QuoteDet
 
 Missing Customer Codes (Exist on Quote, but missing in CustCode)
 Select q.* from Quote q where q.CustCode not in (Select custcode from CustCode) order by QuoteNo

@@ -19,7 +19,7 @@ Contact Load:
 
 ***********************************************************************************************************************************
 
-Ship To Load:
+Ship To Load: (We need to clean up where we have the same Customer defined to more than 1 Shipping Address )
     SCC 
     1. 8 Errors - Duplicate Customer's defined 
 Error
@@ -85,11 +85,11 @@ DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --
 ***********************************************************************************************************************************
 
 ***********************************************************************************************************************************
-Work Order Load:
+Work Order Load: What to load for FOB?.. There is no FOB field in Sql Server 
 
 1. Per Kate: We are not storing a Contact relationship
 2. Do we need to worry about storing a Parent Work Order relationship?
-3. What to load for FOB?.. There is no FOB field in Sql Server 
+3. ******What to load for FOB?.. There is no FOB field in Sql Server 
 
     SCC 
     1. 2 Errors for one duplicate
@@ -99,7 +99,7 @@ DUPLICATE_VALUE:Duplicate external id specified: 2209:Order_Number__c --	Schuff 
 
     DCS
     1. 15 Errors
-    Error	ï»¿SoldTo	ShipToName	ShipAddr1	ShipAddr2	ShipCity	ShipSt	ShipZIP	OrderNo
+    Error	SoldTo	ShipToName	ShipAddr1	ShipAddr2	ShipCity	ShipSt	ShipZIP	OrderNo
 DUPLICATE_VALUE:Duplicate external id specified: 40066:Order_Number__c --	Dadee Manufacturing, LLC	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40066
 DUPLICATE_VALUE:Duplicate external id specified: 40066:Order_Number__c --	Dadee Manufacturing, Llc	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40066
 DUPLICATE_VALUE:Duplicate external id specified: 40063:Order_Number__c --	Dadee Manufacturing, LLC	Dadee Manufacturing, Llc	1824 W. Broadway  		Phoenix	AZ	85041	40063

@@ -25,7 +25,7 @@ def logic_to_apply(row):
         #
         #**************************************************************************************   
         if columnname == 'RecordTypeId':
-            print('We have setup logic for this field: ' + columnname)		
+            #print('We have setup logic for this field: ' + columnname)		
             if row["LoadForCompany_del"] == 'DESERT':
                 row["RecordTypeId"] = os.environ['DesertRTID'] 
             else:

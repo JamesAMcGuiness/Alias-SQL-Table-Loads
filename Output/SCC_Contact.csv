@@ -1,323 +1,324 @@
-﻿Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
-J, , ,jtackett@currierinc.com,(602) 247-4370,Buyer,,SCC_4575,23:12.8,1,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Amalia Arvizu, , ,rtrojan@castlesteelinc.com,(602) 243-2766,NULL,NULL,SCC_4576,22:39.7,2,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-Kelly, , ,kschwein@paysonaz.gov,928-472-5104,Buyer,,SCC_4579,48:05.5,3,Y,31:44.6,SCC_Contact.csv,SCC_4892,STANDARD
-Kody Koebensky, , ,Kkoebensky@currierinc.com,(602) 247-4370,Buyer,602-859-5902,SCC_4580,23:12.8,4,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Jamie Scallion, , ,jscallion@ppsphx.com,602-497-4997,AP,,SCC_4581,26:01.8,5,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Blake Ebner, , ,blakee@fpfind.com,602-437-0006,Buyer,562-667-7714,SCC_4582,56:37.5,6,Y,31:44.6,SCC_Contact.csv,SCC_4894,STANDARD
-Eric, , ,ericl@pioneerequip.com,602-437-4312,Buyer,,SCC_4583,25:55.2,7,Y,31:44.6,SCC_Contact.csv,SCC_4895,STANDARD
-Jon Mrock, , ,Jon.mrock@fmdfs.com,(602) 368-9379,Purchasing,,SCC_4584,03:45.7,8,Y,31:44.6,SCC_Contact.csv,SCC_4896,STANDARD
-Melissa, , ,AP@fmdfs.com,(602) 368-9379,AP,,SCC_4585,03:45.7,9,Y,31:44.6,SCC_Contact.csv,SCC_4896,STANDARD
-Dusty Pinckard-, , ,dusty@millinginc.com,480-964-9041,Buyer,,SCC_4586,09:27.9,10,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-Jay Leavitt, , ,jay@millinginc.com,480-964-9041,Buyer,,SCC_4587,09:27.9,11,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-Accounts Payable, , ,accountspayable@swmetalsmiths.com,602.438.8577,Buyer,,SCC_4588,14:20.5,12,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Maxine, , ,maxine@capitolengineering.org,602-252-5754,Buyer,,SCC_4589,09:01.2,13,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Niki Richins, , ,nikirichins@copperstateinc.com,420.751.6388  EX 103,Buyer,,SCC_4590,22:17.3,14,Y,31:44.6,SCC_Contact.csv,SCC_4901,STANDARD
-Tommy Thomas, , ,tommyt@ppsphx.com,602-497-4997,Buyer,602-432-7872,SCC_4591,26:01.8,15,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Greg Rath, , ,,602-276-4841,Owner,(602) 571-1511,SCC_4592,48:18.4,16,Y,31:44.6,SCC_Contact.csv,SCC_4897,STANDARD
-Lisa, , ,lisa@oltfab.com,602-276 4841,AP,,SCC_4593,48:18.4,17,Y,31:44.6,SCC_Contact.csv,SCC_4897,STANDARD
-Shannon, , ,shannon@oltfab.com,602-276 4841,Buyer,,SCC_4594,48:18.4,18,Y,31:44.6,SCC_Contact.csv,SCC_4897,STANDARD
-Amalia Arvizu, , ,aariviz@castlesteelinc.com,(602) 243-2766,,,SCC_4596,22:39.7,19,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-Accounts Payable, , ,ap@ppsphx.com,602-497-4997,A/P,,SCC_4597,26:01.8,20,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Madison Mellman, , ,ap@currierinc.com,(602) 247-4370,AP,,SCC_4598,23:12.8,21,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Eric Johnson, , ,ejohnson@ppsphx.com,602-497-4997,Buyer,602-510-2638,SCC_4599,26:01.8,22,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Connie Huston, , ,ap@mmiindustrial.com,480-964-9041,Buyer,,SCC_4601,09:27.9,23,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-sean, , ,sean@mountainscapers.com,602-626-4050,Buyer,,SCC_4604,27:07.3,24,Y,31:44.6,SCC_Contact.csv,SCC_4902,STANDARD
-Michael, , ,mfoley@castlesteelinc.com,(602) 243-2766,,,SCC_4605,22:39.7,25,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-John Moschinger, , ,jmmoschinger@pcl.com;MAlvarado@pcl.com,602-799-3597,Buyer,,SCC_4609,11:28.9,26,Y,31:44.6,SCC_Contact.csv,SCC_4904,STANDARD
-Damian Budka, , ,damian@ppsphx.com,602-497-4997,Buyer,NULL,SCC_4610,26:01.8,27,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-accounts Payable, , ,accountspayable@talis.us,480-557-6100,Buyer,,SCC_4613,52:49.0,28,Y,31:44.6,SCC_Contact.csv,SCC_4906,STANDARD
-Jim Tackett, , ,jtackett@currierinc.com,,Buyer,NULL,SCC_4615,23:12.8,29,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Toni Bingham, , ,tonib@fpfind.com,602-437-0006,Buyer,480-319-4910,SCC_4616,NULL,30,Y,31:44.6,SCC_Contact.csv,SCC_4894,STANDARD
-Gordon Bayes, , ,gordon.bayes@separationbydesign.com,812-424-1239,Buyer,812-569-0987,SCC_4617,12:45.4,31,Y,31:44.6,SCC_Contact.csv,SCC_4909,STANDARD
-Accounts Payable, , ,accountspayable@separationbydesign.com,812-424-1239,A/P,,SCC_4618,12:45.4,32,Y,31:44.6,SCC_Contact.csv,SCC_4909,STANDARD
-Koen Black, , ,Koen.Black@gcinc.com,602-345-8600,Engineer,,SCC_4619,NULL,33,Y,31:44.6,SCC_Contact.csv,SCC_4910,STANDARD
-Maria Alvarado@pcl.com, , ,MAlvarado@pcl.com,602-799-3597,Buyer,NULL,SCC_4621,11:28.9,34,Y,31:44.6,SCC_Contact.csv,SCC_4904,STANDARD
-ap, , ,invoicing@castlesteelinc.com,(602) 243-2766,Buyer,,SCC_4623,22:39.7,35,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-Richard, , ,Richardholmessr@advancedmetalsales.com,623-434-8343,Buyer,602-680-9942,SCC_4624,54:10.4,36,Y,31:44.6,SCC_Contact.csv,SCC_4908,STANDARD
-Jeff, , ,jeff@ppsphx.com,602-497-4997,Buyer,NULL,SCC_4625,26:01.8,37,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Mike Hennesy, , ,Mike@hennesymech.com,602-757-6108,Buyer,,SCC_4626,NULL,38,Y,31:44.6,SCC_Contact.csv,SCC_4911,STANDARD
-A/P, , ,accounts.payable@schuff.com,602 452 4476,Accounts Payable,,SCC_4629,09:53.0,39,Y,31:44.6,SCC_Contact.csv,SCC_4907,STANDARD
-John Gray, , ,John@alstatesteel.com,602-699-6500,Buyer,505-681-5856,SCC_4633,23:25.7,40,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-A/P, , ,admin@tenshon.com,480.663.3166,Buyer,,SCC_4636,25:50.4,41,Y,31:44.6,SCC_Contact.csv,SCC_4914,STANDARD
-Cullin Howard, , ,choward@tenshon.com,480.663.3166,Buyer,,SCC_4637,25:50.4,42,Y,31:44.6,SCC_Contact.csv,SCC_4914,STANDARD
-Matthew Dickerson, , ,mdickerson@tenshon.com,480.663.3166,President/ A/P,,SCC_4638,25:50.4,43,Y,31:44.6,SCC_Contact.csv,SCC_4914,STANDARD
-JOE, , ,JOE@YJDRILLING.COM,602-453-3252,Buyer,,SCC_4639,25:31.6,44,Y,31:44.6,SCC_Contact.csv,SCC_4915,STANDARD
-Cassidy Ludwig, , ,AP@YJDRILLING.COM,602-453-3252,ap,,SCC_4640,25:31.5,45,Y,31:44.6,SCC_Contact.csv,SCC_4915,STANDARD
-AP, , ,AP@DESERTPOWDER.COM,602-253-7875,Buyer,,SCC_4641,48:53.4,46,Y,31:44.6,SCC_Contact.csv,SCC_4916,STANDARD
-Andrew Dewar, , ,AndrewD@natlpump.com,623-979-3560,Buyer,,SCC_4643,55:03.5,47,Y,31:44.6,SCC_Contact.csv,SCC_4917,STANDARD
-Larry Chapman, , ,larryc@natlpump.com,623-979-3560,Buyer,,SCC_4644,55:03.5,48,Y,31:44.6,SCC_Contact.csv,SCC_4917,STANDARD
-David Donovan, , ,ddonovan@pumpsystemsaz.com,480-545-8484,Buyer,,SCC_4650,24:52.3,49,Y,31:44.6,SCC_Contact.csv,SCC_4918,STANDARD
-Kurt Kauffman, , ,4kpaintingandtrim@gmail.com,602-694-0996,Owner,,SCC_4651,52:16.1,50,Y,31:44.6,SCC_Contact.csv,SCC_4919,STANDARD
-John Lockett, , ,jlockett@pumpsystemsaz.com,480-545-8484,Buyer,,SCC_4652,24:52.3,51,Y,31:44.6,SCC_Contact.csv,SCC_4918,STANDARD
-Stephanie Thomas, , ,SThomas@pumpsystemsaz.com,480-545-8484,A/P,,SCC_4653,24:52.3,52,Y,31:44.6,SCC_Contact.csv,SCC_4918,STANDARD
-A/P, , ,accountspayable@copperstateinc.com,420.751.6388  EX 103,A/P,,SCC_4654,22:17.3,53,Y,31:44.6,SCC_Contact.csv,SCC_4901,STANDARD
-Laremy Janecek, , ,,602-718-3291,Buyer,,SCC_4656,NULL,54,Y,31:44.6,SCC_Contact.csv,SCC_4920,STANDARD
-Clint Scott, , ,clintscott@advancedmetalsales.com,623-434-8343,Buyer,,SCC_4657,54:10.4,55,Y,31:44.6,SCC_Contact.csv,SCC_4908,STANDARD
-Chris Wallis, , ,chris@alstatesteel.com,,Buyer,505-997-6649,SCC_4659,23:25.7,56,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Jeff Baker, , ,jbaker@ppsphx.com,602-497-4997,Buyer,NULL,SCC_4660,26:01.8,57,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Caitlin Gauthier, , ,caitlin@alstatesteel.com,,A/P,,SCC_4661,23:25.7,58,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Karl, , ,ap@agateinc.com,480-994-9455,Buyer,,SCC_4663,54:40.0,59,Y,31:44.6,SCC_Contact.csv,SCC_4922,STANDARD
-Anthony Renteria, , ,anthony.renteria@natlpump.com,623-979-3560,Buyer,NULL,SCC_4664,55:03.5,60,Y,31:44.6,SCC_Contact.csv,SCC_4917,STANDARD
-Eric Loring, , ,ejl@jchinc.com,602-243-0585,Engineer,480-695-9972,SCC_4665,NULL,61,Y,31:44.6,SCC_Contact.csv,SCC_4923,STANDARD
-A/P, , ,CSWinvoices@pcl.com,602-799-3597,Accounts Payable,,SCC_4670,11:28.9,62,Y,31:44.6,SCC_Contact.csv,SCC_4904,STANDARD
-Nathan Piche, , ,n.piche@tristaraz.com,602-252-0554,Buyer,,SCC_4678,NULL,63,Y,31:44.6,SCC_Contact.csv,SCC_4924,STANDARD
-Melissa, , ,ap@oag-ps.com,602-368-2010,Buyer,,SCC_4689,56:43.2,64,Y,31:44.6,SCC_Contact.csv,SCC_4925,STANDARD
-John Heiken, , ,John.Heiken@BGI.email,480-248-7635,Buyer,,SCC_4691,21:11.5,65,Y,31:44.6,SCC_Contact.csv,SCC_4926,STANDARD
-Jim Stieben, , ,JimS@mmitank.com,602-272-6000,Buyer,,SCC_4693,35:00.9,66,Y,31:44.6,SCC_Contact.csv,SCC_4927,STANDARD
-Drew Reading, , ,dreading@currierinc.com,,Project Engineer,NULL,SCC_4694,23:12.8,67,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Chris Henderson, , ,chris.henderson@rollingplains.com,480-688-7297,Buyer,,SCC_4696,09:40.5,68,Y,31:44.6,SCC_Contact.csv,SCC_4928,STANDARD
-A/P, , ,ap@rollingsplains.com,480-688-7297,Buyer,480-895-8813,SCC_4697,09:40.5,69,Y,31:44.6,SCC_Contact.csv,SCC_4928,STANDARD
-Chris Shippy, , ,chris@rollingplains.com,480-895-8813,Buyer,,SCC_4698,09:40.5,70,Y,31:44.6,SCC_Contact.csv,SCC_4928,STANDARD
-Lori Brady, , ,ap@agateinc.com,480-850-9123,AP,,SCC_4702,54:40.0,71,Y,31:44.6,SCC_Contact.csv,SCC_4922,STANDARD
-Ed LaFontaine, , ,ed@bungersteel.com,623-936-7181,Purchasing Manager,602-828-3026,SCC_4703,NULL,72,Y,31:44.6,SCC_Contact.csv,SCC_4930,STANDARD
-Jim Cloughessy, , ,Jim.Cloughessy@graywolf.com,480-892-4257,Project Manager,602-527-3373,SCC_4704,35:29.6,73,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Tom Morris, , ,Tom.Morris@graywolf.com,480-718-2564,Senior PM,480-318-2175,SCC_4705,35:29.6,74,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Victor Valencia, , ,vic@vicswelding.com,623-925-5696,Owner,602-525-4804,SCC_4706,NULL,75,Y,31:44.6,SCC_Contact.csv,SCC_4934,STANDARD
-David Cooper, , ,dave@mmitank.com,602-272-6000,A/P,,SCC_4707,35:00.9,76,Y,31:44.6,SCC_Contact.csv,SCC_4927,STANDARD
-Accounts Payable, , ,ap@mmitank.com,602-272-6000,A/P,,SCC_4708,35:01.1,77,Y,31:44.6,SCC_Contact.csv,SCC_4927,STANDARD
-Greg Sprinkle, , ,gregsprinkle@hotmail.com,480-993-8999,President,,SCC_4709,48:35.8,78,Y,31:44.6,SCC_Contact.csv,SCC_4931,STANDARD
-Chad Kauffman, , ,chad@indinspect.com,480-993-8999,,,SCC_4710,48:35.8,79,Y,31:44.6,SCC_Contact.csv,SCC_4931,STANDARD
-Freddy Beltran, , ,fbeltran@ablesteel.com,480-830-2253,Buyer,,SCC_4712,10:05.5,80,Y,31:44.6,SCC_Contact.csv,SCC_4935,STANDARD
-C. Clark, , ,cyclark@ablesteel.com,480-830-2253,Buyer,,SCC_4713,10:05.5,81,Y,31:44.6,SCC_Contact.csv,SCC_4935,STANDARD
-Rick Kratz, , ,rick@rmrfab.com,602-695-0174,Buyer,NULL,SCC_4714,NULL,82,Y,31:44.6,SCC_Contact.csv,SCC_4936,STANDARD
-Kurt Ratsch, , ,kurt@alstatesteel.com,,Buyer,NULL,SCC_4715,23:25.7,83,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Carlo Apodaca, , ,NULL,480-545-8484,Buyer,NULL,SCC_4716,24:52.3,84,Y,31:44.6,SCC_Contact.csv,SCC_4918,STANDARD
-Carlo Apodaca, , ,capodaca@pumpsystemsaz.com,480-545-8484,Buyer,NULL,SCC_4717,NULL,85,Y,31:44.6,SCC_Contact.csv,SCC_4918,STANDARD
-Terry Hembree, , ,terry@allmetalsaz.com,602-689-8248,Buyer,,SCC_4718,NULL,86,Y,31:44.6,SCC_Contact.csv,SCC_4937,STANDARD
-David Melberg, , ,david.mellberg@schuff.com,602-452-4426,AP Clerk,,SCC_4720,35:29.6,87,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Teddy Rumzek, , ,teddy@ppsphx.com,602-497-4997,Buyer,NULL,SCC_4721,26:01.8,88,Y,31:44.6,SCC_Contact.csv,SCC_4893,STANDARD
-Thomas, , ,NULL,420.751.6388  EX 103,Buyer,NULL,SCC_4725,22:17.3,89,Y,31:44.6,SCC_Contact.csv,SCC_4901,STANDARD
-Joe Aggas, , ,NULL,602-252-5754,Buyer,NULL,SCC_4726,09:01.2,90,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Craig Rucker, , ,NULL,,Buyer,NULL,SCC_4727,21:11.5,91,Y,31:44.6,SCC_Contact.csv,SCC_4926,STANDARD
-James HArt, , ,James.Hart@aco.com,520-421-9968,Estimator,,SCC_4734,NULL,92,Y,31:44.6,SCC_Contact.csv,SCC_4938,STANDARD
-Bryan McGann, , ,Bryan.McGann@graywolf.com,602-452-4426,Buyer,NULL,SCC_4736,35:29.6,93,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Kent Carpenter, , ,kcarpenter@trustopinc.com,602-323-9125,Buyer,,SCC_4746,42:12.8,94,Y,31:44.6,SCC_Contact.csv,SCC_4939,STANDARD
-A/P, , ,apinvoices@trustopinc.com,602-323-9125,Accounts Payable,,SCC_4747,42:12.8,95,Y,31:44.6,SCC_Contact.csv,SCC_4939,STANDARD
-Larry Lynch, , ,larry@ensolutions.us,,Buyer,,SCC_4748,03:20.6,96,Y,31:44.6,SCC_Contact.csv,SCC_4941,STANDARD
-Cindy Argyle, , ,ap@bgi.email,480-248-7635,AP,,SCC_4749,NULL,97,Y,31:44.6,SCC_Contact.csv,SCC_4926,STANDARD
-Ryan Gamboa, , ,ryan@spartantruck.com,602-295-3744,Engineering Manager,,SCC_4750,12:00.5,98,Y,31:44.6,SCC_Contact.csv,SCC_4944,STANDARD
-Tony Boulos, , ,michelle@fireupfreedom.com,602-721-3911,Buyer,,SCC_4751,07:46.4,99,Y,31:44.6,SCC_Contact.csv,SCC_4946,STANDARD
-Jason Evahnenko, , ,jasone@felixconstruction.com,4804640011,Sr Project Manager,6024633547,SCC_4752,25:29.2,100,Y,31:44.6,SCC_Contact.csv,SCC_4947,STANDARD
-Frank Natividad, , ,FNatividad@swmetalsmiths.com,602.438.8577,Assistant Project Manager,480.347.7724,SCC_4753,14:20.5,101,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Michael Wolfe, , ,mikeW@ktfab.com,4804973140,Buyer,,SCC_4754,37:30.6,102,Y,31:44.6,SCC_Contact.csv,SCC_4948,STANDARD
-Tom White, , ,Tom.Wright@graywolf.com,602-452-4426,Buyer,NULL,SCC_4755,35:29.6,103,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Dennis O'Leary, , ,doleary@swmetalsmiths.com,602-759-8227,Buyer,480-621-1376,SCC_4759,14:20.5,104,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Tom Puckett, , ,tom@magnumcompanies.net,602-272-3600,Buyer,602.622.7434,SCC_4760,37:21.0,105,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Accounts Payable, , ,ap@felixconstruction.com,4804640011,Accounts Payable,,SCC_4761,25:29.2,106,Y,31:44.6,SCC_Contact.csv,SCC_4947,STANDARD
-Ankush Kumar, , ,akumar@trustopinc.com,,Mechanical Engineer,480.719.9269,SCC_4763,42:12.8,107,Y,31:44.6,SCC_Contact.csv,SCC_4939,STANDARD
-Spencer Nield, , ,spencer.nield@schuff.com,602-252-7787,Sr Project Manager,602.377.4856,SCC_4764,09:53.0,108,Y,31:44.6,SCC_Contact.csv,SCC_4907,STANDARD
-Scott Shepherd, , ,Sshepherd@phoenixpumps.com,602-232-2994,Service Center Manager,602-692-5548,SCC_4766,56:44.6,109,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Ericka Scott, , ,escott@swmetalsmiths.com,602.763.0735,Project Manager,,SCC_4767,14:20.5,110,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Accounting, , ,accountingcg@spartantruck.com,602-295-3744,Buyer,,SCC_4768,12:00.5,111,Y,31:44.6,SCC_Contact.csv,SCC_4944,STANDARD
-Leann Price, , ,leannP@ktfab.com,4804973140,A/P,,SCC_4769,37:30.6,112,Y,31:44.6,SCC_Contact.csv,SCC_4948,STANDARD
-Kory Burden, , ,NULL,4804640011,Buyer,NULL,SCC_4770,25:29.2,113,Y,31:44.6,SCC_Contact.csv,SCC_4947,STANDARD
-Ron, , ,estimating@trwsteelworks.com,602.269.1755,,,SCC_4771,NULL,114,Y,31:44.6,SCC_Contact.csv,SCC_4951,STANDARD
-Robert Rehfeld, , ,rrehfeld@swmetalsmiths.com,,Estimator,602.386.6385,SCC_4773,14:20.5,115,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Brett Churchill, , ,brettc@ktfab.com,4804973140,Buyer,6022912006,SCC_4774,37:30.6,116,Y,31:44.6,SCC_Contact.csv,SCC_4948,STANDARD
-Kirstie Robiscoe, , ,estimating@denalimetalworks.com,602.606.7658,Estimating,,SCC_4777,NULL,117,Y,31:44.6,SCC_Contact.csv,SCC_4954,STANDARD
-Tom Daniels, , ,NULL,602-232-2994,Buyer,NULL,SCC_4779,56:44.6,118,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Tyson Wines, , ,twines@swmetalsmiths.com,,Buyer,480.235.8728,SCC_4780,14:20.6,119,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Tony Zinsmeyer, , ,tonyz@castlesteelinc.com,(602) 243-2766,Buyer,NULL,SCC_4781,22:39.7,120,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-Dominic Smith, , ,dsmith@phoenixpumps.com,602-732-7301,Buyer,602-732-7301,SCC_4783,56:44.6,121,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Carena Mitchell, , ,NULL,4804640011,Buyer,NULL,SCC_4784,25:29.2,122,Y,31:44.6,SCC_Contact.csv,SCC_4947,STANDARD
-AP, , ,ap@ktfab.com,4804973140,AP,,SCC_4785,37:30.6,123,Y,31:44.6,SCC_Contact.csv,SCC_4948,STANDARD
-Jane Cook, , ,ap@laron.com,928-861-5456,AP Clerk,,SCC_4786,12:27.8,124,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-Bill Eaton, , ,beaton@laron.com,602-254-5491,Buyer,,SCC_4787,12:27.8,125,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-Russell Kennedy, , ,rkennedy@laron.com,602-281-1608,Buyer,,SCC_4788,12:27.8,126,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-Paul Cerejo, , ,paul@bajacarports.com,(925) 229-0732,Buyer,(925) 393-3571,SCC_4790,23:42.6,127,Y,31:44.6,SCC_Contact.csv,SCC_4956,STANDARD
-Tony Privitera, , ,NULL,(602) 247-4370,Buyer,NULL,SCC_4791,23:12.8,128,Y,31:44.6,SCC_Contact.csv,SCC_4890,STANDARD
-Sean Brown, , ,sean.brown@trumetalsolutions.com,602.595.7801 X207,Buyer,NULL,SCC_4792,NULL,129,Y,31:44.6,SCC_Contact.csv,SCC_4957,STANDARD
-Brien Higgins, , ,brien.higgins@sdb.com,480-967-5810,Steel Ops Mgr,602-695-8157,SCC_4793,17:19.5,130,Y,31:44.6,SCC_Contact.csv,SCC_4958,STANDARD
-Greg Brockman, , ,greg@magnumcompanies.net,602-272-3600,CEO,602.625.0690,SCC_4794,37:21.0,131,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Dan Brauche, , ,dan.brauch@oldcastle.com,,Outside Sales,480.665.6098,SCC_4796,NULL,132,Y,31:44.6,SCC_Contact.csv,SCC_4959,STANDARD
-Jeff Hannah, , ,NULL,(602) 243-2766,Buyer,NULL,SCC_4797,22:39.7,133,Y,31:44.6,SCC_Contact.csv,SCC_4891,STANDARD
-Phil Clay, , ,pclay@sedonaaz.gov,928-239-0473,Buyer,,SCC_4798,NULL,134,Y,31:44.6,SCC_Contact.csv,SCC_4960,STANDARD
-Brian Oesterreicher, , ,brian.o@rimex.com,602-272-9393,GM,602-616-1771,SCC_4800,18:46.2,135,Y,31:44.6,SCC_Contact.csv,SCC_4961,STANDARD
-Julie Oesterreicher, , ,julie.oesterreicher@rimex.com,602-272-9393,AP/AR,,SCC_4803,18:46.2,136,Y,31:44.6,SCC_Contact.csv,SCC_4961,STANDARD
-Dick Kampfen, , ,dick@simflo.com,806-777-9440,Buyer,,SCC_4804,02:37.7,137,Y,31:44.6,SCC_Contact.csv,SCC_4962,STANDARD
-Accounts Payable, , ,accountspayable@phoenixpumps.com,602-232-2994,Buyer,,SCC_4805,56:44.5,138,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Sinith, , ,,602-257-1200,Buyer,,SCC_4808,35:50.4,139,Y,31:44.6,SCC_Contact.csv,SCC_4963,STANDARD
-Chad Walker, , ,chad@metalfab-az.com,602-437-0276,Buyer,,SCC_4810,NULL,140,Y,31:44.6,SCC_Contact.csv,SCC_4964,STANDARD
-Jason, , ,jason@millinginc.com,480-964-9041,Buyer,NULL,SCC_4811,09:27.9,141,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-Val, , ,val@millinginc.com,480-964-9041,Buyer,,SCC_4812,09:27.9,142,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-Ron Ruff, , ,ron.ruff@rjruffco.com,602.278.5581,Buyer,,SCC_4813,36:37.3,143,Y,31:44.6,SCC_Contact.csv,SCC_4965,STANDARD
-ULISIES, , ,NULL,480-964-9041,Buyer,NULL,SCC_4814,09:27.9,144,Y,31:44.6,SCC_Contact.csv,SCC_4898,STANDARD
-Tim Black, , ,tim.black@giconpumps.com,623-907-8754,Buyer,,SCC_4815,NULL,145,Y,31:44.6,SCC_Contact.csv,SCC_4952,STANDARD
-Stan Wilson, , ,stanley.wilson@rogerscorp.com,480-961-8295,Project Engineer,480-540-0157,SCC_4816,46:13.8,146,Y,31:44.6,SCC_Contact.csv,SCC_4966,STANDARD
-Rod LeFrois, , ,rod.lefrois@schreiberfoods.com,480-627-8260,Facilities Maintenance,602-350-1764,SCC_4817,51:36.5,147,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-John Rimmin, , ,jcrimmin@transco-ind.com,602-999-1188,Buyer,,SCC_4818,05:37.3,148,Y,31:44.6,SCC_Contact.csv,SCC_4968,STANDARD
-Ryan Ruff, , ,ryan.ruff@rjruffco.com,602.278.5581,Buyer,,SCC_4819,36:37.4,149,Y,31:44.6,SCC_Contact.csv,SCC_4965,STANDARD
-1st Time invoice Submission, , ,rogerscorp@bottomlineidcs.com,480-961-8295,1st Time Invoice,,SCC_4820,46:13.8,150,Y,31:44.6,SCC_Contact.csv,SCC_4966,STANDARD
-All Other AP Docs, , ,corp-ap@rogersc orporation.com,480-917-6378,AP,,SCC_4821,46:13.8,151,Y,31:44.6,SCC_Contact.csv,SCC_4966,STANDARD
-Accounts Payable, , ,ap@transco-ind.com,602-999-1188,A/P,,SCC_4822,05:37.3,152,Y,31:44.6,SCC_Contact.csv,SCC_4968,STANDARD
-Rod Dominguez, , ,rdominguez@transco-ind.com,602-999-1188,Buyer,,SCC_4823,05:37.3,153,Y,31:44.6,SCC_Contact.csv,SCC_4968,STANDARD
-Anthony Prestigiacomo, , ,anthonyp@sdiamondsteel.com,602-455-4310,Buyer,,SCC_4824,51:53.7,154,Y,31:44.6,SCC_Contact.csv,SCC_4969,STANDARD
-Matt Presti, , ,mpresti@sdiamondsteel.com,602-455-4310,Buyer,,SCC_4825,51:53.7,155,Y,31:44.6,SCC_Contact.csv,SCC_4969,STANDARD
-Dave Lowenstein, , ,NULL,480-850-9123,Buyer,NULL,SCC_4826,54:39.9,156,Y,31:44.6,SCC_Contact.csv,SCC_4922,STANDARD
-Jay, , ,jay@mountainscapers.com,602-558-0058,Buyer,,SCC_4828,27:07.3,157,Y,31:44.6,SCC_Contact.csv,SCC_4902,STANDARD
-Karen, , ,karen@magnumcompanies.net,602-272-3600,A/P,,SCC_4829,37:21.0,158,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Kami McDaniel, , ,Kami.McDaniel@schuff.com,602-252-7787,Buyer,NULL,SCC_4830,09:53.0,159,Y,31:44.6,SCC_Contact.csv,SCC_4907,STANDARD
-Jason Ziance, , ,jason.ziance@graywolf.com,480-800-7539,Buyer,,SCC_4831,35:29.6,160,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Ben Santana, , ,bsantana@sdiamondsteel.com,,Vice President of Construction,602-206-3600,SCC_4832,51:53.7,161,Y,31:44.6,SCC_Contact.csv,SCC_4969,STANDARD
-Jill Bagwell, , ,jbagwell@staffordcranegroup.com,480-993-3302,Accounts Payable,,SCC_4834,29:32.1,162,Y,31:44.6,SCC_Contact.csv,SCC_4971,STANDARD
-Patrick N. Stafford, , ,admin@staffordtowercraneamerica.com,480-993-3302,President,,SCC_4835,29:32.1,163,Y,31:44.6,SCC_Contact.csv,SCC_4971,STANDARD
-Robert, , ,,623-203-0858,Buyer,,SCC_4836,29:32.1,164,Y,31:44.6,SCC_Contact.csv,SCC_4971,STANDARD
-Ric Traeger, , ,,602.320.8814,Buyer,602.320.8814,SCC_4837,NULL,165,Y,31:44.6,SCC_Contact.csv,SCC_4972,STANDARD
-Antonia, , ,asohriakoff@sdiamondsteel.com,602-455-4310,AP,,SCC_4838,51:53.7,166,Y,31:44.6,SCC_Contact.csv,SCC_4969,STANDARD
-Casey Gauthier, , ,casey@alstatesteel.com,(505)877-5454,Project Manager,NULL,SCC_4839,23:25.7,167,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Bradley Blackwell, , ,bblackwell@kellerelectrical.com,602-792-2023,Buyer,602-290-0183,SCC_4841,51:16.6,168,Y,31:44.6,SCC_Contact.csv,SCC_4973,STANDARD
-Tommy Pena, , ,,520-294-3126,Buyer,,SCC_4842,NULL,169,Y,31:44.6,SCC_Contact.csv,SCC_4974,STANDARD
-Tony Higgs, , ,tony@magnumcompanies.net,602-272-3600,Buyer,602-622-7434,SCC_4843,37:21.0,170,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Ron Alderfer, , ,ron.alderfer@cox.net,480-560-6443,President/Owner,,SCC_4844,24:09.2,171,Y,31:44.6,SCC_Contact.csv,SCC_4975,STANDARD
-James Nitti, , ,jnitti@nittibldrs.com,480-459-2010,Estimator,480-861-1468,SCC_4845,34:24.9,172,Y,31:44.6,SCC_Contact.csv,SCC_4976,STANDARD
-Jason Shano, , ,jms@ascosigns.com,602-278-8464,Buyer,480-220-5161,SCC_4848,NULL,173,Y,31:44.6,SCC_Contact.csv,SCC_4977,STANDARD
-Jim Toney, , ,JToney@swmetalsmiths.com,,Outside Sales,214-548-8273,SCC_4849,14:20.5,174,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Johanna Gow, , ,jgow@paragonpoweraz.com,602-454-0714,AP,,SCC_4850,16:52.9,175,Y,31:44.6,SCC_Contact.csv,SCC_4978,STANDARD
-Glen Hixenbaugh, , ,ghixenbaugh@paragonpoweraz.com,602-454-0714,Buyer,,SCC_4851,16:52.9,176,Y,31:44.6,SCC_Contact.csv,SCC_4978,STANDARD
-Jeff Wallis Jr, , ,jeffjr@alstatesteel.com,,President,,SCC_4852,23:25.7,177,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Laura Wallis, , ,laura@alstatesteel.com,,Accounts Payable,505-877-4711,SCC_4853,23:25.7,178,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Mike McLaws, , ,NULL,602-252-5754,Buyer,NULL,SCC_4855,09:01.2,179,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Zachary Sycks, , ,ZacharyS@P3supply.net,480-659-6304,Estimator,480-482-8503,SCC_4856,36:22.0,180,Y,31:44.6,SCC_Contact.csv,SCC_4979,STANDARD
-Kenric Freiwald, , ,kenric.freiwald@natlpump.com,623-979-3560,Buyer,,SCC_4857,55:03.5,181,Y,31:44.6,SCC_Contact.csv,SCC_4917,STANDARD
-Sean, , ,smarkoff@laron.com,602-281-1608,Buyer,602-695-0320,SCC_4859,12:27.8,182,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-NULL, , ,robert doenges,602-741-5177,NULL,NULL,SCC_4860,44:44.1,183,Y,31:44.6,SCC_Contact.csv,SCC_4980,STANDARD
-Dianne Positeri, , ,dianne@pacific-tek.com,1-800-884-5551,Buyer,,SCC_4861,59:18.2,184,Y,31:44.6,SCC_Contact.csv,SCC_4981,STANDARD
-Ellis Johnson, , ,ellis@pacific-tek.com,1-800-884-5551,President,,SCC_4862,59:18.2,185,Y,31:44.6,SCC_Contact.csv,SCC_4981,STANDARD
-Todd Whiteley, , ,toddw@pkc.com,913-356-5620,Chief Estimator,,SCC_4863,13:52.1,186,Y,31:44.6,SCC_Contact.csv,SCC_4982,STANDARD
-Marykay Reynolds, , ,mkreynolds@custompipe .com,602-276-2944,Inside sales,814-440-5344,SCC_4864,13:16.2,187,Y,31:44.6,SCC_Contact.csv,SCC_4983,STANDARD
-Mike Mathis, , ,MikeM@ktfab.com,4804973140,Buyer,NULL,SCC_4866,37:30.6,188,Y,31:44.6,SCC_Contact.csv,SCC_4948,STANDARD
-David Svancara, , ,,602-248-0808,Buyer,,SCC_4867,29:13.4,189,Y,31:44.6,SCC_Contact.csv,SCC_4984,STANDARD
-Brian Sullivan, , ,bsullivan@phoenixpumps.com,602-232-2994,Territory Development Manager,602-680-8375,SCC_4868,56:44.6,190,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Bill Clifford, , ,bclifford@haydonbc.com,602-296-1496,PM,480-387-6769,SCC_4869,42:30.4,191,Y,31:44.6,SCC_Contact.csv,SCC_4985,STANDARD
-Larry Fox, , ,larry@bad-elf.com,1-855-422-3353,VP Marketing&Business Developm,480-570-0214,SCC_4870,NULL,192,Y,31:44.6,SCC_Contact.csv,SCC_4986,STANDARD
-AP, , ,ap@cpepumps.com,480-626-5257,Buyer,,SCC_4871,53:23.7,193,Y,31:44.6,SCC_Contact.csv,SCC_4987,STANDARD
-AP, , ,az-apmail@superradiatorcoils.com; liza.celaya@supe,602-257-9708,Buyer,,SCC_4872,11:57.2,194,Y,31:44.6,SCC_Contact.csv,SCC_4988,STANDARD
-Liza Celaya, , ,liza.celaya@superradiatorcoils.com,602-257-9708,Buyer,,SCC_4873,11:57.2,195,Y,31:44.6,SCC_Contact.csv,SCC_4988,STANDARD
-Accounts Payable, , ,accountspayable.us@rimex.com,602-272-9393,AP,,SCC_4874,18:46.2,196,Y,31:44.6,SCC_Contact.csv,SCC_4961,STANDARD
-Lucas Petrie, , ,lpetrie@ttxinc.com,920-743-6568,Buyer,,SCC_4875,22:46.2,197,Y,31:44.6,SCC_Contact.csv,SCC_4989,STANDARD
-Accounts Payable, , ,ap@ttxinc.com,920-743-6568,A/P,,SCC_4876,22:46.2,198,Y,31:44.6,SCC_Contact.csv,SCC_4989,STANDARD
-Josh Hoffert, , ,jhoffert@mgccontractors.com,6024375000,Project Manager,602-309-2402,SCC_4877,NULL,199,Y,31:44.6,SCC_Contact.csv,SCC_4990,STANDARD
-John Pepe, , ,jr@swmetalsmiths.com,602-759-8240,Buyer,NULL,SCC_4878,14:20.5,200,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Virginia Parish, , ,ap@simflo.com,806-747-3411,AP,,SCC_4879,02:37.7,201,Y,31:44.6,SCC_Contact.csv,SCC_4962,STANDARD
-Derek Reynolds, , ,derek@simflo.com,806-747-3411,Buyer,,SCC_4880,02:37.7,202,Y,31:44.6,SCC_Contact.csv,SCC_4962,STANDARD
-Evan Emery, , ,evan@designbits.org,607-345-9255,Consultant,,SCC_4882,NULL,203,Y,31:44.6,SCC_Contact.csv,SCC_4992,STANDARD
-Accounts Payable, , ,payables@alstatesteel.com,505-877-5454,AP,,SCC_4883,23:25.7,204,Y,31:44.6,SCC_Contact.csv,SCC_4912,STANDARD
-Casey Horn, , ,casey.horn@nesbitts.com,480-423-7638,Project Manager,,SCC_4884,29:15.0,205,Y,31:44.6,SCC_Contact.csv,SCC_4993,STANDARD
-Ray Nitti, , ,rnitti@nittibldrs.com,480-459-2010,Owner,NULL,SCC_4885,NULL,206,Y,31:44.6,SCC_Contact.csv,SCC_4976,STANDARD
-Austin Smith, , ,austin.smith@graywolf.com,480-280-1731,Preconstruction Manager,,SCC_4887,35:29.6,207,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Sean Bahnam, , ,SBahnam@Laron.com,(800) 248-3430,NULL,(602) 695-0320,SCC_4888,09:14.1,208,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-Dan Reardon, , ,dreardon56@yahoo.com,602-448-9534,Owner,,SCC_4889,14:55.8,209,Y,31:44.6,SCC_Contact.csv,SCC_4994,STANDARD
-Zack Causer, , ,,480-398-5054,Owner,,SCC_4890,46:51.9,210,Y,31:44.6,SCC_Contact.csv,SCC_4995,STANDARD
-Tyler Stradling, , ,tyler@alloycorporation.com,480-398-5054,Project Manager,,SCC_4891,46:51.9,211,Y,31:44.6,SCC_Contact.csv,SCC_4995,STANDARD
-Rich Reed, , ,rreed@simflo.com,806-747-3411,Buyer,NULL,SCC_4892,02:37.7,212,Y,31:44.6,SCC_Contact.csv,SCC_4962,STANDARD
-Anna Tuura, , ,anna@alloycorporation.com,480-398-5054,Accounting,,SCC_4894,46:51.9,213,Y,31:44.6,SCC_Contact.csv,SCC_4995,STANDARD
-Jeff Wold, , ,jeffwold@swwc.biz,602-442-1110,Sr. Project Manager,480.599.7201,SCC_4897,58:27.7,214,Y,31:44.6,SCC_Contact.csv,SCC_4996,STANDARD
-A/P, , ,payables@swwc.biz,602-442-1110,Buyer,,SCC_4898,58:27.7,215,Y,31:44.6,SCC_Contact.csv,SCC_4996,STANDARD
-Paul Adams, , ,paul@magnumcompanies..net,602-272-3600,Buyer,602-218-1835,SCC_4899,37:21.0,216,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Jesse Resendez, , ,Jresendez@haydonbc.com,602-296-1496,Buyer,480-372-1695,SCC_4900,42:30.4,217,Y,31:44.6,SCC_Contact.csv,SCC_4985,STANDARD
-Lisa Carlson, , ,lisa@boldco.net,480-844-0996,Buyer,,SCC_4901,03:16.7,218,Y,31:44.6,SCC_Contact.csv,SCC_4998,STANDARD
-RC Coles, , ,rc.coles@phoenixstair.com,602-233-2300,Buyer,,SCC_4903,NULL,219,Y,31:44.6,SCC_Contact.csv,SCC_4999,STANDARD
-Accounts Payable, , ,ap@phillipstank.com,412-315-7963,A/P,,SCC_4904,49:13.1,220,Y,31:44.6,SCC_Contact.csv,SCC_5000,STANDARD
-Connie V. Peña, , ,cpena@haydonbc.com,602-296-1496,A/P,,SCC_4905,42:30.4,221,Y,31:44.6,SCC_Contact.csv,SCC_4985,STANDARD
-Megan Ambroziak, , ,megan@constructionproductmarketing.com,602-499-3584,Buyer,,SCC_4906,07:07.3,222,Y,31:44.6,SCC_Contact.csv,SCC_5001,STANDARD
-Duane Hager, , ,dhager@3mincarwash.com,,Owner,623-910-2670,SCC_4908,NULL,223,Y,31:44.6,SCC_Contact.csv,SCC_5002,STANDARD
-Scott Holt, , ,info@azpurecustom.com,480-277-4946,Buyer,,SCC_4909,39:13.8,224,Y,31:44.6,SCC_Contact.csv,SCC_5003,STANDARD
-Sam McFadden, , ,smcfadden@phoenixpumps.com,602-732-7301,Buyer,NULL,SCC_4914,NULL,225,Y,31:44.6,SCC_Contact.csv,SCC_4950,STANDARD
-Leonard Moreno, , ,lmoreno@morenosteel.com,602-276-9508,Owner,602-628-2486,SCC_4915,NULL,226,Y,31:44.6,SCC_Contact.csv,SCC_5004,STANDARD
-Karissa Suarez, , ,ksuarez@laron.com,(800) 248-3430,Sales,520-349-9795,SCC_4916,09:14.1,227,Y,31:44.6,SCC_Contact.csv,SCC_4955,STANDARD
-Levi Gomez, , ,levigomez@gmail.com,,Buyer,,SCC_4917,NULL,228,Y,31:44.6,SCC_Contact.csv,SCC_5005,STANDARD
-Robert Singh, , ,rsingh@wtecenergy.com,(201) 242-9906,Engineer,,SCC_4918,24:25.1,229,Y,31:44.6,SCC_Contact.csv,SCC_5006,STANDARD
-Chris Rogalski, , ,crogalski@swmetalsmiths.com,,Buyer,NULL,SCC_4919,14:20.5,230,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Robin McDowell, , ,dmcdowell@swetinc.com,602-331-0888,Buyer,602-403-1423,SCC_4921,14:11.1,231,Y,31:44.6,SCC_Contact.csv,SCC_5007,STANDARD
-Andy Tillia, , ,,602.309.4775,Buyer,6029082214,SCC_4924,NULL,232,Y,31:44.6,SCC_Contact.csv,SCC_5008,STANDARD
-Nick Farinola, , ,nfarinola@wteenergy.com,(201) 242-9906,Buyer,NULL,SCC_4926,NULL,233,Y,31:44.6,SCC_Contact.csv,SCC_5006,STANDARD
-Charlie Duran, , ,charlie@mmitank.com,602-272-6000,Buyer,480-372-1657,SCC_4927,35:00.8,234,Y,31:44.6,SCC_Contact.csv,SCC_4927,STANDARD
-Miguel Mata, , ,matam@ewcorporation.com,760-337-0020,Buyer,760-427-1836,SCC_4928,NULL,235,Y,31:44.6,SCC_Contact.csv,SCC_5012,STANDARD
-Sesilia Salinas, , ,sesilia.salinas@keller-na.com,619-443-3891,Buyer,619-873-8042,SCC_4929,48:43.3,236,Y,31:44.6,SCC_Contact.csv,SCC_5013,STANDARD
-Scott Simkins, , ,scott.simkins@phillipstank.com,412-315-7963,Buyer,,SCC_4930,NULL,237,Y,31:44.6,SCC_Contact.csv,SCC_5000,STANDARD
-Rachel Lubay, , ,rachel@archerdouglas.com,602-429-0469,Sales Director,,SCC_4931,NULL,238,Y,31:44.6,SCC_Contact.csv,SCC_5014,STANDARD
-Tessa Bennett, , ,tessa.bennett@huntercontracting.com,480-356-9387,Project Enginner,480-356-9387,SCC_4932,51:49.3,239,Y,31:44.6,SCC_Contact.csv,SCC_5015,STANDARD
-Matthew Gordon, , ,matthew.gordon@emerson.com,414-486-5044,Account Delivery Mgr,414-702-1062,SCC_4933,44:36.7,240,Y,31:44.6,SCC_Contact.csv,SCC_5016,STANDARD
-"Kevin""Cole"" Bigelow", , ,cole.bigelow@kiewit.com,720-287-9639,Buyer,720-287-9639,SCC_4934,21:43.4,241,Y,31:44.6,SCC_Contact.csv,SCC_5010,STANDARD
-Su Heus, , ,ap.vilter@emerson.com,414-744-0111,AP,,SCC_4936,NULL,242,Y,31:44.6,SCC_Contact.csv,SCC_5016,STANDARD
-Kim Rivera, , ,ap@kellerelectrical.com,602-437-3015,AP,,SCC_4937,51:16.6,243,Y,31:44.6,SCC_Contact.csv,SCC_4973,STANDARD
-Susan Almanza, , ,accountspayable@aimscompanies.com,602-331-0888,Buyer,,SCC_4938,14:11.1,244,Y,31:44.6,SCC_Contact.csv,SCC_5007,STANDARD
-CAPITAL ENGINEERING CO, , ,NULL,602-252-5754,Operations Manager,480-528-8886,SCC_4939,09:01.2,245,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Jim Tucker, , ,NULL,602-252-5754,Buyer,NULL,SCC_4940,09:01.2,246,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Dan Reardon, , ,dreardon56@yahoo.com,602-448-9534,Buyer,,SCC_4941,06:45.2,247,Y,31:44.6,SCC_Contact.csv,SCC_5011,STANDARD
-Terry Hembree, , ,terry@oltfab.com,480-213-7944,Estimator/ Project Mgr,NULL,SCC_4942,48:18.4,248,Y,31:44.6,SCC_Contact.csv,SCC_4897,STANDARD
-Victor Vidales, , ,vvidales@remax.net,602-617-8293,PRESIDENT,602-617-8293,SCC_4943,NULL,249,Y,31:44.6,SCC_Contact.csv,SCC_5017,STANDARD
-Roger Gholson, , ,roger@williamsondev.com,602-527-0432,Project Manager,,SCC_4944,45:42.2,250,Y,31:44.6,SCC_Contact.csv,SCC_5018,STANDARD
-James Hwyward, , ,James.Hayward@schreiberfoods.com,480-627-8263,Buyer,,SCC_4945,51:36.5,251,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-Aleko Tadeo, , ,alekomarie.tadeo@emerson.com,636-897-2000,Buyer,,SCC_4946,31:13.7,252,Y,31:44.6,SCC_Contact.csv,SCC_5020,STANDARD
-Accounts Payable, , ,ap.vilter@emerson.com,636-897-2000,A/P,,SCC_4947,31:13.7,253,Y,31:44.6,SCC_Contact.csv,SCC_5020,STANDARD
-William McCue, , ,William.McCue@csusa.us,480-940-8400,Account Manager,,SCC_4948,51:14.2,254,Y,31:44.6,SCC_Contact.csv,SCC_5021,STANDARD
-Accounts Payable, , ,ap@williamsondev.com,602-527-0432,A/P,,SCC_4949,NULL,255,Y,31:44.6,SCC_Contact.csv,SCC_5018,STANDARD
-Sean Wahl, , ,sean.wahl@schreiberfoods.com,480-627-8215,Accounting,480-433-2660,SCC_4952,51:36.5,256,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-Jose Castro, , ,Jose.Castro@schreiberfoods.com,480-627-8260,Facilities Maintenance,480-662-9167,SCC_4954,51:36.5,257,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-A/P, , ,Jose.Castro@;James.Hayward@schreiberfoods.com,480-627-8260,Accounts Payable,,SCC_4955,51:36.5,258,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-Brian Hartsfield, , ,bhartsfield@jensenprecast.com,602-268-0228,Sales Manager,520-719-6121,SCC_4956,18:49.1,259,Y,31:44.6,SCC_Contact.csv,SCC_5022,STANDARD
-Chris Cady, , ,ccady@silent-aire.com,480-495-9874,Buyer,,SCC_4957,03:38.0,260,Y,31:44.6,SCC_Contact.csv,SCC_5025,STANDARD
-Priscilla Miller, , ,priscilla.miller@csusa.us,480-940-8400,Project Coordinator,,SCC_4958,51:14.2,261,Y,31:44.6,SCC_Contact.csv,SCC_5021,STANDARD
-AP, , ,tcmpayables@csusa.us,480-940-8400,A/P,,SCC_4959,51:14.2,262,Y,31:44.6,SCC_Contact.csv,SCC_5021,STANDARD
-Kelly, , ,ap@capitolaz.com,602-252-5754,A/P,,SCC_4960,09:01.2,263,Y,31:44.6,SCC_Contact.csv,SCC_4900,STANDARD
-Patty, , ,patty@mmitank.com,602-272-6000,A/P,,SCC_4961,NULL,264,Y,31:44.6,SCC_Contact.csv,SCC_4927,STANDARD
-Clyde Mitchell, , ,Clyde@alliedmachineworks.com,928-965-8393,Buyer,,SCC_4962,45:06.6,265,Y,31:44.6,SCC_Contact.csv,SCC_5026,STANDARD
-Jeff, , ,jeff@grayleafstudio.com;admin@grayleafstudio.com,480-553-3941,Buyer,,SCC_4963,15:58.2,266,Y,31:44.6,SCC_Contact.csv,SCC_5028,STANDARD
-Christie Simmons, , ,Accounts.Payable@schuff.com:kristy.simmons@schuff.,602 417 8869,A/P,,SCC_4964,35:29.6,267,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Paul Campbel, , ,paul@spartantruck.com,602-295-3744,Buyer,NULL,SCC_4967,12:00.5,268,Y,31:44.6,SCC_Contact.csv,SCC_4944,STANDARD
-Wayne, , ,wayne@alliedmachineworks.com,928-965-8393,Buyer,928-322-3520,SCC_4970,45:06.6,269,Y,31:44.6,SCC_Contact.csv,SCC_5026,STANDARD
-wayne langston, , ,wayne.langston@smithpipe.com,6022449166,out side sales,602-377-7535,SCC_4973,NULL,270,Y,31:44.6,SCC_Contact.csv,SCC_5029,STANDARD
-Laura Zaremba, , ,lzaremba@buesingcorp.com,602-233-3339,A/R,,SCC_4974,29:15.3,271,Y,31:44.6,SCC_Contact.csv,SCC_5030,STANDARD
-Accounts Payable, , ,accounting@buesingcorp.com,602-233-3339,A/P,,SCC_4975,29:15.3,272,Y,31:44.6,SCC_Contact.csv,SCC_5030,STANDARD
-Monique Moore, , ,mmoore@buesingcorp.com,602-233-3339,Project Coordinator,,SCC_4976,29:15.3,273,Y,31:44.6,SCC_Contact.csv,SCC_5030,STANDARD
-Tony Dau, , ,Tony.Dau@Graywolf.com,480-892-7509,Project Coordinator,,SCC_4977,35:29.6,274,Y,31:44.6,SCC_Contact.csv,SCC_4932,STANDARD
-Todd Branton, , ,todd.branton@sreenvironmental.com,480-240-9277,Fleet Manager,,SCC_4978,46:34.0,275,Y,31:44.6,SCC_Contact.csv,SCC_5032,STANDARD
-Accounts Payable, , ,Jbolinder@jensenprecast.com,602-268-0228,A/P,,SCC_4979,18:49.1,276,Y,31:44.6,SCC_Contact.csv,SCC_5022,STANDARD
-Accounts Payable, , ,usa.ap@silent-aire.com;twoten@silent-aire.com,480-656-1239,AP,,SCC_4982,03:38.0,277,Y,31:44.6,SCC_Contact.csv,SCC_5025,STANDARD
-Yin Boyer, , ,yboyer@silent-aire.com,480-495-9874,Sr. Purchaser,,SCC_4983,03:38.0,278,Y,31:44.6,SCC_Contact.csv,SCC_5025,STANDARD
-Invoices payment, , ,invoicesusapo@schreiberfoods.com,,Accounting,,SCC_4985,51:36.5,279,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-Accounts Payable, , ,5DFinance@5dmining.com,928-425-2998,A/P,,SCC_4987,34:01.6,280,Y,31:44.6,SCC_Contact.csv,SCC_5033,STANDARD
-Valrie Bejarano, , ,Valrie@5dmining.com,928-425-2998,Buyer,,SCC_4988,34:01.6,281,Y,31:44.6,SCC_Contact.csv,SCC_5033,STANDARD
-Rudy Cabanillas, , ,Rudy@5dmining.com,928-425-2998,Buyer,,SCC_4989,34:01.6,282,Y,31:44.6,SCC_Contact.csv,SCC_5033,STANDARD
-Dale Owens, , ,dale@magnumcompanies.net,602-272-3600,Buyer,NULL,SCC_4990,37:21.0,283,Y,31:44.6,SCC_Contact.csv,SCC_4949,STANDARD
-Marco Torres, , ,marco.torres@schuff.com,602-416-7739,Invoice Inquiries,,SCC_4992,09:53.0,284,Y,31:44.6,SCC_Contact.csv,SCC_4907,STANDARD
-Nigel Knoy, , ,,928-777-0099,Buyer,,SCC_4993,NULL,285,Y,31:44.6,SCC_Contact.csv,SCC_5034,STANDARD
-Ty Brady, , ,ty@summitprocesssystems.com,480-855-7494,PM,,SCC_4995,52:02.9,286,Y,31:44.6,SCC_Contact.csv,SCC_5035,STANDARD
-Stacy Brady, , ,stacy@summitprocesssystems.com,480-855-7494,Buyer,,SCC_4996,52:02.7,287,Y,31:44.6,SCC_Contact.csv,SCC_5035,STANDARD
-Ryan Schuff, , ,ryan@stellar-steel.com,602.723.6391,Buyer,602.723.6391,SCC_4997,55:08.2,288,Y,31:44.6,SCC_Contact.csv,SCC_5036,STANDARD
-Shane Murray, , ,Shane@accutite.com,714-679-6461,Buyer,,SCC_4998,NULL,289,Y,31:44.6,SCC_Contact.csv,SCC_5037,STANDARD
-Accounts Payable, , ,payables@sreenvironmental.com,480-240-9277,A/P,,SCC_4999,46:33.9,290,Y,31:44.6,SCC_Contact.csv,SCC_5032,STANDARD
-Barry Green, , ,bgreen@apmi2.com,480-668-0024,Estimating Manager,,SCC_5000,NULL,291,Y,31:44.6,SCC_Contact.csv,SCC_5038,STANDARD
-Gareth Low, , ,gareth.low@silent-aire.com,480-656-1239,Buyer,NULL,SCC_5001,03:38.0,292,Y,31:44.6,SCC_Contact.csv,SCC_5025,STANDARD
-Mark Smith, , ,mark.smith@schreiberfoods.com,480-627-8216,Facilities Maintenance,,SCC_5002,51:36.5,293,Y,31:44.6,SCC_Contact.csv,SCC_4967,STANDARD
-Matt Howard, , ,MattH@shsteelaz.com,480-926-6062,Buyer,,SCC_5004,39:10.4,294,Y,31:44.6,SCC_Contact.csv,SCC_5039,STANDARD
-Robin White, , ,rwhite@dnlfab.com,623-628-0308,PM,,SCC_5006,09:13.0,295,Y,31:44.6,SCC_Contact.csv,SCC_5040,STANDARD
-Israel, , ,,623-518-4285,Buyer,,SCC_5009,41:57.4,296,Y,31:44.6,SCC_Contact.csv,SCC_5041,STANDARD
-Becky Hentschel, , ,acctspayable@inproduction.net,480-433-1158,A/P,,SCC_5010,31:49.2,297,Y,31:44.6,SCC_Contact.csv,SCC_5042,STANDARD
-Jonathan Jones, , ,jjones@inproduction.net,480-433-1158,VP,804-389-5758,SCC_5011,31:49.2,298,Y,31:44.6,SCC_Contact.csv,SCC_5042,STANDARD
-Chri Garcia, , ,christopherj.garcia-us pipe.com,602-352-2222,Diector,,SCC_5012,NULL,299,Y,31:44.6,SCC_Contact.csv,SCC_5043,STANDARD
-Charles Gregg, , ,charles.gregg@us-pipe.com;uspf-accounting@uspipefa,602-654-1360,Buyer,,SCC_5013,45:40.7,300,Y,31:44.6,SCC_Contact.csv,SCC_5044,STANDARD
-Vince, , ,vince@havanashade.com,480-229-0080,Buyer,,SCC_5014,NULL,301,Y,31:44.6,SCC_Contact.csv,SCC_5045,STANDARD
-Marina Canellas, , ,canellas@dennisgroup,413 787 2223,PM,,SCC_5015,NULL,302,Y,31:44.6,SCC_Contact.csv,SCC_5046,STANDARD
-Tina, , ,twoteb@silent-aire.com,4806561239,AP,,SCC_5018,03:38.0,303,Y,31:44.6,SCC_Contact.csv,SCC_5025,STANDARD
-Matt Howard, , ,matth@atmphx.com,623.582.3900,Project Manager,602-989-7288,SCC_5023,25:42.6,304,Y,31:44.6,SCC_Contact.csv,SCC_5048,STANDARD
-ROBERT Derango, , ,RDERANGO@AZDPS.GOV,6023164855,EOD,,SCC_5024,01:00.7,305,Y,31:44.6,SCC_Contact.csv,SCC_5049,STANDARD
-Rich Reed, , ,rreed@smythindustries.com,520.750.8719,Project Manager,520.269.1963,SCC_5025,NULL,306,Y,31:44.6,SCC_Contact.csv,SCC_5050,STANDARD
-Accounts Payable, , ,Finance@ATMphx.com,623.582.3900,A/P,,SCC_5026,25:42.6,307,Y,31:44.6,SCC_Contact.csv,SCC_5048,STANDARD
-steve Hamilton, , ,steve.hamilton@surpriseaz.gov,731-267-6621,Buyer,,SCC_5027,NULL,308,Y,31:44.6,SCC_Contact.csv,SCC_5051,STANDARD
-Accounts Payable, , ,ap@huntercontracting.com,480-356-9387,A/P,,SCC_5028,51:49.2,309,Y,31:44.6,SCC_Contact.csv,SCC_5015,STANDARD
-Victor, , ,,602-367-4454,Buyer,,SCC_5029,NULL,310,Y,31:44.6,SCC_Contact.csv,SCC_5052,STANDARD
-Denisse, , ,denisse@moralesartisticiron.com,602-367-4454,Buyer,,SCC_5030,NULL,311,Y,31:44.6,SCC_Contact.csv,SCC_5052,STANDARD
-Doug Oland, , ,doug.oland@phoenix.gov,602-561-2023,Collections,,SCC_5031,NULL,312,Y,31:44.6,SCC_Contact.csv,SCC_5053,STANDARD
-Dusty Angle, , ,dangle@dngllc.com,480-361-9137,Project Coordinator,,SCC_5032,24:03.1,313,Y,31:44.6,SCC_Contact.csv,SCC_5054,STANDARD
-Dean schneider, , ,dean@alumaline.com,480-926-3831,Buyer,,SCC_5033,08:29.2,314,Y,31:44.6,SCC_Contact.csv,SCC_5055,STANDARD
-Thomas Haberny, , ,thaberny@swmetalsmiths.com,602-759-8260,Estimator,513-348-2247,SCC_5034,14:20.5,315,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Alan Swift, , ,alans@fullcirclewater.com,858-672-7508,Buyer,858-395-4744,SCC_5036,40:46.6,316,Y,31:44.6,SCC_Contact.csv,SCC_5057,STANDARD
-Lance, , ,lancee@Fullcirclewater.com,858-672-7508,Buyer,,SCC_5037,40:46.6,317,Y,31:44.6,SCC_Contact.csv,SCC_5057,STANDARD
-Ron Schneider, , ,ron@alumaline.com,480-926-3831,President,,SCC_5039,08:29.2,318,Y,31:44.6,SCC_Contact.csv,SCC_5055,STANDARD
-Julie Shuey, , ,jshuey@swmetalsmiths.com,,Buyer,NULL,SCC_5040,NULL,319,Y,31:44.6,SCC_Contact.csv,SCC_4899,STANDARD
-Patrice Minetta, , ,pminetta@dngllc.com,480-361-9137,Controller,,SCC_5041,24:03.1,320,Y,31:44.6,SCC_Contact.csv,SCC_5054,STANDARD
-Accounts Payable, , ,subbillings@dngllc.com,480-361-9137,A/P,,SCC_5042,24:03.1,321,Y,31:44.6,SCC_Contact.csv,SCC_5054,STANDARD
-Roy Hunt, , ,royh@dm-fab.com,480-851-2681,pm,,SCC_5043,30:34.5,322,Y,31:44.6,SCC_Contact.csv,SCC_5058,STANDARD
+﻿,Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
+0,J, , ,jtackett@currierinc.com,(602) 247-4370,Buyer,,SCC_4575,2023-04-03,1,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+1,Amalia Arvizu, , ,rtrojan@castlesteelinc.com,(602) 243-2766,,,SCC_4576,2023-04-03,2,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+2,Kelly, , ,kschwein@paysonaz.gov,928-472-5104,Buyer,,SCC_4579,2018-07-26,3,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4892,CUSTOM
+3,Kody Koebensky, , ,Kkoebensky@currierinc.com,(602) 247-4370,Buyer,602-859-5902,SCC_4580,2023-04-03,4,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+4,Jamie Scallion, , ,jscallion@ppsphx.com,602-497-4997,AP,,SCC_4581,2022-05-12,5,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+5,Blake Ebner, , ,blakee@fpfind.com,602-437-0006,Buyer,562-667-7714,SCC_4582,2018-09-26,6,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4894,CUSTOM
+6,Eric, , ,ericl@pioneerequip.com,602-437-4312,Buyer,,SCC_4583,2018-09-17,7,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4895,CUSTOM
+7,Jon Mrock, , ,Jon.mrock@fmdfs.com,(602) 368-9379,Purchasing,,SCC_4584,2018-07-31,8,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4896,CUSTOM
+8,Melissa, , ,AP@fmdfs.com,(602) 368-9379,AP,,SCC_4585,2018-07-31,9,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4896,CUSTOM
+9,Dusty Pinckard-, , ,dusty@millinginc.com,480-964-9041,Buyer,,SCC_4586,2023-04-11,10,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+10,Jay Leavitt, , ,jay@millinginc.com,480-964-9041,Buyer,,SCC_4587,2023-04-11,11,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+11,Accounts Payable, , ,accountspayable@swmetalsmiths.com,602.438.8577,Buyer,,SCC_4588,2023-03-20,12,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+12,Maxine, , ,maxine@capitolengineering.org,602-252-5754,Buyer,,SCC_4589,2023-04-11,13,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+13,Niki Richins, , ,nikirichins@copperstateinc.com,420.751.6388  EX 103,Buyer,,SCC_4590,2023-04-03,14,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4901,CUSTOM
+14,Tommy Thomas, , ,tommyt@ppsphx.com,602-497-4997,Buyer,602-432-7872,SCC_4591,2022-05-12,15,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+15,Greg Rath, , ,,602-276-4841,Owner,(602) 571-1511,SCC_4592,2021-09-29,16,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4897,CUSTOM
+16,Lisa, , ,lisa@oltfab.com,602-276 4841,AP,,SCC_4593,2021-09-29,17,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4897,CUSTOM
+17,Shannon, , ,shannon@oltfab.com,602-276 4841,Buyer,,SCC_4594,2021-09-29,18,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4897,CUSTOM
+18,Amalia Arvizu, , ,aariviz@castlesteelinc.com,(602) 243-2766,,,SCC_4596,2023-04-03,19,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+19,Accounts Payable, , ,ap@ppsphx.com,602-497-4997,A/P,,SCC_4597,2022-05-12,20,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+20,Madison Mellman, , ,ap@currierinc.com,(602) 247-4370,AP,,SCC_4598,2023-04-03,21,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+21,Eric Johnson, , ,ejohnson@ppsphx.com,602-497-4997,Buyer,602-510-2638,SCC_4599,2022-05-12,22,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+22,Connie Huston, , ,ap@mmiindustrial.com,480-964-9041,Buyer,,SCC_4601,2023-04-11,23,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+23,sean, , ,sean@mountainscapers.com,602-626-4050,Buyer,,SCC_4604,2020-07-03,24,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4902,CUSTOM
+24,Michael, , ,mfoley@castlesteelinc.com,(602) 243-2766,,,SCC_4605,2023-04-03,25,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+25,John Moschinger, , ,jmmoschinger@pcl.com;MAlvarado@pcl.com,602-799-3597,Buyer,,SCC_4609,2019-10-17,26,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4904,CUSTOM
+26,Damian Budka, , ,damian@ppsphx.com,602-497-4997,Buyer,,SCC_4610,2022-05-12,27,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+27,accounts Payable, , ,accountspayable@talis.us,480-557-6100,Buyer,,SCC_4613,2022-02-02,28,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4906,CUSTOM
+28,Jim Tackett, , ,jtackett@currierinc.com,,Buyer,,SCC_4615,2023-04-03,29,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+29,Toni Bingham, , ,tonib@fpfind.com,602-437-0006,Buyer,480-319-4910,SCC_4616,,30,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4894,CUSTOM
+30,Gordon Bayes, , ,gordon.bayes@separationbydesign.com,812-424-1239,Buyer,812-569-0987,SCC_4617,2019-01-18,31,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4909,CUSTOM
+31,Accounts Payable, , ,accountspayable@separationbydesign.com,812-424-1239,A/P,,SCC_4618,2019-01-18,32,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4909,CUSTOM
+32,Koen Black, , ,Koen.Black@gcinc.com,602-345-8600,Engineer,,SCC_4619,,33,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4910,CUSTOM
+33,Maria Alvarado@pcl.com, , ,MAlvarado@pcl.com,602-799-3597,Buyer,,SCC_4621,2019-10-17,34,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4904,CUSTOM
+34,ap, , ,invoicing@castlesteelinc.com,(602) 243-2766,Buyer,,SCC_4623,2023-04-03,35,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+35,Richard, , ,Richardholmessr@advancedmetalsales.com,623-434-8343,Buyer,602-680-9942,SCC_4624,2022-02-02,36,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4908,CUSTOM
+36,Jeff, , ,jeff@ppsphx.com,602-497-4997,Buyer,,SCC_4625,2022-05-12,37,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+37,Mike Hennesy, , ,Mike@hennesymech.com,602-757-6108,Buyer,,SCC_4626,,38,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4911,CUSTOM
+38,A/P, , ,accounts.payable@schuff.com,602 452 4476,Accounts Payable,,SCC_4629,2023-04-11,39,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4907,CUSTOM
+39,John Gray, , ,John@alstatesteel.com,602-699-6500,Buyer,505-681-5856,SCC_4633,2023-04-03,40,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+40,A/P, , ,admin@tenshon.com,480.663.3166,Buyer,,SCC_4636,2019-01-16,41,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4914,CUSTOM
+41,Cullin Howard, , ,choward@tenshon.com,480.663.3166,Buyer,,SCC_4637,2019-01-16,42,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4914,CUSTOM
+42,Matthew Dickerson, , ,mdickerson@tenshon.com,480.663.3166,President/ A/P,,SCC_4638,2019-01-16,43,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4914,CUSTOM
+43,JOE, , ,JOE@YJDRILLING.COM,602-453-3252,Buyer,,SCC_4639,2022-06-16,44,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4915,CUSTOM
+44,Cassidy Ludwig, , ,AP@YJDRILLING.COM,602-453-3252,ap,,SCC_4640,2022-06-16,45,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4915,CUSTOM
+45,AP, , ,AP@DESERTPOWDER.COM,602-253-7875,Buyer,,SCC_4641,2023-04-04,46,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4916,CUSTOM
+46,Andrew Dewar, , ,AndrewD@natlpump.com,623-979-3560,Buyer,,SCC_4643,2020-05-13,47,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4917,CUSTOM
+47,Larry Chapman, , ,larryc@natlpump.com,623-979-3560,Buyer,,SCC_4644,2020-05-13,48,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4917,CUSTOM
+48,David Donovan, , ,ddonovan@pumpsystemsaz.com,480-545-8484,Buyer,,SCC_4650,2019-05-22,49,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4918,CUSTOM
+49,Kurt Kauffman, , ,4kpaintingandtrim@gmail.com,602-694-0996,Owner,,SCC_4651,2018-12-11,50,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4919,CUSTOM
+50,John Lockett, , ,jlockett@pumpsystemsaz.com,480-545-8484,Buyer,,SCC_4652,2019-05-22,51,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4918,CUSTOM
+51,Stephanie Thomas, , ,SThomas@pumpsystemsaz.com,480-545-8484,A/P,,SCC_4653,2019-05-22,52,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4918,CUSTOM
+52,A/P, , ,accountspayable@copperstateinc.com,420.751.6388  EX 103,A/P,,SCC_4654,2023-04-03,53,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4901,CUSTOM
+53,Laremy Janecek, , ,,602-718-3291,Buyer,,SCC_4656,,54,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4920,CUSTOM
+54,Clint Scott, , ,clintscott@advancedmetalsales.com,623-434-8343,Buyer,,SCC_4657,2022-02-02,55,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4908,CUSTOM
+55,Chris Wallis, , ,chris@alstatesteel.com,,Buyer,505-997-6649,SCC_4659,2023-04-03,56,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+56,Jeff Baker, , ,jbaker@ppsphx.com,602-497-4997,Buyer,,SCC_4660,2022-05-12,57,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+57,Caitlin Gauthier, , ,caitlin@alstatesteel.com,,A/P,,SCC_4661,2023-04-03,58,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+58,Karl, , ,ap@agateinc.com,480-994-9455,Buyer,,SCC_4663,2020-04-27,59,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4922,CUSTOM
+59,Anthony Renteria, , ,anthony.renteria@natlpump.com,623-979-3560,Buyer,,SCC_4664,2020-05-13,60,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4917,CUSTOM
+60,Eric Loring, , ,ejl@jchinc.com,602-243-0585,Engineer,480-695-9972,SCC_4665,,61,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4923,CUSTOM
+61,A/P, , ,CSWinvoices@pcl.com,602-799-3597,Accounts Payable,,SCC_4670,2019-10-17,62,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4904,CUSTOM
+62,Nathan Piche, , ,n.piche@tristaraz.com,602-252-0554,Buyer,,SCC_4678,,63,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4924,CUSTOM
+63,Melissa, , ,ap@oag-ps.com,602-368-2010,Buyer,,SCC_4689,2019-03-13,64,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4925,CUSTOM
+64,John Heiken, , ,John.Heiken@BGI.email,480-248-7635,Buyer,,SCC_4691,2019-08-28,65,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4926,CUSTOM
+65,Jim Stieben, , ,JimS@mmitank.com,602-272-6000,Buyer,,SCC_4693,2021-11-29,66,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4927,CUSTOM
+66,Drew Reading, , ,dreading@currierinc.com,,Project Engineer,,SCC_4694,2023-04-03,67,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+67,Chris Henderson, , ,chris.henderson@rollingplains.com,480-688-7297,Buyer,,SCC_4696,2019-10-17,68,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4928,CUSTOM
+68,A/P, , ,ap@rollingsplains.com,480-688-7297,Buyer,480-895-8813,SCC_4697,2019-10-17,69,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4928,CUSTOM
+69,Chris Shippy, , ,chris@rollingplains.com,480-895-8813,Buyer,,SCC_4698,2019-10-17,70,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4928,CUSTOM
+70,Lori Brady, , ,ap@agateinc.com,480-850-9123,AP,,SCC_4702,2020-04-27,71,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4922,CUSTOM
+71,Ed LaFontaine, , ,ed@bungersteel.com,623-936-7181,Purchasing Manager,602-828-3026,SCC_4703,,72,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4930,CUSTOM
+72,Jim Cloughessy, , ,Jim.Cloughessy@graywolf.com,480-892-4257,Project Manager,602-527-3373,SCC_4704,2023-04-12,73,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+73,Tom Morris, , ,Tom.Morris@graywolf.com,480-718-2564,Senior PM,480-318-2175,SCC_4705,2023-04-12,74,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+74,Victor Valencia, , ,vic@vicswelding.com,623-925-5696,Owner,602-525-4804,SCC_4706,,75,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4934,CUSTOM
+75,David Cooper, , ,dave@mmitank.com,602-272-6000,A/P,,SCC_4707,2021-11-29,76,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4927,CUSTOM
+76,Accounts Payable, , ,ap@mmitank.com,602-272-6000,A/P,,SCC_4708,2021-11-29,77,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4927,CUSTOM
+77,Greg Sprinkle, , ,gregsprinkle@hotmail.com,480-993-8999,President,,SCC_4709,2021-01-13,78,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4931,CUSTOM
+78,Chad Kauffman, , ,chad@indinspect.com,480-993-8999,,,SCC_4710,2021-01-13,79,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4931,CUSTOM
+79,Freddy Beltran, , ,fbeltran@ablesteel.com,480-830-2253,Buyer,,SCC_4712,2019-10-17,80,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4935,CUSTOM
+80,C. Clark, , ,cyclark@ablesteel.com,480-830-2253,Buyer,,SCC_4713,2019-10-17,81,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4935,CUSTOM
+81,Rick Kratz, , ,rick@rmrfab.com,602-695-0174,Buyer,,SCC_4714,,82,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4936,CUSTOM
+82,Kurt Ratsch, , ,kurt@alstatesteel.com,,Buyer,,SCC_4715,2023-04-03,83,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+83,Carlo Apodaca, , ,,480-545-8484,Buyer,,SCC_4716,2019-05-22,84,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4918,CUSTOM
+84,Carlo Apodaca, , ,capodaca@pumpsystemsaz.com,480-545-8484,Buyer,,SCC_4717,,85,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4918,CUSTOM
+85,Terry Hembree, , ,terry@allmetalsaz.com,602-689-8248,Buyer,,SCC_4718,,86,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4937,CUSTOM
+86,David Melberg, , ,david.mellberg@schuff.com,602-452-4426,AP Clerk,,SCC_4720,2023-04-12,87,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+87,Teddy Rumzek, , ,teddy@ppsphx.com,602-497-4997,Buyer,,SCC_4721,2022-05-12,88,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4893,CUSTOM
+88,Thomas, , ,,420.751.6388  EX 103,Buyer,,SCC_4725,2023-04-03,89,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4901,CUSTOM
+89,Joe Aggas, , ,,602-252-5754,Buyer,,SCC_4726,2023-04-11,90,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+90,Craig Rucker, , ,,,Buyer,,SCC_4727,2019-08-28,91,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4926,CUSTOM
+91,James HArt, , ,James.Hart@aco.com,520-421-9968,Estimator,,SCC_4734,,92,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4938,CUSTOM
+92,Bryan McGann, , ,Bryan.McGann@graywolf.com,602-452-4426,Buyer,,SCC_4736,2023-04-12,93,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+93,Kent Carpenter, , ,kcarpenter@trustopinc.com,602-323-9125,Buyer,,SCC_4746,2021-09-30,94,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4939,CUSTOM
+94,A/P, , ,apinvoices@trustopinc.com,602-323-9125,Accounts Payable,,SCC_4747,2021-09-30,95,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4939,CUSTOM
+95,Larry Lynch, , ,larry@ensolutions.us,,Buyer,,SCC_4748,2019-11-26,96,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4941,CUSTOM
+96,Cindy Argyle, , ,ap@bgi.email,480-248-7635,AP,,SCC_4749,,97,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4926,CUSTOM
+97,Ryan Gamboa, , ,ryan@spartantruck.com,602-295-3744,Engineering Manager,,SCC_4750,2022-10-04,98,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4944,CUSTOM
+98,Tony Boulos, , ,michelle@fireupfreedom.com,602-721-3911,Buyer,,SCC_4751,2019-09-27,99,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4946,CUSTOM
+99,Jason Evahnenko, , ,jasone@felixconstruction.com,4804640011,Sr Project Manager,6024633547,SCC_4752,2020-09-15,100,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4947,CUSTOM
+100,Frank Natividad, , ,FNatividad@swmetalsmiths.com,602.438.8577,Assistant Project Manager,480.347.7724,SCC_4753,2023-03-20,101,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+101,Michael Wolfe, , ,mikeW@ktfab.com,4804973140,Buyer,,SCC_4754,2020-08-04,102,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4948,CUSTOM
+102,Tom White, , ,Tom.Wright@graywolf.com,602-452-4426,Buyer,,SCC_4755,2023-04-12,103,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+103,Dennis O'Leary, , ,doleary@swmetalsmiths.com,602-759-8227,Buyer,480-621-1376,SCC_4759,2023-03-20,104,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+104,Tom Puckett, , ,tom@magnumcompanies.net,602-272-3600,Buyer,602.622.7434,SCC_4760,2023-01-03,105,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+105,Accounts Payable, , ,ap@felixconstruction.com,4804640011,Accounts Payable,,SCC_4761,2020-09-15,106,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4947,CUSTOM
+106,Ankush Kumar, , ,akumar@trustopinc.com,,Mechanical Engineer,480.719.9269,SCC_4763,2021-09-30,107,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4939,CUSTOM
+107,Spencer Nield, , ,spencer.nield@schuff.com,602-252-7787,Sr Project Manager,602.377.4856,SCC_4764,2023-04-11,108,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4907,CUSTOM
+108,Scott Shepherd, , ,Sshepherd@phoenixpumps.com,602-232-2994,Service Center Manager,602-692-5548,SCC_4766,2021-03-15,109,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+109,Ericka Scott, , ,escott@swmetalsmiths.com,602.763.0735,Project Manager,,SCC_4767,2023-03-20,110,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+110,Accounting, , ,accountingcg@spartantruck.com,602-295-3744,Buyer,,SCC_4768,2022-10-04,111,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4944,CUSTOM
+111,Leann Price, , ,leannP@ktfab.com,4804973140,A/P,,SCC_4769,2020-08-04,112,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4948,CUSTOM
+112,Kory Burden, , ,,4804640011,Buyer,,SCC_4770,2020-09-15,113,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4947,CUSTOM
+113,Ron, , ,estimating@trwsteelworks.com,602.269.1755,,,SCC_4771,,114,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4951,CUSTOM
+114,Robert Rehfeld, , ,rrehfeld@swmetalsmiths.com,,Estimator,602.386.6385,SCC_4773,2023-03-20,115,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+115,Brett Churchill, , ,brettc@ktfab.com,4804973140,Buyer,6022912006,SCC_4774,2020-08-04,116,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4948,CUSTOM
+116,Kirstie Robiscoe, , ,estimating@denalimetalworks.com,602.606.7658,Estimating,,SCC_4777,,117,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4954,CUSTOM
+117,Tom Daniels, , ,,602-232-2994,Buyer,,SCC_4779,2021-03-15,118,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+118,Tyson Wines, , ,twines@swmetalsmiths.com,,Buyer,480.235.8728,SCC_4780,2023-03-20,119,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+119,Tony Zinsmeyer, , ,tonyz@castlesteelinc.com,(602) 243-2766,Buyer,,SCC_4781,2023-04-03,120,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+120,Dominic Smith, , ,dsmith@phoenixpumps.com,602-732-7301,Buyer,602-732-7301,SCC_4783,2021-03-15,121,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+121,Carena Mitchell, , ,,4804640011,Buyer,,SCC_4784,2020-09-15,122,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4947,CUSTOM
+122,AP, , ,ap@ktfab.com,4804973140,AP,,SCC_4785,2020-08-04,123,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4948,CUSTOM
+123,Jane Cook, , ,ap@laron.com,928-861-5456,AP Clerk,,SCC_4786,2020-05-20,124,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+124,Bill Eaton, , ,beaton@laron.com,602-254-5491,Buyer,,SCC_4787,2020-05-20,125,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+125,Russell Kennedy, , ,rkennedy@laron.com,602-281-1608,Buyer,,SCC_4788,2020-05-20,126,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+126,Paul Cerejo, , ,paul@bajacarports.com,(925) 229-0732,Buyer,(925) 393-3571,SCC_4790,2019-12-04,127,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4956,CUSTOM
+127,Tony Privitera, , ,,(602) 247-4370,Buyer,,SCC_4791,2023-04-03,128,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4890,CUSTOM
+128,Sean Brown, , ,sean.brown@trumetalsolutions.com,602.595.7801 X207,Buyer,,SCC_4792,,129,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4957,CUSTOM
+129,Brien Higgins, , ,brien.higgins@sdb.com,480-967-5810,Steel Ops Mgr,602-695-8157,SCC_4793,2019-12-17,130,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4958,CUSTOM
+130,Greg Brockman, , ,greg@magnumcompanies.net,602-272-3600,CEO,602.625.0690,SCC_4794,2023-01-03,131,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+131,Dan Brauche, , ,dan.brauch@oldcastle.com,,Outside Sales,480.665.6098,SCC_4796,,132,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4959,CUSTOM
+132,Jeff Hannah, , ,,(602) 243-2766,Buyer,,SCC_4797,2023-04-03,133,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4891,CUSTOM
+133,Phil Clay, , ,pclay@sedonaaz.gov,928-239-0473,Buyer,,SCC_4798,,134,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4960,CUSTOM
+134,Brian Oesterreicher, , ,brian.o@rimex.com,602-272-9393,GM,602-616-1771,SCC_4800,2022-11-22,135,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4961,CUSTOM
+135,Julie Oesterreicher, , ,julie.oesterreicher@rimex.com,602-272-9393,AP/AR,,SCC_4803,2022-11-22,136,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4961,CUSTOM
+136,Dick Kampfen, , ,dick@simflo.com,806-777-9440,Buyer,,SCC_4804,2022-12-12,137,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4962,CUSTOM
+137,Accounts Payable, , ,accountspayable@phoenixpumps.com,602-232-2994,Buyer,,SCC_4805,2021-03-15,138,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+138,Sinith, , ,,602-257-1200,Buyer,,SCC_4808,2020-01-31,139,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4963,CUSTOM
+139,Chad Walker, , ,chad@metalfab-az.com,602-437-0276,Buyer,,SCC_4810,,140,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4964,CUSTOM
+140,Jason, , ,jason@millinginc.com,480-964-9041,Buyer,,SCC_4811,2023-04-11,141,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+141,Val, , ,val@millinginc.com,480-964-9041,Buyer,,SCC_4812,2023-04-11,142,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+142,Ron Ruff, , ,ron.ruff@rjruffco.com,602.278.5581,Buyer,,SCC_4813,2020-09-29,143,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4965,CUSTOM
+143,ULISIES, , ,,480-964-9041,Buyer,,SCC_4814,2023-04-11,144,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4898,CUSTOM
+144,Tim Black, , ,tim.black@giconpumps.com,623-907-8754,Buyer,,SCC_4815,,145,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4952,CUSTOM
+145,Stan Wilson, , ,stanley.wilson@rogerscorp.com,480-961-8295,Project Engineer,480-540-0157,SCC_4816,2020-03-10,146,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4966,CUSTOM
+146,Rod LeFrois, , ,rod.lefrois@schreiberfoods.com,480-627-8260,Facilities Maintenance,602-350-1764,SCC_4817,2023-04-13,147,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+147,John Rimmin, , ,jcrimmin@transco-ind.com,602-999-1188,Buyer,,SCC_4818,2020-08-18,148,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4968,CUSTOM
+148,Ryan Ruff, , ,ryan.ruff@rjruffco.com,602.278.5581,Buyer,,SCC_4819,2020-09-29,149,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4965,CUSTOM
+149,1st Time invoice Submission, , ,rogerscorp@bottomlineidcs.com,480-961-8295,1st Time Invoice,,SCC_4820,2020-03-10,150,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4966,CUSTOM
+150,All Other AP Docs, , ,corp-ap@rogersc orporation.com,480-917-6378,AP,,SCC_4821,2020-03-10,151,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4966,CUSTOM
+151,Accounts Payable, , ,ap@transco-ind.com,602-999-1188,A/P,,SCC_4822,2020-08-18,152,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4968,CUSTOM
+152,Rod Dominguez, , ,rdominguez@transco-ind.com,602-999-1188,Buyer,,SCC_4823,2020-08-18,153,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4968,CUSTOM
+153,Anthony Prestigiacomo, , ,anthonyp@sdiamondsteel.com,602-455-4310,Buyer,,SCC_4824,2023-03-14,154,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4969,CUSTOM
+154,Matt Presti, , ,mpresti@sdiamondsteel.com,602-455-4310,Buyer,,SCC_4825,2023-03-14,155,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4969,CUSTOM
+155,Dave Lowenstein, , ,,480-850-9123,Buyer,,SCC_4826,2020-04-27,156,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4922,CUSTOM
+156,Jay, , ,jay@mountainscapers.com,602-558-0058,Buyer,,SCC_4828,2020-07-03,157,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4902,CUSTOM
+157,Karen, , ,karen@magnumcompanies.net,602-272-3600,A/P,,SCC_4829,2023-01-03,158,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+158,Kami McDaniel, , ,Kami.McDaniel@schuff.com,602-252-7787,Buyer,,SCC_4830,2023-04-11,159,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4907,CUSTOM
+159,Jason Ziance, , ,jason.ziance@graywolf.com,480-800-7539,Buyer,,SCC_4831,2023-04-12,160,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+160,Ben Santana, , ,bsantana@sdiamondsteel.com,,Vice President of Construction,602-206-3600,SCC_4832,2023-03-14,161,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4969,CUSTOM
+161,Jill Bagwell, , ,jbagwell@staffordcranegroup.com,480-993-3302,Accounts Payable,,SCC_4834,2020-05-12,162,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4971,CUSTOM
+162,Patrick N. Stafford, , ,admin@staffordtowercraneamerica.com,480-993-3302,President,,SCC_4835,2020-05-12,163,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4971,CUSTOM
+163,Robert, , ,,623-203-0858,Buyer,,SCC_4836,2020-05-12,164,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4971,CUSTOM
+164,Ric Traeger, , ,,602.320.8814,Buyer,602.320.8814,SCC_4837,,165,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4972,CUSTOM
+165,Antonia, , ,asohriakoff@sdiamondsteel.com,602-455-4310,AP,,SCC_4838,2023-03-14,166,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4969,CUSTOM
+166,Casey Gauthier, , ,casey@alstatesteel.com,(505)877-5454,Project Manager,,SCC_4839,2023-04-03,167,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+167,Bradley Blackwell, , ,bblackwell@kellerelectrical.com,602-792-2023,Buyer,602-290-0183,SCC_4841,2023-03-14,168,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4973,CUSTOM
+168,Tommy Pena, , ,,520-294-3126,Buyer,,SCC_4842,,169,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4974,CUSTOM
+169,Tony Higgs, , ,tony@magnumcompanies.net,602-272-3600,Buyer,602-622-7434,SCC_4843,2023-01-03,170,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+170,Ron Alderfer, , ,ron.alderfer@cox.net,480-560-6443,President/Owner,,SCC_4844,2023-02-15,171,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4975,CUSTOM
+171,James Nitti, , ,jnitti@nittibldrs.com,480-459-2010,Estimator,480-861-1468,SCC_4845,2020-09-03,172,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4976,CUSTOM
+172,Jason Shano, , ,jms@ascosigns.com,602-278-8464,Buyer,480-220-5161,SCC_4848,,173,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4977,CUSTOM
+173,Jim Toney, , ,JToney@swmetalsmiths.com,,Outside Sales,214-548-8273,SCC_4849,2023-03-20,174,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+174,Johanna Gow, , ,jgow@paragonpoweraz.com,602-454-0714,AP,,SCC_4850,2020-05-01,175,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4978,CUSTOM
+175,Glen Hixenbaugh, , ,ghixenbaugh@paragonpoweraz.com,602-454-0714,Buyer,,SCC_4851,2020-05-01,176,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4978,CUSTOM
+176,Jeff Wallis Jr, , ,jeffjr@alstatesteel.com,,President,,SCC_4852,2023-04-03,177,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+177,Laura Wallis, , ,laura@alstatesteel.com,,Accounts Payable,505-877-4711,SCC_4853,2023-04-03,178,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+178,Mike McLaws, , ,,602-252-5754,Buyer,,SCC_4855,2023-04-11,179,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+179,Zachary Sycks, , ,ZacharyS@P3supply.net,480-659-6304,Estimator,480-482-8503,SCC_4856,2020-05-11,180,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4979,CUSTOM
+180,Kenric Freiwald, , ,kenric.freiwald@natlpump.com,623-979-3560,Buyer,,SCC_4857,2020-05-13,181,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4917,CUSTOM
+181,Sean, , ,smarkoff@laron.com,602-281-1608,Buyer,602-695-0320,SCC_4859,2020-05-20,182,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+182,Dianne Positeri, , ,dianne@pacific-tek.com,1-800-884-5551,Buyer,,SCC_4861,2020-06-29,183,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4981,CUSTOM
+183,Ellis Johnson, , ,ellis@pacific-tek.com,1-800-884-5551,President,,SCC_4862,2020-06-29,184,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4981,CUSTOM
+184,Todd Whiteley, , ,toddw@pkc.com,913-356-5620,Chief Estimator,,SCC_4863,2020-06-04,185,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4982,CUSTOM
+185,Marykay Reynolds, , ,mkreynolds@custompipe .com,602-276-2944,Inside sales,814-440-5344,SCC_4864,2020-06-04,186,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4983,CUSTOM
+186,Mike Mathis, , ,MikeM@ktfab.com,4804973140,Buyer,,SCC_4866,2020-08-04,187,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4948,CUSTOM
+187,David Svancara, , ,,602-248-0808,Buyer,,SCC_4867,2020-06-17,188,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4984,CUSTOM
+188,Brian Sullivan, , ,bsullivan@phoenixpumps.com,602-232-2994,Territory Development Manager,602-680-8375,SCC_4868,2021-03-15,189,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+189,Bill Clifford, , ,bclifford@haydonbc.com,602-296-1496,PM,480-387-6769,SCC_4869,2023-03-27,190,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4985,CUSTOM
+190,Larry Fox, , ,larry@bad-elf.com,1-855-422-3353,VP Marketing&Business Developm,480-570-0214,SCC_4870,,191,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4986,CUSTOM
+191,AP, , ,ap@cpepumps.com,480-626-5257,Buyer,,SCC_4871,2020-09-22,192,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4987,CUSTOM
+192,AP, , ,az-apmail@superradiatorcoils.com; liza.celaya@supe,602-257-9708,Buyer,,SCC_4872,2021-07-22,193,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4988,CUSTOM
+193,Liza Celaya, , ,liza.celaya@superradiatorcoils.com,602-257-9708,Buyer,,SCC_4873,2021-07-22,194,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4988,CUSTOM
+194,Accounts Payable, , ,accountspayable.us@rimex.com,602-272-9393,AP,,SCC_4874,2022-11-22,195,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4961,CUSTOM
+195,Lucas Petrie, , ,lpetrie@ttxinc.com,920-743-6568,Buyer,,SCC_4875,2020-07-28,196,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4989,CUSTOM
+196,Accounts Payable, , ,ap@ttxinc.com,920-743-6568,A/P,,SCC_4876,2020-07-28,197,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4989,CUSTOM
+197,Josh Hoffert, , ,jhoffert@mgccontractors.com,6024375000,Project Manager,602-309-2402,SCC_4877,,198,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4990,CUSTOM
+198,John Pepe, , ,jr@swmetalsmiths.com,602-759-8240,Buyer,,SCC_4878,2023-03-20,199,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+199,Virginia Parish, , ,ap@simflo.com,806-747-3411,AP,,SCC_4879,2022-12-12,200,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4962,CUSTOM
+200,Derek Reynolds, , ,derek@simflo.com,806-747-3411,Buyer,,SCC_4880,2022-12-12,201,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4962,CUSTOM
+201,Evan Emery, , ,evan@designbits.org,607-345-9255,Consultant,,SCC_4882,,202,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4992,CUSTOM
+202,Accounts Payable, , ,payables@alstatesteel.com,505-877-5454,AP,,SCC_4883,2023-04-03,203,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4912,CUSTOM
+203,Casey Horn, , ,casey.horn@nesbitts.com,480-423-7638,Project Manager,,SCC_4884,2020-09-15,204,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4993,CUSTOM
+204,Ray Nitti, , ,rnitti@nittibldrs.com,480-459-2010,Owner,,SCC_4885,,205,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4976,CUSTOM
+205,Austin Smith, , ,austin.smith@graywolf.com,480-280-1731,Preconstruction Manager,,SCC_4887,2023-04-12,206,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+206,Sean Bahnam, , ,SBahnam@Laron.com,(800) 248-3430,,(602) 695-0320,SCC_4888,2021-06-23,207,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+207,Dan Reardon, , ,dreardon56@yahoo.com,602-448-9534,Owner,,SCC_4889,2020-12-11,208,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4994,CUSTOM
+208,Zack Causer, , ,,480-398-5054,Owner,,SCC_4890,2021-03-30,209,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4995,CUSTOM
+209,Tyler Stradling, , ,tyler@alloycorporation.com,480-398-5054,Project Manager,,SCC_4891,2021-03-30,210,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4995,CUSTOM
+210,Rich Reed, , ,rreed@simflo.com,806-747-3411,Buyer,,SCC_4892,2022-12-12,211,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4962,CUSTOM
+211,Anna Tuura, , ,anna@alloycorporation.com,480-398-5054,Accounting,,SCC_4894,2021-03-30,212,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4995,CUSTOM
+212,Jeff Wold, , ,jeffwold@swwc.biz,602-442-1110,Sr. Project Manager,480.599.7201,SCC_4897,2020-12-30,213,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4996,CUSTOM
+213,A/P, , ,payables@swwc.biz,602-442-1110,Buyer,,SCC_4898,2020-12-30,214,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4996,CUSTOM
+214,Paul Adams, , ,paul@magnumcompanies..net,602-272-3600,Buyer,602-218-1835,SCC_4899,2023-01-03,215,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+215,Jesse Resendez, , ,Jresendez@haydonbc.com,602-296-1496,Buyer,480-372-1695,SCC_4900,2023-03-27,216,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4985,CUSTOM
+216,Lisa Carlson, , ,lisa@boldco.net,480-844-0996,Buyer,,SCC_4901,2021-12-28,217,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4998,CUSTOM
+217,RC Coles, , ,rc.coles@phoenixstair.com,602-233-2300,Buyer,,SCC_4903,,218,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4999,CUSTOM
+218,Accounts Payable, , ,ap@phillipstank.com,412-315-7963,A/P,,SCC_4904,2021-05-20,219,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5000,CUSTOM
+219,Connie V. Peña, , ,cpena@haydonbc.com,602-296-1496,A/P,,SCC_4905,2023-03-27,220,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4985,CUSTOM
+220,Megan Ambroziak, , ,megan@constructionproductmarketing.com,602-499-3584,Buyer,,SCC_4906,2021-12-15,221,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5001,CUSTOM
+221,Duane Hager, , ,dhager@3mincarwash.com,,Owner,623-910-2670,SCC_4908,,222,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5002,CUSTOM
+222,Scott Holt, , ,info@azpurecustom.com,480-277-4946,Buyer,,SCC_4909,2022-05-04,223,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5003,CUSTOM
+223,Sam McFadden, , ,smcfadden@phoenixpumps.com,602-732-7301,Buyer,,SCC_4914,,224,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4950,CUSTOM
+224,Leonard Moreno, , ,lmoreno@morenosteel.com,602-276-9508,Owner,602-628-2486,SCC_4915,,225,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5004,CUSTOM
+225,Karissa Suarez, , ,ksuarez@laron.com,(800) 248-3430,Sales,520-349-9795,SCC_4916,2021-06-23,226,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4955,CUSTOM
+226,Levi Gomez, , ,levigomez@gmail.com,,Buyer,,SCC_4917,,227,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5005,CUSTOM
+227,Robert Singh, , ,rsingh@wtecenergy.com,(201) 242-9906,Engineer,,SCC_4918,2021-04-28,228,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5006,CUSTOM
+228,Chris Rogalski, , ,crogalski@swmetalsmiths.com,,Buyer,,SCC_4919,2023-03-20,229,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+229,Robin McDowell, , ,dmcdowell@swetinc.com,602-331-0888,Buyer,602-403-1423,SCC_4921,2021-07-07,230,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5007,CUSTOM
+230,Andy Tillia, , ,,602.309.4775,Buyer,6029082214,SCC_4924,,231,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5008,CUSTOM
+231,Nick Farinola, , ,nfarinola@wteenergy.com,(201) 242-9906,Buyer,,SCC_4926,,232,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5006,CUSTOM
+232,Charlie Duran, , ,charlie@mmitank.com,602-272-6000,Buyer,480-372-1657,SCC_4927,2021-11-29,233,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4927,CUSTOM
+233,Miguel Mata, , ,matam@ewcorporation.com,760-337-0020,Buyer,760-427-1836,SCC_4928,,234,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5012,CUSTOM
+234,Sesilia Salinas, , ,sesilia.salinas@keller-na.com,619-443-3891,Buyer,619-873-8042,SCC_4929,2021-05-20,235,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5013,CUSTOM
+235,Scott Simkins, , ,scott.simkins@phillipstank.com,412-315-7963,Buyer,,SCC_4930,,236,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5000,CUSTOM
+236,Rachel Lubay, , ,rachel@archerdouglas.com,602-429-0469,Sales Director,,SCC_4931,,237,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5014,CUSTOM
+237,Tessa Bennett, , ,tessa.bennett@huntercontracting.com,480-356-9387,Project Enginner,480-356-9387,SCC_4932,2023-04-10,238,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5015,CUSTOM
+238,Matthew Gordon, , ,matthew.gordon@emerson.com,414-486-5044,Account Delivery Mgr,414-702-1062,SCC_4933,2021-06-28,239,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5016,CUSTOM
+239,"Kevin""Cole"" Bigelow", , ,cole.bigelow@kiewit.com,720-287-9639,Buyer,720-287-9639,SCC_4934,2021-09-10,240,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5010,CUSTOM
+240,Su Heus, , ,ap.vilter@emerson.com,414-744-0111,AP,,SCC_4936,,241,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5016,CUSTOM
+241,Kim Rivera, , ,ap@kellerelectrical.com,602-437-3015,AP,,SCC_4937,2023-03-14,242,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4973,CUSTOM
+242,Susan Almanza, , ,accountspayable@aimscompanies.com,602-331-0888,Buyer,,SCC_4938,2021-07-07,243,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5007,CUSTOM
+243,CAPITAL ENGINEERING CO, , ,,602-252-5754,Operations Manager,480-528-8886,SCC_4939,2023-04-11,244,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+244,Jim Tucker, , ,,602-252-5754,Buyer,,SCC_4940,2023-04-11,245,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+245,Dan Reardon, , ,dreardon56@yahoo.com,602-448-9534,Buyer,,SCC_4941,2021-08-25,246,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5011,CUSTOM
+246,Terry Hembree, , ,terry@oltfab.com,480-213-7944,Estimator/ Project Mgr,,SCC_4942,2021-09-29,247,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4897,CUSTOM
+247,Victor Vidales, , ,vvidales@remax.net,602-617-8293,PRESIDENT,602-617-8293,SCC_4943,,248,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5017,CUSTOM
+248,Roger Gholson, , ,roger@williamsondev.com,602-527-0432,Project Manager,,SCC_4944,2021-09-29,249,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5018,CUSTOM
+249,James Hwyward, , ,James.Hayward@schreiberfoods.com,480-627-8263,Buyer,,SCC_4945,2023-04-13,250,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+250,Aleko Tadeo, , ,alekomarie.tadeo@emerson.com,636-897-2000,Buyer,,SCC_4946,2021-09-15,251,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5020,CUSTOM
+251,Accounts Payable, , ,ap.vilter@emerson.com,636-897-2000,A/P,,SCC_4947,2021-09-15,252,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5020,CUSTOM
+252,William McCue, , ,William.McCue@csusa.us,480-940-8400,Account Manager,,SCC_4948,2022-06-09,253,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5021,CUSTOM
+253,Accounts Payable, , ,ap@williamsondev.com,602-527-0432,A/P,,SCC_4949,,254,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5018,CUSTOM
+254,Sean Wahl, , ,sean.wahl@schreiberfoods.com,480-627-8215,Accounting,480-433-2660,SCC_4952,2023-04-13,255,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+255,Jose Castro, , ,Jose.Castro@schreiberfoods.com,480-627-8260,Facilities Maintenance,480-662-9167,SCC_4954,2023-04-13,256,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+256,A/P, , ,Jose.Castro@;James.Hayward@schreiberfoods.com,480-627-8260,Accounts Payable,,SCC_4955,2023-04-13,257,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+257,Brian Hartsfield, , ,bhartsfield@jensenprecast.com,602-268-0228,Sales Manager,520-719-6121,SCC_4956,2022-05-04,258,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5022,CUSTOM
+258,Chris Cady, , ,ccady@silent-aire.com,480-495-9874,Buyer,,SCC_4957,2023-01-16,259,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5025,CUSTOM
+259,Priscilla Miller, , ,priscilla.miller@csusa.us,480-940-8400,Project Coordinator,,SCC_4958,2022-06-09,260,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5021,CUSTOM
+260,AP, , ,tcmpayables@csusa.us,480-940-8400,A/P,,SCC_4959,2022-06-09,261,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5021,CUSTOM
+261,Kelly, , ,ap@capitolaz.com,602-252-5754,A/P,,SCC_4960,2023-04-11,262,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4900,CUSTOM
+262,Patty, , ,patty@mmitank.com,602-272-6000,A/P,,SCC_4961,,263,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4927,CUSTOM
+263,Clyde Mitchell, , ,Clyde@alliedmachineworks.com,928-965-8393,Buyer,,SCC_4962,2023-01-30,264,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5026,CUSTOM
+264,Jeff, , ,jeff@grayleafstudio.com;admin@grayleafstudio.com,480-553-3941,Buyer,,SCC_4963,2022-04-08,265,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5028,CUSTOM
+265,Christie Simmons, , ,Accounts.Payable@schuff.com:kristy.simmons@schuff.,602 417 8869,A/P,,SCC_4964,2023-04-12,266,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+266,Paul Campbel, , ,paul@spartantruck.com,602-295-3744,Buyer,,SCC_4967,2022-10-04,267,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4944,CUSTOM
+267,Wayne, , ,wayne@alliedmachineworks.com,928-965-8393,Buyer,928-322-3520,SCC_4970,2023-01-30,268,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5026,CUSTOM
+268,wayne langston, , ,wayne.langston@smithpipe.com,6022449166,out side sales,602-377-7535,SCC_4973,,269,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5029,CUSTOM
+269,Laura Zaremba, , ,lzaremba@buesingcorp.com,602-233-3339,A/R,,SCC_4974,2022-10-10,270,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5030,CUSTOM
+270,Accounts Payable, , ,accounting@buesingcorp.com,602-233-3339,A/P,,SCC_4975,2022-10-10,271,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5030,CUSTOM
+271,Monique Moore, , ,mmoore@buesingcorp.com,602-233-3339,Project Coordinator,,SCC_4976,2022-10-10,272,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5030,CUSTOM
+272,Tony Dau, , ,Tony.Dau@Graywolf.com,480-892-7509,Project Coordinator,,SCC_4977,2023-04-12,273,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4932,CUSTOM
+273,Todd Branton, , ,todd.branton@sreenvironmental.com,480-240-9277,Fleet Manager,,SCC_4978,2022-08-01,274,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5032,CUSTOM
+274,Accounts Payable, , ,Jbolinder@jensenprecast.com,602-268-0228,A/P,,SCC_4979,2022-05-04,275,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5022,CUSTOM
+275,Accounts Payable, , ,usa.ap@silent-aire.com;twoten@silent-aire.com,480-656-1239,AP,,SCC_4982,2023-01-16,276,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5025,CUSTOM
+276,Yin Boyer, , ,yboyer@silent-aire.com,480-495-9874,Sr. Purchaser,,SCC_4983,2023-01-16,277,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5025,CUSTOM
+277,Invoices payment, , ,invoicesusapo@schreiberfoods.com,,Accounting,,SCC_4985,2023-04-13,278,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+278,Accounts Payable, , ,5DFinance@5dmining.com,928-425-2998,A/P,,SCC_4987,2022-05-11,279,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5033,CUSTOM
+279,Valrie Bejarano, , ,Valrie@5dmining.com,928-425-2998,Buyer,,SCC_4988,2022-05-11,280,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5033,CUSTOM
+280,Rudy Cabanillas, , ,Rudy@5dmining.com,928-425-2998,Buyer,,SCC_4989,2022-05-11,281,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5033,CUSTOM
+281,Dale Owens, , ,dale@magnumcompanies.net,602-272-3600,Buyer,,SCC_4990,2023-01-03,282,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4949,CUSTOM
+282,Marco Torres, , ,marco.torres@schuff.com,602-416-7739,Invoice Inquiries,,SCC_4992,2023-04-11,283,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4907,CUSTOM
+283,Nigel Knoy, , ,,928-777-0099,Buyer,,SCC_4993,,284,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5034,CUSTOM
+284,Ty Brady, , ,ty@summitprocesssystems.com,480-855-7494,PM,,SCC_4995,2022-07-25,285,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5035,CUSTOM
+285,Stacy Brady, , ,stacy@summitprocesssystems.com,480-855-7494,Buyer,,SCC_4996,2022-07-25,286,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5035,CUSTOM
+286,Ryan Schuff, , ,ryan@stellar-steel.com,602.723.6391,Buyer,602.723.6391,SCC_4997,2022-07-22,287,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5036,CUSTOM
+287,Shane Murray, , ,Shane@accutite.com,714-679-6461,Buyer,,SCC_4998,,288,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5037,CUSTOM
+288,Accounts Payable, , ,payables@sreenvironmental.com,480-240-9277,A/P,,SCC_4999,2022-08-01,289,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5032,CUSTOM
+289,Barry Green, , ,bgreen@apmi2.com,480-668-0024,Estimating Manager,,SCC_5000,,290,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5038,CUSTOM
+290,Gareth Low, , ,gareth.low@silent-aire.com,480-656-1239,Buyer,,SCC_5001,2023-01-16,291,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5025,CUSTOM
+291,Mark Smith, , ,mark.smith@schreiberfoods.com,480-627-8216,Facilities Maintenance,,SCC_5002,2023-04-13,292,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4967,CUSTOM
+292,Matt Howard, , ,MattH@shsteelaz.com,480-926-6062,Buyer,,SCC_5004,2023-01-03,293,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5039,CUSTOM
+293,Robin White, , ,rwhite@dnlfab.com,623-628-0308,PM,,SCC_5006,2023-04-11,294,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5040,CUSTOM
+294,Israel, , ,,623-518-4285,Buyer,,SCC_5009,2022-10-17,295,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5041,CUSTOM
+295,Becky Hentschel, , ,acctspayable@inproduction.net,480-433-1158,A/P,,SCC_5010,2022-11-07,296,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5042,CUSTOM
+296,Jonathan Jones, , ,jjones@inproduction.net,480-433-1158,VP,804-389-5758,SCC_5011,2022-11-07,297,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5042,CUSTOM
+297,Chri Garcia, , ,christopherj.garcia-us pipe.com,602-352-2222,Diector,,SCC_5012,,298,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5043,CUSTOM
+298,Charles Gregg, , ,charles.gregg@us-pipe.com;uspf-accounting@uspipefa,602-654-1360,Buyer,,SCC_5013,2023-01-30,299,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5044,CUSTOM
+299,Vince, , ,vince@havanashade.com,480-229-0080,Buyer,,SCC_5014,,300,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5045,CUSTOM
+300,Marina Canellas, , ,canellas@dennisgroup,413 787 2223,PM,,SCC_5015,,301,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5046,CUSTOM
+301,Tina, , ,twoteb@silent-aire.com,4806561239,AP,,SCC_5018,2023-01-16,302,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5025,CUSTOM
+302,Matt Howard, , ,matth@atmphx.com,623.582.3900,Project Manager,602-989-7288,SCC_5023,2023-01-09,303,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5048,CUSTOM
+303,ROBERT Derango, , ,RDERANGO@AZDPS.GOV,6023164855,EOD,,SCC_5024,2022-12-28,304,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5049,CUSTOM
+304,Rich Reed, , ,rreed@smythindustries.com,520-750-8719,Project Manager,520.269.1963,SCC_5025,2023-04-13,305,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5050,CUSTOM
+305,Accounts Payable, , ,Finance@ATMphx.com,623.582.3900,A/P,,SCC_5026,2023-01-09,306,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5048,CUSTOM
+306,steve Hamilton, , ,steve.hamilton@surpriseaz.gov,731-267-6621,Buyer,,SCC_5027,,307,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5051,CUSTOM
+307,Accounts Payable, , ,ap@huntercontracting.com,480-356-9387,A/P,,SCC_5028,2023-04-10,308,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5015,CUSTOM
+308,Victor, , ,,602-367-4454,Buyer,,SCC_5029,,309,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5052,CUSTOM
+309,Denisse, , ,denisse@moralesartisticiron.com,602-367-4454,Buyer,,SCC_5030,,310,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5052,CUSTOM
+310,Doug Oland, , ,doug.oland@phoenix.gov,602-561-2023,Collections,,SCC_5031,,311,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5053,CUSTOM
+311,Dusty Angle, , ,dangle@dngllc.com,480-361-9137,Project Coordinator,,SCC_5032,2023-04-03,312,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5054,CUSTOM
+312,Dean schneider, , ,dean@alumaline.com,480-926-3831,Buyer,,SCC_5033,2023-04-11,313,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5055,CUSTOM
+313,Thomas Haberny, , ,thaberny@swmetalsmiths.com,602-759-8260,Estimator,513-348-2247,SCC_5034,2023-03-20,314,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+314,Alan Swift, , ,alans@fullcirclewater.com,858-672-7508,Buyer,858-395-4744,SCC_5036,2023-03-10,315,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5057,CUSTOM
+315,Lance, , ,lancee@Fullcirclewater.com,858-672-7508,Buyer,,SCC_5037,2023-03-10,316,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5057,CUSTOM
+316,Ron Schneider, , ,ron@alumaline.com,480-926-3831,President,,SCC_5039,2023-04-11,317,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5055,CUSTOM
+317,Julie Shuey, , ,jshuey@swmetalsmiths.com,,Buyer,,SCC_5040,,318,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_4899,CUSTOM
+318,Patrice Minetta, , ,pminetta@dngllc.com,480-361-9137,Controller,,SCC_5041,2023-04-03,319,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5054,CUSTOM
+319,Accounts Payable, , ,subbillings@dngllc.com,480-361-9137,A/P,,SCC_5042,2023-04-03,320,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5054,CUSTOM
+320,Roy Hunt, , ,royh@dm-fab.com,480-851-2681,pm,,SCC_5043,2023-03-24,321,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5058,CUSTOM
+321,Accounts Payable, , ,accounting@smythindustries.com,520-750-8719,A/P,,SCC_5044,,322,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5050,CUSTOM
+322,Thomas Tress, , ,ttress@smythindustries.com,520-750-8719,Project Coordinator,520-820-5778,SCC_5045,,323,Y,2023-04-13 12:46:30.697,SCC_Contact.csv,SCC_5050,CUSTOM
