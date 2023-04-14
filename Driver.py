@@ -142,7 +142,7 @@ def lambda_handler(key):
         object_name = "WorkOrderLineItem"
         ex_id = "OrderDetId__c"
         
-        header = "Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -169,7 +169,7 @@ def lambda_handler(key):
         head, filename = os.path.split(key)
         object_name = "BillingDet__c"
         ex_id = "BillingDet_ID__c"
-        header = "Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -183,7 +183,7 @@ def lambda_handler(key):
         object_name = "Billing__c"
         ex_id = "E2_Invoice__c"
         
-        header = "Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -198,7 +198,7 @@ def lambda_handler(key):
         object_name = "QuoteDet__c"
         ex_id = "QuoteDet_ID__c"
         
-        header = "Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
+        header = "CSV_Row_Num_del,Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
         
         QuoteDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -212,7 +212,7 @@ def lambda_handler(key):
         object_name = "Opportunity"
         ex_id = "E2_Quote_Key__c"
         
-        header = "Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
+        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])

@@ -51,4 +51,65 @@ df = pd.read_sql(sql=sqlQuery, con=connSCC)
 df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_Order.csv',encoding="utf-8-sig")
 
 
+#DCS Work Order Detail Load
+sqlQuery="SELECT od.QtyOrdered,ISNULL(od.UnitPrice, 0 ) as UnitPrice,od.PartDesc,od.Revision,od.JobNo,od.Status,'???' as QuoteNo,'DCS_' + CONVERT(varchar(100),od.OrderDet_ID) as OrderDet_ID, 'DCS_' + CONVERT(varchar(100),od.OrderNo) as LookupValToOrder,'02iDn000000AXurIAG' as DummyAssetID,'01uDn000003d5aFIAQ' as DummyPriceBookID,CASE WHEN od.WorkCode is Null THEN 'DUMMY'	WHEN od.WorkCode = '' THEN 'DUMMY'	ELSE od.WorkCode END as WorkCode,row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_OrderDet.csv' as Source_File,CONVERT(nvarchar,od.LastModDate, 23) as PreviousModDate From OrderDet od"
+df = pd.read_sql(sql=sqlQuery, con=connDCS)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_OrderDet.csv',encoding="utf-8-sig")
+
+
+#SCC Work Order Detail Load
+sqlQuery="SELECT od.QtyOrdered,ISNULL(od.UnitPrice, 0 ) as UnitPrice,od.PartDesc,od.Revision,od.JobNo,od.Status,'???' as QuoteNo,'SCC_' + CONVERT(varchar(100),od.OrderDet_ID) as OrderDet_ID, 'SCC_' + CONVERT(varchar(100),od.OrderNo) as LookupValToOrder,'02iDn000000AXurIAG' as DummyAssetID,'01uDn000003d5aFIAQ' as DummyPriceBookID,CASE WHEN od.WorkCode is Null THEN 'DUMMY'	WHEN od.WorkCode = '' THEN 'DUMMY'	ELSE od.WorkCode END as WorkCode,row_number() over(order by(od.OrderDet_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'SCC_OrderDet.csv' as Source_File,CONVERT(nvarchar,od.LastModDate, 23) as PreviousModDate From OrderDet od"
+df = pd.read_sql(sql=sqlQuery, con=connSCC)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_OrderDet.csv',encoding="utf-8-sig")
+
+#DCS Billing Load
+sqlQuery="SELECT b.CustDesc,b.ShipToName,b.SAddr1,b.SAddr2,b.SCity,b.SSt,b.SZip,'DCS_' + InvoiceNo as InvoiceNo,CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 'DCS_' + InvoiceNo + ' - ' + CONVERT(nvarchar,b.InvDate,23) as Name,b.WorkCode,b.TermsCode,'Nofield' as SubTotal,b.SalesTaxChgs,b.ShippingChgs,b.InvoiceTotal,b.AmtPaidSoFar,'Balance Due' as BalanceDue,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,b.CustDesc,b.DateEnt,b.pymtstatus,'QuoteNo' as QuoteNo,'DCS_' + CONVERT(varchar(100), b.Billing_ID) as E2_Invoice__c,row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_Billing.csv' as Source_File,	  CONVERT(nvarchar,b.LastModDate, 23) as PreviousModDate From Billing b, CustCode cc Where b.CustCode = cc.CustCode"
+df = pd.read_sql(sql=sqlQuery, con=connDCS)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_Billing.csv',encoding="utf-8-sig")
+
+#SCC Billing Load
+sqlQuery="SELECT b.CustDesc,b.ShipToName,b.SAddr1,b.SAddr2,b.SCity,b.SSt,b.SZip,'SCC_' + InvoiceNo as InvoiceNo,CONVERT(nvarchar,b.InvDate,23) as InvoiceDate, 'SCC_' + InvoiceNo + ' - ' + CONVERT(nvarchar,b.InvDate,23) as Name,b.WorkCode,b.TermsCode,'Nofield' as SubTotal,b.SalesTaxChgs,b.ShippingChgs,b.InvoiceTotal,b.AmtPaidSoFar,'Balance Due' as BalanceDue,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,b.CustDesc,b.DateEnt,b.pymtstatus,'QuoteNo' as QuoteNo,'SCC_' + CONVERT(varchar(100), b.Billing_ID) as E2_Invoice__c,row_number() over(order by(b.Billing_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_Billing.csv' as Source_File,	  CONVERT(nvarchar,b.LastModDate, 23) as PreviousModDate From Billing b, CustCode cc Where b.CustCode = cc.CustCode"
+df = pd.read_sql(sql=sqlQuery, con=connSCC)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_Billing.csv',encoding="utf-8-sig")
+
+
+#DCS Billing Detail Load
+sqlQuery="SELECT bd.QtyShipped,bd.UnitPrice,bd.LineTotal,'DCS_' + bd.InvoiceNo as InvoiceNo,bd.PartDesc,bd.PartNo,bd.DelTicketNo,bd.Revision,bd.PONum,'DCS_' + CONVERT(varchar(100), bd.BillingDet_ID) as BillingDet_ID,row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_BillingDet.csv' as Source_File,	  CONVERT(nvarchar,bd.LastModDate, 23) as PreviousModDate FROM BillingDet bd"
+df = pd.read_sql(sql=sqlQuery, con=connDCS)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_BillingDet.csv',encoding="utf-8-sig")
+
+#SCC Billing Detail Load
+sqlQuery="SELECT bd.QtyShipped,bd.UnitPrice,bd.LineTotal,'SCC_' + bd.InvoiceNo as InvoiceNo,bd.PartDesc,bd.PartNo,bd.DelTicketNo,bd.Revision,bd.PONum,'SCC_' + CONVERT(varchar(100), bd.BillingDet_ID) as BillingDet_ID,row_number() over(order by(bd.BillingDet_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_BillingDet.csv' as Source_File,	  CONVERT(nvarchar,bd.LastModDate, 23) as PreviousModDate FROM BillingDet bd"
+df = pd.read_sql(sql=sqlQuery, con=connSCC)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_BillingDet.csv',encoding="utf-8-sig")
+
+#DCS Quote Load
+sqlQuery="SELECT q.CustDesc as 'QUOTE_TO',q.Addr1,q.Addr2,q.City,q.st,q.Zip,'DCS_' + q.QuoteNo as QuoteNo,CONVERT(nvarchar,q.DateEnt, 23) as DateENT,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,q.QuotedBy,q.ShipVia,q.ContactName,q.InqNum,q.TermsCode,q.Phone,q.FAX,'Formula for Total??' as Total,'DCS_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,' ' as RecordTypeId,q.CustDesc + ' - ' + q.QuoteNo as Name,'Quote' as StageName,CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_Quote.csv' as Source_File,	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM Quote q, CustCode cc Where q.CustCode = cc.CustCode and q.CustCode is not null order by E2_Quote_Key"
+df = pd.read_sql(sql=sqlQuery, con=connDCS)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_Quote.csv',encoding="utf-8-sig")
+
+#SCC Quote Load
+sqlQuery="SELECT q.CustDesc as 'QUOTE_TO',q.Addr1,q.Addr2,q.City,q.st,q.Zip,'SCC_' + q.QuoteNo as QuoteNo,CONVERT(nvarchar,q.DateEnt, 23) as DateENT,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,q.QuotedBy,q.ShipVia,q.ContactName,q.InqNum,q.TermsCode,q.Phone,q.FAX,'Formula for Total??' as Total,'SCC_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,' ' as RecordTypeId,q.CustDesc + ' - ' + q.QuoteNo as Name,'Quote' as StageName,CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_Quote.csv' as Source_File,	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM Quote q, CustCode cc Where q.CustCode = cc.CustCode and q.CustCode is not null order by E2_Quote_Key"
+df = pd.read_sql(sql=sqlQuery, con=connSCC)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_Quote.csv',encoding="utf-8-sig")
+
+
+#DCS Quote Detail Load
+sqlQuery="SELECT qd.ItemNo,qd.PartNo,qd.Qty1,qd.Price1,qd.JobNo,qd.JobNotes,qd.QuoteNo,qd.Status,SUBSTRING(qd.Descrip,1,80) as Name,'DCS_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,'DCS_'+ qd.QuoteNo as LookupValForOpp,CASE WHEN qd.WorkCode is Null		THEN 'DUMMY'	WHEN qd.WorkCode = ''		THEN 'DUMMY'	ELSE qd.WorkCode END as WorkCode,row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_QuoteDet.csv' as Source_File,	  CONVERT(nvarchar,qd.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM QuoteDet qd Order by QuoteNo"
+df = pd.read_sql(sql=sqlQuery, con=connDCS)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_QuoteDet.csv',encoding="utf-8-sig")
+
+#SCC Quote Detail Load
+sqlQuery="SELECT qd.ItemNo,qd.PartNo,qd.Qty1,qd.Price1,qd.JobNo,qd.JobNotes,qd.QuoteNo,qd.Status,SUBSTRING(qd.Descrip,1,80) as Name,'SCC_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,'SCC_'+ qd.QuoteNo as LookupValForOpp,CASE WHEN qd.WorkCode is Null		THEN 'DUMMY'	WHEN qd.WorkCode = ''		THEN 'DUMMY'	ELSE qd.WorkCode END as WorkCode,row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_QuoteDet.csv' as Source_File,	  CONVERT(nvarchar,qd.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM QuoteDet qd Order by QuoteNo"
+df = pd.read_sql(sql=sqlQuery, con=connSCC)
+df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_QuoteDet.csv',encoding="utf-8-sig")
+
+
+
+
+
+
+
+
+
 #print(df)
