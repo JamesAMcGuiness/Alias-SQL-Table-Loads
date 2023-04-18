@@ -1,210 +1,210 @@
 ﻿,SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
-0,36N 56th st,,Phoenix,AZ,85034,J,Currier,6218,SCC_4890,2022-12-12,1,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-1,3828 N 35th Ave,,Phoenix,AZ,85017,Amalia Arvizu,Castle Steel,6219,SCC_4891,2020-02-17,2,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+0,36N 56th st,,Phoenix,AZ,85034,J,Currier,6218,SCC_4890,2022-12-12,1,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+1,3828 N 35th Ave,,Phoenix,AZ,85017,Amalia Arvizu,Castle Steel,6219,SCC_4891,2020-02-17,2,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 2,"303A Beeline
-",,Payson,,85541,,Town Of  Payson,6220,SCC_4892,,3,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-3,406 E. Pioneer St.,,Phoenix,AZ,85040,Accounts Payable,Professional Piping Systems,6221,SCC_4893,2022-05-12,4,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Payson,,85541,,Town Of  Payson,6220,SCC_4892,,3,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+3,406 E. Pioneer St.,,Phoenix,AZ,85040,Accounts Payable,Professional Piping Systems,6221,SCC_4893,2022-05-12,4,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 4,"3618 E. LA SALLE STREET
-",,Phoenix,AZ,85040,,FPF Industries,6222,SCC_4894,2018-09-26,5,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85040,,FPF Industries,6222,SCC_4894,2018-09-26,5,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 5,"3738 E Miami Ave
-",,Phoenix,AZ,85040,,Pioneer Equipment Inc,6223,SCC_4895,2018-08-08,6,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85040,,Pioneer Equipment Inc,6223,SCC_4895,2018-08-08,6,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 6,"3401 E Weir Ave
-",,Phoenix,AZ,85040,,"FMD Fabrication Service, LLC",6224,SCC_4896,,7,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-7,2301 West Broadway,,Phoenix,AZ,85041,Greg Rath,OLT Fabrication,6225,SCC_4897,2021-08-04,8,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-8,1042 S. Lewis,,Mesa,AZ,85210,Connie Huston,MMI Industrial & Steel,6226,SCC_4898,2022-11-22,9,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-9,5026 E Beverly Rd,,Phoenix,AZ,85044,,Southwest Metalsmiths,6227,SCC_4899,2023-03-20,10,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-10,724 E Southern Pacific Dr,,Phoenix,AZ,85035,,Capitol Engineering Co.,6228,SCC_4900,2022-06-09,11,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-11,1908 N. Rosemont,,Mesa,AZ,85205,A/P,"Copperstate Construction Services, Inc.",6229,SCC_4901,2022-06-09,12,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-12,1312 E. Kaler Drive,,Phoenix,AZ,85020,,Mountainscapers LLC.,6230,SCC_4902,2020-05-12,13,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85040,,"FMD Fabrication Service, LLC",6224,SCC_4896,,7,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+7,2301 West Broadway,,Phoenix,AZ,85041,Greg Rath,OLT Fabrication,6225,SCC_4897,2021-08-04,8,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+8,1042 S. Lewis,,Mesa,AZ,85210,Connie Huston,MMI Industrial & Steel,6226,SCC_4898,2022-11-22,9,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+9,5026 E Beverly Rd,,Phoenix,AZ,85044,,Southwest Metalsmiths,6227,SCC_4899,2023-03-20,10,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+10,724 E Southern Pacific Dr,,Phoenix,AZ,85035,,Capitol Engineering Co.,6228,SCC_4900,2022-06-09,11,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+11,1908 N. Rosemont,,Mesa,AZ,85205,A/P,"Copperstate Construction Services, Inc.",6229,SCC_4901,2022-06-09,12,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+12,1312 E. Kaler Drive,,Phoenix,AZ,85020,,Mountainscapers LLC.,6230,SCC_4902,2020-05-12,13,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 13,"
-",,,,,A/P,PCL Construction,6232,SCC_4904,2019-10-17,14,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-14,2342 S McClintock Dr,,TEMPE,AZ,85282,,Talis Construction Corp.,6234,SCC_4906,2022-02-02,15,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,A/P,PCL Construction,6232,SCC_4904,2019-10-17,14,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+14,2342 S McClintock Dr,,TEMPE,AZ,85282,,Talis Construction Corp.,6234,SCC_4906,2022-02-02,15,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 15,"3003 N Central Ave
-Suite1500",Suite1500,Phoenix,AZ,85012,A/P,Schuff Steel,6235,SCC_4907,2023-01-09,16,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-16,21605 N 26th Ave,,Phoenix,AZ,85027,Richard,Advanced Metal Sales LLC,6236,SCC_4908,2022-02-02,17,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Suite1500",Suite1500,Phoenix,AZ,85012,A/P,Schuff Steel,6235,SCC_4907,2023-01-09,16,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+16,21605 N 26th Ave,,Phoenix,AZ,85027,Richard,Advanced Metal Sales LLC,6236,SCC_4908,2022-02-02,17,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 17,"1601 Buchanan Road
-",,Evansville,IN,47720,,Separation By Design,6237,SCC_4909,2019-01-11,18,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Evansville,IN,47720,,Separation By Design,6237,SCC_4909,2019-01-11,18,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 18,"1138 N Alma School Road
-#207",#207,Mesa,AZ,85201,,Layne,6238,SCC_4910,,19,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+#207",#207,Mesa,AZ,85201,,Layne,6238,SCC_4910,,19,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 19,"201 S. 26th Street
-",,Phoenix,AZ,85034,,Hennesy Mechanical Systems,6239,SCC_4911,,20,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-20,5343 Mohave Street,,Phoenix,AZ,85043,Caitlin Gauthier,Alstate Steel,6240,SCC_4912,2022-05-04,21,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85034,,Hennesy Mechanical Systems,6239,SCC_4911,,20,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+20,5343 Mohave Street,,Phoenix,AZ,85043,Caitlin Gauthier,Alstate Steel,6240,SCC_4912,2022-05-04,21,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 21,"8743 E. Pecos Rd. Suite #122
-",,Mesa,AZ,85212,,Tenshon,6242,SCC_4914,2019-01-16,22,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-22,"3922 E University Dr, Suite 1",,Phoenix,AZ,85034,,YELLOW JACKET DRILLING,6243,SCC_4915,2020-09-29,23,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Mesa,AZ,85212,,Tenshon,6242,SCC_4914,2019-01-16,22,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+22,"3922 E University Dr, Suite 1",,Phoenix,AZ,85034,,YELLOW JACKET DRILLING,6243,SCC_4915,2020-09-29,23,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 23,"
-",,,,,,DESERT COATING SOLUTION LLC,6244,SCC_4916,2019-11-18,24,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-24,7706 N 71st Ave,,Glendale,AZ,85303,Kenric Freiwald,National Pump Company,6245,SCC_4917,2020-05-13,25,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,DESERT COATING SOLUTION LLC,6244,SCC_4916,2019-11-18,24,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+24,7706 N 71st Ave,,Glendale,AZ,85303,Kenric Freiwald,National Pump Company,6245,SCC_4917,2020-05-13,25,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 25,"
-",,,,,John Lockett,Pump System AZ,6246,SCC_4918,2019-05-22,26,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,John Lockett,Pump System AZ,6246,SCC_4918,2019-05-22,26,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 26,"
-",,,,,,4K Painting & Trim,6247,SCC_4919,2018-12-11,27,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,4K Painting & Trim,6247,SCC_4919,2018-12-11,27,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 27,"1945 W Broadway Rd
-",,Phoenix,AZ,85041,,JV Driver Fabricators,6248,SCC_4920,,28,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85041,,JV Driver Fabricators,6248,SCC_4920,,28,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 28,"
-",,,,,,WILL HYDRAULICS,6250,SCC_4921,,29,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-29,2607 N. Country Club Drive,,Scottsdale,AZ,85256,Lori Brady,Agate Steel,6251,SCC_4922,2020-04-27,30,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,WILL HYDRAULICS,6250,SCC_4921,,29,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+29,2607 N. Country Club Drive,,Scottsdale,AZ,85256,Lori Brady,Agate Steel,6251,SCC_4922,2020-04-27,30,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 30,"3501 E. Broadway Rd
-",,Phoenix,AZ,85040,,"James, Cooke and Hobson, Inc.",6252,SCC_4923,,31,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85040,,"James, Cooke and Hobson, Inc.",6252,SCC_4923,,31,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 31,"1645 W. Buckeye Road
-",,Phoenix,AZ,85007,,Tri Star Industrial Company,6253,SCC_4924,,32,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85007,,Tri Star Industrial Company,6253,SCC_4924,,32,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 32,"3342 E. Wier Ave.
-",,Scottsdale,AZ,85256,,Oil & Gas Process Solutions,6254,SCC_4925,,33,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Scottsdale,AZ,85256,,Oil & Gas Process Solutions,6254,SCC_4925,,33,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 33,"1841 S. Horne
-",,Mesa,AZ,85204,Cindy Argyle,"Brahma Group, Inc",6255,SCC_4926,2019-08-28,34,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-34,3240 S. 37th Ave,,Phoenix,AZ,85009,David Cooper,MMI Tank,6256,SCC_4927,2021-11-29,35,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Mesa,AZ,85204,Cindy Argyle,"Brahma Group, Inc",6255,SCC_4926,2019-08-28,34,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+34,3240 S. 37th Ave,,Phoenix,AZ,85009,David Cooper,MMI Tank,6256,SCC_4927,2021-11-29,35,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 35,"
-",,,,,,WALTER,6258,SCC_4929,,36,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,WALTER,6258,SCC_4929,,36,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 36,"8112 West Buckeye Road
-",,Phoenix,AZ,85043,,Bunger Steel,6259,SCC_4930,,37,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-37,3301 East Tonto Drive,,Phoenix,AZ,85044,Greg Sprinkle,Industrial Inspection & Consul,6260,SCC_4931,2020-12-07,38,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85043,,Bunger Steel,6259,SCC_4930,,37,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+37,3301 East Tonto Drive,,Phoenix,AZ,85044,Greg Sprinkle,Industrial Inspection & Consul,6260,SCC_4931,2020-12-07,38,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 38,"4320 E. Presidio St.
-Suite #111",Suite #111,Mesa,AZ,85215,David Melberg,Schuff Steel Management Co.,6261,SCC_4932,2023-04-12,39,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Suite #111",Suite #111,Mesa,AZ,85215,David Melberg,Schuff Steel Management Co.,6261,SCC_4932,2023-04-12,39,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 39,"5136 S Desert View Drive
-",,Apache Junction,AZ,85120,,Rolling Plains,6263,SCC_4928,2019-10-17,40,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Apache Junction,AZ,85120,,Rolling Plains,6263,SCC_4928,2019-10-17,40,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 40,"
-",,,,,,Vic's Welding Co. LLC,6264,SCC_4934,,41,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Vic's Welding Co. LLC,6264,SCC_4934,,41,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 41,"4150 E Quartz Circle
-",,Mesa,AZ,85215,,Able Steel Fabricators,6265,SCC_4935,2019-10-17,42,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Mesa,AZ,85215,,Able Steel Fabricators,6265,SCC_4935,2019-10-17,42,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 42,"
-",,,,,,RMR Fabrication,6266,SCC_4936,2019-05-16,43,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,RMR Fabrication,6266,SCC_4936,2019-05-16,43,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 43,"
-",,Peroria,AZ,85009,,All Metal Specialties,6267,SCC_4937,,44,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Peroria,AZ,85009,,All Metal Specialties,6267,SCC_4937,,44,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 44,"825 W. Beechcraft St
-",,Casa Grande,AZ,85122,,ACO INC,6268,SCC_4938,,45,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Casa Grande,AZ,85122,,ACO INC,6268,SCC_4938,,45,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 45,"1725 W 10th Place
-",,Tempe,AZ,85281,,Tru-Stop Inc,6269,SCC_4939,2019-10-08,46,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Tempe,AZ,85281,,Tru-Stop Inc,6269,SCC_4939,2019-10-08,46,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 46,"
-",,,,,,Sparkman Enterprises,6270,SCC_4940,,47,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Sparkman Enterprises,6270,SCC_4940,,47,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 47,"
-",,,,,,Ensolutions Inc,6271,SCC_4941,2019-10-17,48,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Ensolutions Inc,6271,SCC_4941,2019-10-17,48,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 48,"
-",,,,,,Innovative Industrial,6272,SCC_4942,,49,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Innovative Industrial,6272,SCC_4942,,49,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 49,"
-",,Phoenix,AZ,,,Chris Cartlidge,6273,SCC_4943,,50,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-50,12266 Branford Street,,Sun Valley,CA,91352,Accounting,Spartan Truck Company,6274,SCC_4944,2022-01-21,51,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,,,Chris Cartlidge,6273,SCC_4943,,50,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+50,12266 Branford Street,,Sun Valley,CA,91352,Accounting,Spartan Truck Company,6274,SCC_4944,2022-01-21,51,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 51,"
-",,,,,,Rick - MMI,6275,SCC_4945,,52,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Rick - MMI,6275,SCC_4945,,52,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 52,"
-",,,,,,Fire Up Fredom,6276,SCC_4946,2019-09-27,53,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-53,11140 N 136th Ave,,Surprise,AZ,85379,Accounts Payable,Felix Construction,6277,SCC_4947,2020-05-04,54,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-54,501 E Comstock Drive,,Chandler,AZ,85225,Leann Price,KT Fab,6278,SCC_4948,2020-06-11,55,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-55,2439 S 49th Avenue,,Phoenix,AZ,85043,Karen,Magnum Companies,6279,SCC_4949,2022-09-29,56,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-56,1326 W. Industrial Dr,,Coolidge,AZ,85128,Accounts Payable,Felix Construction,6280,SCC_4947,2020-05-04,57,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-57,5100 S 36th Street,,Phoenix,AZ,85040,Dominic Smith,"Phoenix Pumps, Inc.",6281,SCC_4950,2021-03-15,58,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,Fire Up Fredom,6276,SCC_4946,2019-09-27,53,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+53,11140 N 136th Ave,,Surprise,AZ,85379,Accounts Payable,Felix Construction,6277,SCC_4947,2020-05-04,54,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+54,501 E Comstock Drive,,Chandler,AZ,85225,Leann Price,KT Fab,6278,SCC_4948,2020-06-11,55,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+55,2439 S 49th Avenue,,Phoenix,AZ,85043,Karen,Magnum Companies,6279,SCC_4949,2022-09-29,56,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+56,1326 W. Industrial Dr,,Coolidge,AZ,85128,Accounts Payable,Felix Construction,6280,SCC_4947,2020-05-04,57,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+57,5100 S 36th Street,,Phoenix,AZ,85040,Dominic Smith,"Phoenix Pumps, Inc.",6281,SCC_4950,2021-03-15,58,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 58,"3137 W Lincoln St
-",,Phoenix,AZ,85009,,TRW Steel,6282,SCC_4951,,59,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-59,1441 N VIP Blvd,,Casa Grande,AZ,85122,,Spartan Truck Company Inc,6283,SCC_4944,2022-01-21,60,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-60,7506 W Madison Street,,Tolleson,AZ,85353,Tim Black,Gicon Pumps & Equipmt,6284,SCC_4952,2020-02-06,61,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85009,,TRW Steel,6282,SCC_4951,,59,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+59,1441 N VIP Blvd,,Casa Grande,AZ,85122,,Spartan Truck Company Inc,6283,SCC_4944,2022-01-21,60,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+60,7506 W Madison Street,,Tolleson,AZ,85353,Tim Black,Gicon Pumps & Equipmt,6284,SCC_4952,2020-02-06,61,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 61,"450 E Pima Street #2
-",,Phoenix,AZ,85004,,Denali Metalworks,6286,SCC_4954,,62,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-62,42554 Sante Fe Drive,,Kingman,AZ,86401,,Laron Inc - Kingman,6287,SCC_4955,2020-05-18,63,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-63,3550 S 16th Street,,Phoenix,AZ,85040,,Laron Inc - PHX,6288,SCC_4955,2020-05-18,64,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85004,,Denali Metalworks,6286,SCC_4954,,62,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+62,42554 Sante Fe Drive,,Kingman,AZ,86401,,Laron Inc - Kingman,6287,SCC_4955,2020-05-18,63,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+63,3550 S 16th Street,,Phoenix,AZ,85040,,Laron Inc - PHX,6288,SCC_4955,2020-05-18,64,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 64,"223 Foster Street
-",,Martinez,CA,94533,,Baja Construction,6290,SCC_4956,,65,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Martinez,CA,94533,,Baja Construction,6290,SCC_4956,,65,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 65,"3530 E Atlanta Ave
-",,Phoenix,AZ,85040,,Tru Metal Solutions,6291,SCC_4957,2019-12-11,66,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Phoenix,AZ,85040,,Tru Metal Solutions,6291,SCC_4957,2019-12-11,66,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 66,"1001 S Edward Drive
-",,Tempe,AZ,85281,,SDB Contracting Services,6292,SCC_4958,,67,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Tempe,AZ,85281,,SDB Contracting Services,6292,SCC_4958,,67,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 67,"411 East Frye Rd
-",,Chandler,AZ,85225,,Old Castle Infrastructure,6293,SCC_4959,,68,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,Chandler,AZ,85225,,Old Castle Infrastructure,6293,SCC_4959,,68,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 68,"
-",,,,,,City of Sedona,6294,SCC_4960,,69,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-69,4415 W. Magnolia St.,,Phoenix,AZ,85043,Brian Oesterreicher,Rimex,6295,SCC_4961,2022-11-22,70,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-70,754 E Maley St,,Willcox,AZ,85643,Virginia Parish,Simflo Pump,6296,SCC_4962,2022-12-12,71,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+",,,,,,City of Sedona,6294,SCC_4960,,69,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+69,4415 W. Magnolia St.,,Phoenix,AZ,85043,Brian Oesterreicher,Rimex,6295,SCC_4961,2022-11-22,70,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+70,754 E Maley St,,Willcox,AZ,85643,Virginia Parish,Simflo Pump,6296,SCC_4962,2022-12-12,71,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 71,"735 N 19th Avenue
-Phoenix  AZ  85009",,,,,,Smith Pipe and Steel,6297,SCC_4963,2020-01-28,72,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-72,3637 E. Anne St.,,,,,,MetalFab AZ,6298,SCC_4964,,73,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-73,3883 W. Lower Buckeye Rd.,,Phoenix,AZ,85009,Ron Ruff,R.J. Ruff & CO.,6299,SCC_4965,2020-02-13,74,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-74,100 s Roosevelt Avenue,,Chandler,AZ,85226,1st Time invoice Submission,Rogers Corporation,6300,SCC_4966,2020-02-11,75,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-75,2122 S Hardy Drive,,Tempe,AZ,85282,James Hwyward,Schreiber Foods,6301,SCC_4967,2022-09-07,76,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-76,2160 Superstition Blvd,,Apache Junction,AZ,85120,Accounts Payable,Transco Inc,6302,SCC_4968,2020-02-19,77,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-77,4205 W. Lower Buckeye Rd,,Phoenix,AZ,85009,Antonia,S Diamond Steel,6303,SCC_4969,2021-09-17,78,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-78,,,,,,,Mountain Scaper,6304,SCC_4902,2020-05-12,79,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-79,3620 S 40th Street,,Phoenix,AZ,85040,,Phoenix Tower Crane,6305,SCC_4971,2020-05-12,80,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Phoenix  AZ  85009",,,,,,Smith Pipe and Steel,6297,SCC_4963,2020-01-28,72,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+72,3637 E. Anne St.,,,,,,MetalFab AZ,6298,SCC_4964,,73,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+73,3883 W. Lower Buckeye Rd.,,Phoenix,AZ,85009,Ron Ruff,R.J. Ruff & CO.,6299,SCC_4965,2020-02-13,74,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+74,100 s Roosevelt Avenue,,Chandler,AZ,85226,1st Time invoice Submission,Rogers Corporation,6300,SCC_4966,2020-02-11,75,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+75,2122 S Hardy Drive,,Tempe,AZ,85282,James Hwyward,Schreiber Foods,6301,SCC_4967,2022-09-07,76,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+76,2160 Superstition Blvd,,Apache Junction,AZ,85120,Accounts Payable,Transco Inc,6302,SCC_4968,2020-02-19,77,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+77,4205 W. Lower Buckeye Rd,,Phoenix,AZ,85009,Antonia,S Diamond Steel,6303,SCC_4969,2021-09-17,78,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+78,,,,,,,Mountain Scaper,6304,SCC_4902,2020-05-12,79,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+79,3620 S 40th Street,,Phoenix,AZ,85040,,Phoenix Tower Crane,6305,SCC_4971,2020-05-12,80,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 80,"2 N. Central Avenue
-Suite 1600",,Phoenix,AZ,85004,Ric Traeger,Ric Traeger,6306,SCC_4972,,81,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-81,1881 East University Drive,,Phoenix,AZ,85034,Kim Rivera,Keller Electrical Ind,6307,SCC_4973,2022-02-22,82,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-82,2275 E Ganley Road,,Tucson,AZ,85706,,Caid Industries Inc,6308,SCC_4974,,83,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-83,14815 S 14th Place,,Phoenix,AZ,85048,,ALDERFER DESIGNS,6309,SCC_4975,2021-05-06,84,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-84,4248 N Craftsman Ct Suite 100,,Scottsdale,AZ,85251,,Nitti Builders,6310,SCC_4976,2020-09-03,85,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-85,3335 W Vernon Ave,,Phoenix,AZ,85009,,Associated Sign Company,6311,SCC_4977,,86,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-86,5002 S 36th Street,,Phoenix,AZ,85040,,Paragon Power LLC,6312,SCC_4978,2020-04-29,87,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-87,4141 S 36th St Ste 170,,,,,,P3 Construction,6313,SCC_4979,2020-05-11,88,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-88,,,,,,,robert doenges,6314,SCC_4980,2020-06-04,89,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-89,204 S 69th Avenue,,Phoenix,AZ,85043,Dianne Positeri,Pacific Tek,6315,SCC_4981,2020-06-29,90,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-90,,,,,,,Todd Whiteley,6316,SCC_4982,2020-06-04,91,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-91,302 S 28TH ST,,phoenix,AZ,85034,,custom pipe Fabrication,6317,SCC_4983,2020-06-04,92,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-92,3120 W Weldon Ave,,Phoenix,AZ,85017,David Svancara,Coin and Professional Equipment Co,6318,SCC_4984,2020-06-17,93,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-93,4640 E Cotton Gin Loop,,Phoenix,AZ,85040,Jesse Resendez,Haydon Building Corp,6319,SCC_4985,2022-12-06,94,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-94,15230 N 75th St Ste 2010,,Scottsdale,AZ,85260,,Bad Elf,6320,SCC_4986,,95,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-95,4050 W Saturn Way,,Chandler,AZ,85226,,Capital Pump & Equipment,6321,SCC_4987,2020-09-22,96,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-96,2610 S. 21st Street,,Phoenix,AZ,85034,Liza Celaya,Super Radiator Coils,6322,SCC_4988,2020-07-01,97,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-97,317 S THORNTON,,CASA GRANDE,AZ,85193,Accounts Payable,TTX CREW,6323,SCC_4989,2020-07-20,98,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-98,4110 E. Elwood Street,,Phoenix,AZ,85040,,MGC Contractors,6324,SCC_4990,,99,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-99,,,,,,,Design Bits,6326,SCC_4992,,100,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-100,100 S Price Rd,,Tempe,AZ,85281,Casey Horn,Nesbitt Contracting Co,6327,SCC_4993,2020-09-11,101,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-101,12211 S Gilbert Rd,,Gilbert,AZ,85296,,Campbell Enterprises,6328,SCC_4991,,102,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-102,55 E Vía Del Cielo,,Wickenburg,AZ,85930,,Dan Reardon,6329,SCC_4994,2020-10-22,103,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-103,7117 E. Orange Blossom Ln,,Paradise Valley,AZ,85251,Zack Causer,Alloy Builders Corporation,6330,SCC_4995,2020-11-10,104,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-104,2205 W. Grant St.,,Phoenix,AZ,85009,A/P,Southwest Water Works Contractors,6331,SCC_4996,2020-12-30,105,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-105,,,,,,,BRIAN,6332,SCC_4997,,106,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-106,5128 E Ingram St,,Mesa,AZ,85205,,Bold Framing,6333,SCC_4998,,107,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-107,6029 W Washington St,,Phoenix,AZ,85043,,Phoenix Stair,6334,SCC_4999,,108,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-108,13A Talbot Ave,,Braddock,PA,15104,Accounts Payable,Phillips Tank & Structure,6335,SCC_5000,2021-05-20,109,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-109,"3625 E Atlanta Ave, Suite #2",,Phoenix,AZ,85040,,"Construction Product  Marketing, LLC",6336,SCC_5001,2021-10-22,110,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-110,840 North Estrella Parkway,,Goodyear,AZ,85338,,3 Minute Express Car Wash,6337,SCC_5002,,111,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Suite 1600",,Phoenix,AZ,85004,Ric Traeger,Ric Traeger,6306,SCC_4972,,81,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+81,1881 East University Drive,,Phoenix,AZ,85034,Kim Rivera,Keller Electrical Ind,6307,SCC_4973,2022-02-22,82,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+82,2275 E Ganley Road,,Tucson,AZ,85706,,Caid Industries Inc,6308,SCC_4974,,83,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+83,14815 S 14th Place,,Phoenix,AZ,85048,,ALDERFER DESIGNS,6309,SCC_4975,2021-05-06,84,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+84,4248 N Craftsman Ct Suite 100,,Scottsdale,AZ,85251,,Nitti Builders,6310,SCC_4976,2020-09-03,85,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+85,3335 W Vernon Ave,,Phoenix,AZ,85009,,Associated Sign Company,6311,SCC_4977,,86,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+86,5002 S 36th Street,,Phoenix,AZ,85040,,Paragon Power LLC,6312,SCC_4978,2020-04-29,87,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+87,4141 S 36th St Ste 170,,,,,,P3 Construction,6313,SCC_4979,2020-05-11,88,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+88,,,,,,,robert doenges,6314,SCC_4980,2020-06-04,89,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+89,204 S 69th Avenue,,Phoenix,AZ,85043,Dianne Positeri,Pacific Tek,6315,SCC_4981,2020-06-29,90,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+90,,,,,,,Todd Whiteley,6316,SCC_4982,2020-06-04,91,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+91,302 S 28TH ST,,phoenix,AZ,85034,,custom pipe Fabrication,6317,SCC_4983,2020-06-04,92,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+92,3120 W Weldon Ave,,Phoenix,AZ,85017,David Svancara,Coin and Professional Equipment Co,6318,SCC_4984,2020-06-17,93,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+93,4640 E Cotton Gin Loop,,Phoenix,AZ,85040,Jesse Resendez,Haydon Building Corp,6319,SCC_4985,2022-12-06,94,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+94,15230 N 75th St Ste 2010,,Scottsdale,AZ,85260,,Bad Elf,6320,SCC_4986,,95,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+95,4050 W Saturn Way,,Chandler,AZ,85226,,Capital Pump & Equipment,6321,SCC_4987,2020-09-22,96,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+96,2610 S. 21st Street,,Phoenix,AZ,85034,Liza Celaya,Super Radiator Coils,6322,SCC_4988,2020-07-01,97,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+97,317 S THORNTON,,CASA GRANDE,AZ,85193,Accounts Payable,TTX CREW,6323,SCC_4989,2020-07-20,98,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+98,4110 E. Elwood Street,,Phoenix,AZ,85040,,MGC Contractors,6324,SCC_4990,,99,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+99,,,,,,,Design Bits,6326,SCC_4992,,100,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+100,100 S Price Rd,,Tempe,AZ,85281,Casey Horn,Nesbitt Contracting Co,6327,SCC_4993,2020-09-11,101,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+101,12211 S Gilbert Rd,,Gilbert,AZ,85296,,Campbell Enterprises,6328,SCC_4991,,102,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+102,55 E Vía Del Cielo,,Wickenburg,AZ,85930,,Dan Reardon,6329,SCC_4994,2020-10-22,103,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+103,7117 E. Orange Blossom Ln,,Paradise Valley,AZ,85251,Zack Causer,Alloy Builders Corporation,6330,SCC_4995,2020-11-10,104,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+104,2205 W. Grant St.,,Phoenix,AZ,85009,A/P,Southwest Water Works Contractors,6331,SCC_4996,2020-12-30,105,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+105,,,,,,,BRIAN,6332,SCC_4997,,106,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+106,5128 E Ingram St,,Mesa,AZ,85205,,Bold Framing,6333,SCC_4998,,107,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+107,6029 W Washington St,,Phoenix,AZ,85043,,Phoenix Stair,6334,SCC_4999,,108,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+108,13A Talbot Ave,,Braddock,PA,15104,Accounts Payable,Phillips Tank & Structure,6335,SCC_5000,2021-05-20,109,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+109,"3625 E Atlanta Ave, Suite #2",,Phoenix,AZ,85040,,"Construction Product  Marketing, LLC",6336,SCC_5001,2021-10-22,110,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+110,840 North Estrella Parkway,,Goodyear,AZ,85338,,3 Minute Express Car Wash,6337,SCC_5002,,111,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 111,"5155 E Eagle Dr.
-Unit 20561",,Mesa,AZ,85277,,Arizona Pure Custom,6338,SCC_5003,2022-05-04,112,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-112,PO Box 8096,,Phoenix,AZ,85066,,Moreno Welding,6339,SCC_5004,,113,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-113,,,,,,,Levi Gomez,6340,SCC_5005,,114,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Unit 20561",,Mesa,AZ,85277,,Arizona Pure Custom,6338,SCC_5003,2022-05-04,112,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+112,PO Box 8096,,Phoenix,AZ,85066,,Moreno Welding,6339,SCC_5004,,113,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+113,,,,,,,Levi Gomez,6340,SCC_5005,,114,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 114,"777 Terrace Avenue,
-Suite 101",,Hasbrouck Heights,NJ,07604,,WTEC Energy Innovation,6341,SCC_5006,2021-04-28,115,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-115,9452 N. 16th Ave,,Phoenix,AZ,85021,Susan Almanza,"SouthWest Environmental, Inc.",6342,SCC_5007,2021-07-07,116,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-116,3045 S 51st Ave,,Phoenix,AZ,85043,,"MP Environmental Services, Inc.",6343,SCC_5008,,117,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-117,731 N 19th Ave,,Phoenix,AZ,85009,,Standard Coating Company,6344,SCC_5009,,118,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-118,3888 E Broadway Road Phoenix AZ,,,AZ,859040,"Kevin""Cole"" Bigelow",Kiewit,6345,SCC_5010,2021-09-10,119,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-119,55 E Via Del Cielo Wickerberg,,Wickerberg,AZ,,Dan Reardon,Horner,6346,SCC_5011,2021-07-19,120,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-120,1002 East Main Street,,El Centro,CA,92243,,EW Corporation Industrial Fabricators and Construc,6347,SCC_5012,,121,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-121,,,,,,,Keller North America,6348,SCC_5013,2021-05-20,122,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-122,4141 E. Raymond St. Suite E,,Phoenix,AZ,85040,,Archer Douglas,6349,SCC_5014,,123,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-123,701 N Cooper Rd,,Gilbert,AZ,85233,Accounts Payable,Hunter Contracting Co,6350,SCC_5015,2023-01-30,124,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-124,5555 S Packard Ave,,Cudahy,WI,53110,Su Heus,Vilter Manufacturing,6351,SCC_5016,2021-06-28,125,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-125,,,,,,Victor Vidales,Victor Vidales,6352,SCC_5017,2021-08-13,126,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-126,,,,,,Accounts Payable,Williamson Development,6353,SCC_5018,2021-09-29,127,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-127,39506,,phoenix,AZ,85086,,Red point Contracting,6354,SCC_5019,,128,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-128,5555 S Packard Ave,,Cudahy,WI,53110,,Emerson Climate Technologies,6355,SCC_5020,,129,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-129,6875 W. Galveston St.,,Chandler,AZ,85226,Priscilla Miller,Comfort Systems USA Southwest,6356,SCC_5021,2022-06-09,130,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-130,2410 W Broadway Rd,,Phoenix,AZ,85041,Accounts Payable,Jensen Precast,6357,SCC_5022,2022-05-04,131,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-131,280 E. Germann Rd.,,Gilbert,AZ,85297,Accounts Payable,Silent-Aire,6360,SCC_5025,2022-12-08,132,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-132,1468 S. 1st Avenue,,Thatcher,AZ,85552,Wayne,Allied Machine Works,6361,SCC_5026,2022-02-03,133,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-133,,,,,,,Hector Heras,6362,SCC_5027,,134,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-134,34240 S Old Black Canyon Hwy,,Black Canyon City,AZ,85324,,GrayLeaf Studio,6363,SCC_5028,2022-04-08,135,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-135,731 N 19th Ave,,Phoenix,AZ,85009,,Smith pipe,6364,SCC_5029,,136,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-136,3045 S. 7th St.,,Phoenix,AZ,85040,,Buesing Corp,6365,SCC_5030,2022-09-07,137,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-137,,,,,,,Cavco Pewter,6366,SCC_5031,,138,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-138,3230 East Broadway Rd,,Phoenix,AZ,85040,Accounts Payable,SRE Environmental,6367,SCC_5032,2022-08-01,139,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-139,2059 Pioneer Hills Rd.,,Globe,AZ,85501,Accounts Payable,"5D Mining & Construction, Inc",6368,SCC_5033,2022-04-27,140,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-140,5430 side Rd,,Prescott,AZ,86301,,Technology Construction,6369,SCC_5034,,141,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-141,941 W 23rd St,,Tempe,AZ,85282,Stacy Brady,"Summit Process Systems, LLC",6370,SCC_5035,2022-07-25,142,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-142,8137 N 83rd Ave,,Peoria,AZ,85345,,Stellar Steel,6371,SCC_5036,2022-07-22,143,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-143,,,,,,,Accutite Fasteners Inc.,6372,SCC_5037,,144,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-144,164 S. Hamilton Place,,Gilbert,AZ,85233,,American Precision Manufacturing Inc.,6373,SCC_5038,,145,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-145,620 W Commerce Ave,,Gilbet,AZ,85233,Matt Howard,S & H Steel Co,6374,SCC_5039,2022-09-12,146,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-146,1422 South 21st Drive Dr,,Phoenix,AZ,85009,,D & L Fabricating,6375,SCC_5040,2022-10-10,147,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-147,6527 W Northview Ave,,Glendale,AZ,85303,,Diamond Iron LLC,6376,SCC_5041,,148,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-148,599 S. Litchfield Road,,Goodyear,AZ,85338,Jonathan Jones,InProduction,6377,SCC_5042,2022-11-07,149,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-149,3065 43rd Avenue,,Phoenix,,85009,,US PIPE,6378,SCC_5043,,150,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-150,3065 S. 43rd Ave,,Phoenix,AZ,85009,Charles Gregg,U.S. Pipe Fabrication,6379,SCC_5044,,151,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-151,,,,,,,Havana Shade,6380,SCC_5045,,152,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-152,,,,,,,DENNIS GROUP,6381,SCC_5046,,153,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-153,23724 N Central Ave,,Phoenix,AZ,85024,Accounts Payable,All Things Metal LLC,6383,SCC_5048,2023-01-09,154,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-154,,,,,,,AZDPS,6384,SCC_5049,2022-12-28,155,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-155,4010 E Illinois St,,Tucson,AZ,85714,Accounts Payable,"Smyth Industries, Inc.",6385,SCC_5050,2023-04-13,156,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-156,,,,,,,city of surprise,6386,SCC_5051,,157,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-157,,,,,,,Morales Artistic Wrought Iron,6387,SCC_5052,,158,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-158,,,,,,,City of Phoenix,6388,SCC_5053,,159,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-159,3933 East La Salle Street,,Phoenix,AZ,85040,Patrice Minetta,"DNG Construction, LLC",6389,SCC_5054,2023-03-23,160,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-160,529 E Juanita Ave # 6,,Mesa,AZ,85204,Ron Schneider,Aluma Line Inc,6390,SCC_5055,2023-03-14,161,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-161,3965 East Patrick Lane,,Las Vegas,NV,89139,,Slurry Management Systems,6392,SCC_5057,,162,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-162,,,PHOENIX,AZ,,Roy Hunt,DFT FAB,6393,SCC_5058,2023-03-24,163,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+Suite 101",,Hasbrouck Heights,NJ,07604,,WTEC Energy Innovation,6341,SCC_5006,2021-04-28,115,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+115,9452 N. 16th Ave,,Phoenix,AZ,85021,Susan Almanza,"SouthWest Environmental, Inc.",6342,SCC_5007,2021-07-07,116,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+116,3045 S 51st Ave,,Phoenix,AZ,85043,,"MP Environmental Services, Inc.",6343,SCC_5008,,117,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+117,731 N 19th Ave,,Phoenix,AZ,85009,,Standard Coating Company,6344,SCC_5009,,118,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+118,3888 E Broadway Road Phoenix AZ,,,AZ,859040,"Kevin""Cole"" Bigelow",Kiewit,6345,SCC_5010,2021-09-10,119,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+119,55 E Via Del Cielo Wickerberg,,Wickerberg,AZ,,Dan Reardon,Horner,6346,SCC_5011,2021-07-19,120,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+120,1002 East Main Street,,El Centro,CA,92243,,EW Corporation Industrial Fabricators and Construc,6347,SCC_5012,,121,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+121,,,,,,,Keller North America,6348,SCC_5013,2021-05-20,122,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+122,4141 E. Raymond St. Suite E,,Phoenix,AZ,85040,,Archer Douglas,6349,SCC_5014,,123,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+123,701 N Cooper Rd,,Gilbert,AZ,85233,Accounts Payable,Hunter Contracting Co,6350,SCC_5015,2023-01-30,124,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+124,5555 S Packard Ave,,Cudahy,WI,53110,Su Heus,Vilter Manufacturing,6351,SCC_5016,2021-06-28,125,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+125,,,,,,Victor Vidales,Victor Vidales,6352,SCC_5017,2021-08-13,126,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+126,,,,,,Accounts Payable,Williamson Development,6353,SCC_5018,2021-09-29,127,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+127,39506,,phoenix,AZ,85086,,Red point Contracting,6354,SCC_5019,,128,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+128,5555 S Packard Ave,,Cudahy,WI,53110,,Emerson Climate Technologies,6355,SCC_5020,,129,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+129,6875 W. Galveston St.,,Chandler,AZ,85226,Priscilla Miller,Comfort Systems USA Southwest,6356,SCC_5021,2022-06-09,130,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+130,2410 W Broadway Rd,,Phoenix,AZ,85041,Accounts Payable,Jensen Precast,6357,SCC_5022,2022-05-04,131,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+131,280 E. Germann Rd.,,Gilbert,AZ,85297,Accounts Payable,Silent-Aire,6360,SCC_5025,2022-12-08,132,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+132,1468 S. 1st Avenue,,Thatcher,AZ,85552,Wayne,Allied Machine Works,6361,SCC_5026,2022-02-03,133,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+133,,,,,,,Hector Heras,6362,SCC_5027,,134,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+134,34240 S Old Black Canyon Hwy,,Black Canyon City,AZ,85324,,GrayLeaf Studio,6363,SCC_5028,2022-04-08,135,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+135,731 N 19th Ave,,Phoenix,AZ,85009,,Smith pipe,6364,SCC_5029,,136,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+136,3045 S. 7th St.,,Phoenix,AZ,85040,,Buesing Corp,6365,SCC_5030,2022-09-07,137,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+137,,,,,,,Cavco Pewter,6366,SCC_5031,,138,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+138,3230 East Broadway Rd,,Phoenix,AZ,85040,Accounts Payable,SRE Environmental,6367,SCC_5032,2022-08-01,139,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+139,2059 Pioneer Hills Rd.,,Globe,AZ,85501,Accounts Payable,"5D Mining & Construction, Inc",6368,SCC_5033,2022-04-27,140,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+140,5430 side Rd,,Prescott,AZ,86301,,Technology Construction,6369,SCC_5034,,141,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+141,941 W 23rd St,,Tempe,AZ,85282,Stacy Brady,"Summit Process Systems, LLC",6370,SCC_5035,2022-07-25,142,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+142,8137 N 83rd Ave,,Peoria,AZ,85345,,Stellar Steel,6371,SCC_5036,2022-07-22,143,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+143,,,,,,,Accutite Fasteners Inc.,6372,SCC_5037,,144,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+144,164 S. Hamilton Place,,Gilbert,AZ,85233,,American Precision Manufacturing Inc.,6373,SCC_5038,,145,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+145,620 W Commerce Ave,,Gilbet,AZ,85233,Matt Howard,S & H Steel Co,6374,SCC_5039,2022-09-12,146,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+146,1422 South 21st Drive Dr,,Phoenix,AZ,85009,,D & L Fabricating,6375,SCC_5040,2022-10-10,147,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+147,6527 W Northview Ave,,Glendale,AZ,85303,,Diamond Iron LLC,6376,SCC_5041,,148,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+148,599 S. Litchfield Road,,Goodyear,AZ,85338,Jonathan Jones,InProduction,6377,SCC_5042,2022-11-07,149,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+149,3065 43rd Avenue,,Phoenix,,85009,,US PIPE,6378,SCC_5043,,150,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+150,3065 S. 43rd Ave,,Phoenix,AZ,85009,Charles Gregg,U.S. Pipe Fabrication,6379,SCC_5044,,151,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+151,,,,,,,Havana Shade,6380,SCC_5045,,152,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+152,,,,,,,DENNIS GROUP,6381,SCC_5046,,153,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+153,23724 N Central Ave,,Phoenix,AZ,85024,Accounts Payable,All Things Metal LLC,6383,SCC_5048,2023-01-09,154,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+154,,,,,,,AZDPS,6384,SCC_5049,2022-12-28,155,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+155,4010 E Illinois St,,Tucson,AZ,85714,Accounts Payable,"Smyth Industries, Inc.",6385,SCC_5050,2023-04-13,156,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+156,,,,,,,city of surprise,6386,SCC_5051,,157,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+157,,,,,,,Morales Artistic Wrought Iron,6387,SCC_5052,,158,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+158,,,,,,,City of Phoenix,6388,SCC_5053,,159,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+159,3933 East La Salle Street,,Phoenix,AZ,85040,Patrice Minetta,"DNG Construction, LLC",6389,SCC_5054,2023-03-23,160,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+160,529 E Juanita Ave # 6,,Mesa,AZ,85204,Ron Schneider,Aluma Line Inc,6390,SCC_5055,2023-03-14,161,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+161,3965 East Patrick Lane,,Las Vegas,NV,89139,,Slurry Management Systems,6392,SCC_5057,,162,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+162,,,PHOENIX,AZ,,Roy Hunt,DFT FAB,6393,SCC_5058,2023-03-24,163,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv

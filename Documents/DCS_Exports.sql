@@ -320,3 +320,17 @@ Missing Customer Codes (Exist on Quote, but missing in CustCode)
 Select q.* from Quote q where q.CustCode not in (Select custcode from CustCode) order by QuoteNo
 
 Select Distinct WorkCode from QuoteDet
+
+
+SELECT 
+qd.ItemNo,
+qd.PartNo,
+qd.Qty1,
+qd.Price1,
+qd.JobNo,
+qd.JobNotes,
+qd.QuoteNo,
+qd.Status,
+SUBSTRING(qd.Descrip,1,80) as Name,
+'DCS_' + CONVERT(nvarchar,qd.QuoteDet_ID) as QuoteDet_ID,
+'DCS_'+ qd.QuoteNo as LookupValForOpp,CASE WHEN qd.WorkCode is Null		THEN 'DUMMY'	WHEN qd.WorkCode = ''		THEN 'DUMMY'	ELSE qd.WorkCodeEND as WorkCode,row_number() over(order by(qd.QuoteDet_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_QuoteDet.csv' as Source_File,	  CONVERT(nvarchar,qd.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM QuoteDet qd Order by QuoteNo

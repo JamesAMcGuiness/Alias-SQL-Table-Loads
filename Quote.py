@@ -63,7 +63,7 @@ def logic_to_apply(row):
             #*****************************************************************
             # CloseDate - Transformation to SF Date
             #***************************************************************** 	
-                print(row["CloseDate"])				   											
+                #print(row["CloseDate"])				   											
                 if row["CloseDate"] != None and row["CloseDate"] != '': 
                     row["CloseDate"] = datetime.datetime.strptime(row["CloseDate"], "%m/%d/%y").strftime("%Y-%m-%d")
             except ValueError:
@@ -71,9 +71,9 @@ def logic_to_apply(row):
                     try:
                         if row["CloseDate"] != None and row["CloseDate"] != '': 
                             row["CloseDate"] = datetime.datetime.strptime(row["CloseDate"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                            print('Successfully used the 4 digit format!')
+                            #print('Successfully used the 4 digit format!')
                     except ValueError:
-                        print("Date ValueERROR for CloseDate! *" + row["CloseDate"] + "*")
+                         print("Close Date is valid*" + row["CloseDate"] + "*")
 
 
 

@@ -24,6 +24,7 @@ import Release
 import Quote
 import QuoteDet
 import Order
+import LogFile
 
 #Below is the Salesforce Config file for connecting to ORG
 import Client_Config
@@ -87,6 +88,18 @@ def lambda_handler(key):
         CBU_CommTrans.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])	
 	
+    elif "LogFile" in key: 
+        print('***************************************')    
+        print('Running for LogFile....')
+
+        head, filename = os.path.split(key)
+        object_name = "Data_Loads_Stats__c"
+        ex_id = "Id"
+        
+        header = "Client_del,Load_Date__c,Load_File__c,Rows_Processed__c,Total_Errors__c,RecordLocks_del,Error_Rate__c,Warning_Flag__c,JobID__c".split(",")
+        
+        LogFile.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 	
 
     # Running for Customer
@@ -99,7 +112,7 @@ def lambda_handler(key):
         object_name = "Account"
         ex_id = "E2_Customer_Key__c"
         
-        header = "CSV_Row_Num_del,TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
+        header = "CSV_Row_Num_del,TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
         
         Customer.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -113,7 +126,7 @@ def lambda_handler(key):
         object_name = "Account"
         ex_id = "E2_Customer_Key__c"
         
-        header = "CSV_Row_Num_del,ShippingStreet,ShipAddr2_del,ShippingCity,ShippingState,ShippingPostalCode,Ship_To_Contact__c,Shipping_Address_Company_Name__c,E2_Ship_To_Key__c,E2_Customer_Key__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del".split(",")          
+        header = "CSV_Row_Num_del,ShippingStreet,ShipAddr2_del,ShippingCity,ShippingState,ShippingPostalCode,Ship_To_Contact__c,Shipping_Address_Company_Name__c,E2_Ship_To_Key__c,E2_Customer_Key__c,LastModDate_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del".split(",")          
         
         CustomerShipTo.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -127,7 +140,7 @@ def lambda_handler(key):
         object_name = "Contact"
         ex_id = "E2_Contact_ID__c"
         
-        header = "CSV_Row_Num_del,Contact_del,FirstName,LastName,Custom_Email__c,Phone,Title,MobilePhone,E2_Contact_ID__c,LastModDate_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,Account.E2_Customer_Key__c,LoadForCompany_del".split(",")          
+        header = "CSV_Row_Num_del,Contact_del,FirstName,LastName,Custom_Email__c,Phone,Title,MobilePhone,E2_Contact_ID__c,LastModDate_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,Account.E2_Customer_Key__c,LoadForCompany_del".split(",")          
         
         Contact.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -142,7 +155,7 @@ def lambda_handler(key):
         object_name = "WorkOrderLineItem"
         ex_id = "OrderDetId__c"
         
-        header = "CSV_Row_Num_del,Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -156,7 +169,7 @@ def lambda_handler(key):
         object_name = "WorkOrder"
         ex_id = "Order_Number__c"
         
-        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c,Account.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c,Account.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id,'Serial',runtype,os.environ["ClientName"])
@@ -169,7 +182,7 @@ def lambda_handler(key):
         head, filename = os.path.split(key)
         object_name = "BillingDet__c"
         ex_id = "BillingDet_ID__c"
-        header = "CSV_Row_Num_del,Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -183,7 +196,7 @@ def lambda_handler(key):
         object_name = "Billing__c"
         ex_id = "E2_Invoice__c"
         
-        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -198,7 +211,7 @@ def lambda_handler(key):
         object_name = "QuoteDet__c"
         ex_id = "QuoteDet_ID__c"
         
-        header = "CSV_Row_Num_del,Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
+        header = "CSV_Row_Num_del,Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
         
         QuoteDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -212,12 +225,13 @@ def lambda_handler(key):
         object_name = "Opportunity"
         ex_id = "E2_Quote_Key__c"
         
-        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,LoadedByPython_del,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
+        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
-
+    # Running for Logfile
+    
 
     else:
         print(" ............................................. ")
@@ -405,10 +419,11 @@ try:
                  
                  #If the file found is the 
                   if objtype in file:
+                      print(' ')
                       print('***************************************')
                       print('Found a file to process..' + str(file))
                       print('***************************************')
-                      
+                      print(' ')
                       f      = open(file, encoding="latin-1")
                       reader = csv.reader(f)
                       lines  = len(list(csv.reader(f)))
@@ -418,9 +433,11 @@ try:
                            print('***************************************')
                            print("input file does not have any records.")
                            print('***************************************')	
-                           os.remove(destination + "/" + file)
-                           
-                           errorLog.error_bat_job(file, "input file does not have any records")
+                           print(' ')
+                           os.rename(source + "/" + file, destination + "/" + file)
+                           print('Moved empty file to output folder.')
+                           print(' ')
+                           #errorLog.error_bat_job(file, "input file does not have any records")
                       else:
 
                            lambda_handler(file)
@@ -433,7 +450,7 @@ try:
                                 #print('***************************************')    
                                               
                                 os.rename(source + "/" + file, destination + "/" + file)
-                
+                                
                            except FileExistsError:
                                 print('***************************************')    			
                                 print("file already exists")
@@ -444,23 +461,49 @@ try:
                                 os.rename(source + "/" + file, destination + "/" + file)
 				
                            print('*****************************************')    				
-                           print('SUCCESSFULLY Finshed processing the file ')
+                           print('SUCCESSFULLY Finshed processing the file(s) ')
                            print('*****************************************')
                            print(' ')    				
                            print(' ')    				
                            print(' ')    				
                            
                                				     
-
-
+                           
+                                
+                           print('*****************************************')    				
+                           print('SUCCESSFULLY Finshed loading Run Stats.  ')
+                           print('*****************************************')
+                           print(' ')    				
+                           print(' ')    				
+                           print(' ')    				              
+                           
+        #Load all LogFiles to Salesforce
+        print('Now move all LogFile(s) to the Input folder.')
+        source = os.environ.get("op_path") + '\\logs'
+        os.chdir(source)
+                                    
+        #file_lst will contain all the LogFile CSVs to be loaded
+        file_lst = os.listdir(source)
+        #print(file_lst)         
+        for file in file_lst:
+               lambda_handler(file)
+               os.remove(file)
+        file_lst = os.listdir(source)     
+        for file in file_lst:
+               os.remove(file)
+                           
     else:
+        
         pass
+        
+        
         
 except Exception as e:
     source      = os.environ.get("ip_path")
     destination = os.environ.get("op_path")
-    
+    print(' ')
     print("Error has occurred, captured in Driver.py")
+    print(' ')
     print(str(e))
     
     file_lst = os.listdir(source)
@@ -481,4 +524,7 @@ except Exception as e:
                 
             except Exception as e:
                 print(str(e))
+                
+
+
                 

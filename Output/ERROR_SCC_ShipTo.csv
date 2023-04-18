@@ -1,9 +1,9 @@
 ﻿Error,,SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
-DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,8,1042 S. Lewis,,Mesa,AZ,85210,Connie Huston,MMI Industrial & Steel,6226,SCC_4898,2022-11-22,9,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,",,Scottsdale,AZ,85256,,Oil & Gas Process Solutions,6254,SCC_4925,,33,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
-DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,34,3240 S. 37th Ave,,Phoenix,AZ,85009,David Cooper,MMI Tank,6256,SCC_4927,2021-11-29,35,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,8,1042 S. Lewis,,Mesa,AZ,85210,Connie Huston,MMI Industrial & Steel,6226,SCC_4898,2022-11-22,9,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,",,Scottsdale,AZ,85256,,Oil & Gas Process Solutions,6254,SCC_4925,,33,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,34,3240 S. 37th Ave,,Phoenix,AZ,85009,David Cooper,MMI Tank,6256,SCC_4927,2021-11-29,35,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 DUPLICATE_VALUE:Duplicate external id specified: scc_4947:E2_Customer_Key__c --,36,"8112 West Buckeye Road
 DUPLICATE_VALUE:Duplicate external id specified: scc_4944:E2_Customer_Key__c --,38,"4320 E. Presidio St.
-DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,",,Apache Junction,AZ,85120,,Rolling Plains,6263,SCC_4928,2019-10-17,40,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,",,Apache Junction,AZ,85120,,Rolling Plains,6263,SCC_4928,2019-10-17,40,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv
 DUPLICATE_VALUE:Duplicate external id specified: scc_4955:E2_Customer_Key__c --,40,"
-DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,",,,,,,Ensolutions Inc,6271,SCC_4941,2019-10-17,48,Y,2023-04-14 06:41:35.167,SCC_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: scc_4902:E2_Customer_Key__c --,",,,,,,Ensolutions Inc,6271,SCC_4941,2019-10-17,48,Y,2023-04-18 09:00:11.970,SCC_ShipTo.csv

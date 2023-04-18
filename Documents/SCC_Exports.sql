@@ -103,7 +103,7 @@ row_number() over(order by(cc.CustCode_ID)) as RowNum_Of_Source_File,
 	  CONVERT(nvarchar,o.LastModDate, 23) as PreviousModDate
 From Orders o, CustCode cc
 Where o.CustCode = cc.CustCode
-
+and o.LastModDate > '2023-04-16T20:04:09'
 
 
 

@@ -2,16 +2,95 @@ import pyodbc
 import os
 import pandas as pd 
 from datetime import datetime
+import json
+from simple_salesforce import Salesforce, SalesforceLogin, SFType
 
+def getLatestRunDate(myQuery):
+    qryResult = sf.query(myQquery)
+    
+    df       = pd.DataFrame(qryResult['records'])
+    strval   = str(df["LastModifiedDate"])
+    strstrip = strval[1:24]
+       
+    
+    print('****************************************************')
+    print('The last run load for this object was: ' + strstrip)
+    print('****************************************************')
+    
+    return strstrip
+
+
+#Connect To Salesforce
+#sID, instance = SalesforceLogin(username='aliasadmin@desertpowder.com',password='Welcome2Alias',domain='login')
+
+sf = Salesforce(username='aliasadmin@desertpowder.com', password='Welcome2Alias', consumer_key='3MVG9ux34Ig8G5epuXWEQpQ7Gz_zuuv2Soyr2ZwaDScXJyqC1EqxbHYqUZfZ7Ftgstaq_G0gfHorcViPUeX1a', consumer_secret='A10B5FBDBB8FF0B968BA8B44C32267F45477F3B23EA738B941D83038759E3476')
+
+#sf = Salesforce(instance_url=instance, session_id = sID)
 
 #create SQL Connection
 connDCS = pyodbc.connect(driver='{ODBC Driver 17 for SQL Server}',host='DPC-APP02', database ='DCS-Shop', user ='sa', password='E2@DesertPC')
 connSCC = pyodbc.connect(driver='{ODBC Driver 17 for SQL Server}',host='DPC-APP02', database ='SCC-Shop', user ='sa', password='E2@DesertPC')
 
 #print(conn)
+# Select MAX(LastModifiedDate) from Contact Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null
+# WHERE LastModDate > '2023-01-01'
+# Need to convert 2023-04-15T14:28:24.000+0000 to 2023-04-15T14:28:24 
+
+# Get Last time tables were loaded
+try:
+ if (1 == 2):
+    queryLastRunContact           = """Select LastModifiedDate from Contact Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""
+    ContactLastRunDate = getLatestRunDate(queryLastRunContact)
+    
+    queryLastRunAccount           = """Select LastModifiedDate from Account Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""
+    AccountLastRunDate = getLatestRunDate(queryLastRunAccount)
+
+    queryLastRunOpportunity       = """Select LastModifiedDate from Opportunity Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    OpportunityLastRunDate = getLatestRunDate(queryLastRunOpportunity)        
+
+    queryLastRunQuoteDet          = """Select LastModifiedDate from QuoteDet Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    QuoteDetLastRunDate = getLatestRunDate(queryLastRunQuoteDet)
+
+    queryLastRunQuoteLineItem     = """Select LastModifiedDate from QuoteLineItem Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    QuoteLineItemtLastRunDate = getLatestRunDate(queryLastRunQuoteLineItem)
+
+    queryLastRunWorkOrder         = """Select LastModifiedDate from WorkOrder Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    QuoteLineItemtLastRunDate = getLatestRunDate(queryLastRunWorkOrder)
+
+    queryLastRunWorkOrderLineItem = """Select LastModifiedDate from WorkOrderLineItem Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    QuoteLineItemtLastRunDate = getLatestRunDate(queryLastRunWorkOrderLineItem)
+
+    queryLastRunBilling           = """Select LastModifiedDate from Billing__c Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+    QuoteLineItemtLastRunDate = getLatestRunDate(queryLastRunBilling)
+
+    QuoteLineItemtLastRunDate = getLatestRunDate(quequeryLastRunBillingDetryLastRunBilling)    
+    queryLastRunBillingDet        = """Select LastModifiedDate from BillingDet__c Where Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""    
+        
+    #print(querySOQL)
+    
+    qryResult = sf.query(querySOQL)
+    
+    df       = pd.DataFrame(qryResult['records'])
+    strval   = str(df["LastModifiedDate"])
+    strstrip = strval[1:24]
+       
+    
+    print('****************************************************')
+    print('The last run load for this object was: ' + strstrip)
+    print('****************************************************')
+except Exception as e:
+    #print type(e)
+    print(e)
+
+
+    
+    
+    
 
 # DSC_Customer Load
+#LastRunDate = AccountLastRunDate
 sqlQuery = "SELECT Count(*) Over() as TotalRows,replace(replace(APContact,char(10),''),char(13),'') as APContact,replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,BCity,BState,BZIPCode,Phone,Website,replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,'DCS_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,CONVERT(nvarchar,LastModDate, 23) as PreviousModDate,row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Customer.csv' as Source_File,'DESERT' as LoadForCompany FROM CustCode ORDER BY CustCode_ID"
+#sqlQuery = "SELECT Count(*) Over() as TotalRows,replace(replace(APContact,char(10),''),char(13),'') as APContact,replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,BCity,BState,BZIPCode,Phone,Website,replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,'DCS_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,CONVERT(nvarchar,LastModDate, 23) as PreviousModDate,row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Customer.csv' as Source_File,'DESERT' as LoadForCompany FROM CustCode " + " WHERE LastModDate > " + "'"+ LastRunDate + "'" + " ORDER BY CustCode_ID"
 df = pd.read_sql(sql=sqlQuery, con=connDCS)
 df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_Customer.csv')
 
@@ -21,6 +100,7 @@ df = pd.read_sql(sql=sqlQuery, con=connSCC)
 df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\SCC_Customer.csv')
 
 #DCS Contact Load
+#LastRunDate = ContactLastRunDate
 sqlQuery = "SELECT c.Contact,' ' as FirstName,' ' as LastName,c.EMail,c.Phone,c.Title,c.Cell_Phone,'DCS_' + CONVERT(varchar(100), c.Contacts_ID) as Contacts_ID,CONVERT(nvarchar,c.LastModDate, 23) as PreviousModDate,row_number() over(order by(c.Contacts_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Contact.csv' as Source_File,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as CustCode_ID,'DESERT' as LoadForCompany FROM Contacts c, CustCode cc WHERE c.code = cc.custcode and c.Contact > '' ORDER BY Contacts_ID"
 df = pd.read_sql(sql=sqlQuery, con=connDCS)
 df.to_csv('C:\MyProjects\Alias-SQL-Table-Loads\Input\DCS_Contact.csv',encoding="utf-8-sig")

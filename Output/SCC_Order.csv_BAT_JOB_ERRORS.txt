@@ -1,5 +1,0 @@
-﻿Error,[400] Bulk API HTTP Error result: <?xml version="1.0" encoding="UTF-8"?><error
-   xmlns="http://www.force.com/2009/06/asyncapi/dataload">
- <exceptionCode>ClientInputError</exceptionCode>
- <exceptionMessage>Unable to find any data to create batch</exceptionMessage>
-</error>
