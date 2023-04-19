@@ -1,0 +1,8 @@
+﻿,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+0,"Bunger Steel, Inc.",Bunger Steel Incorporated,8112 W Buckeye Rd,,Phoenix,AZ,85043,DCS_89381,2023-04-11,"Bunger Steel, Inc.",,Bunger Truck,DUE ON RECEI,FOB???,DCS_637,DCS_637,,1,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19
+1,"Ducts, Inc.","Ducts, Inc.",5162 W. Van Buren,,Phoenix,AZ,85043,DCS_88449,2023-04-11,"Ducts, Inc.",216-23,N/A,NET 30,FOB???,DCS_1174,DCS_1174,20824,2,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19
+2,Progressive Roofing,Progressive Roofing,23 N. 35th Ave,,Phoenix,AZ,85009,DCS_89380,2023-04-11,Progressive Roofing,,N/A,NET 30,FOB???,DCS_3460,DCS_3460,,3,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19
+3,Pure Guard LLC,"Pure Guard, LLC","9191 W. Buckeye Road, Ste 101",,Tolleson,AZ,85353,DCS_88462,2023-04-03,Pure Guard LLC,19110,N/A,NET 30,FOB???,DCS_3470,DCS_3470,,4,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19
+4,Quality Iron Design,Quality Iron Design,"Tim Freiland
+3035 S. 35th Ave",,Phoenix,AZ,85009,DCS_88532,2023-04-17,Quality Iron Design,,N/A,NET 30,FOB???,DCS_3484,DCS_3484,,5,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19
+5,Madero & Son's Iron Design,Madero & Son's Iron Design,1722 W Atlanta Ave,,Phoenix,AZ,85041,DCS_89378,2023-04-10,Madero & Son's Iron Design,,,DUE ON RECEI,FOB???,DCS_6949,DCS_6949,,6,Y,2023-04-19 08:00:09.347,DCS_Order.csv,2023-04-19

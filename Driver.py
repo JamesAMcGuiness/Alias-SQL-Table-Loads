@@ -434,7 +434,26 @@ try:
                            print("input file does not have any records.")
                            print('***************************************')	
                            print(' ')
-                           os.rename(source + "/" + file, destination + "/" + file)
+                           
+                           
+                           try:
+                                os.rename(source + "/" + file, destination + "/" + file)
+                                
+                           except FileExistsError:
+                                
+                                os.remove(destination + "/" + file)
+                                
+                                try:
+                                    #print('We are finally trying to mover this ' + source + ' filename = ' + file + ' to the Output folder.')
+                                    os.rename(source + "/" + file, destination + "/" + file)
+                                    
+                                except Exception as e:
+                                    print(str(e))
+                           
+                           
+                           
+                           
+                           
                            print('Moved empty file to output folder.')
                            print(' ')
                            #errorLog.error_bat_job(file, "input file does not have any records")
@@ -456,6 +475,7 @@ try:
                                 print("file already exists")
                                 print("removing already exists file")
                                 print('***************************************')    
+                                
                                 os.remove(destination + "/" + file)
                                 print("copying ip file")
                                 os.rename(source + "/" + file, destination + "/" + file)

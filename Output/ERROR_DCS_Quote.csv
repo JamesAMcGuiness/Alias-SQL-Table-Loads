@@ -1,3 +1,0 @@
-﻿Error,,QUOTE_TO,Addr1,Addr2,City,st,Zip,QuoteNo,DateENT,E2_Customer_Key,QuotedBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,E2_Quote_Key,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
-INVALID_FIELD:Failed to deserialize field at col 6. Due to  'DateENT' is not a valid value for the type xsd:date:Quote_Date__c --,0,,"
-REQUIRED_FIELD_MISSING:Required fields are missing: [CloseDate]:CloseDate --,",,Peoria,AZ,85345,DCS_10079,2014-10-07,DCS_2853,39,,,,NET 30,(623) 979-1117,(623) 979-9722,Formula for Total??,DCS_10079, ,Metal-weld Specialties - 10079,Quote,2014-11-06,71,Y,2023-04-18 09:02:19.807,DCS_Quote.csv,2019-09-24,DESERT
