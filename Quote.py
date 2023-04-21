@@ -25,7 +25,7 @@ def logic_to_apply(row):
         #
         #**************************************************************************************   
         if columnname == 'RecordTypeId':
-            print('We have setup logic for this field: ' + columnname)		
+            #print('We have setup logic for this field: ' + columnname)		
             if row["LoadForCompany_del"] == 'DESERT':
                 row["RecordTypeId"] = os.environ['DesertOppRTID'] 
             else:
@@ -51,7 +51,7 @@ def logic_to_apply(row):
                             row["Quote_Date__c"] = datetime.datetime.strptime(row["Quote_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
                             print('Successfully used the 4 digit format!')
                     except ValueError:
-                        print("Date ValueERROR for Quote_Date__c! *" + row["Quote_Date__c"] + "*")
+                        print("Date for Quote_Date__c is in valid format!" + "*" + row["Quote_Date__c"] + "*")
 
 
         if columnname == 'CloseDate':

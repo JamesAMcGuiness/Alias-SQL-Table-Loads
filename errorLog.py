@@ -15,9 +15,9 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
     errorCt = 0
     client = os.environ['ClientName']
 
-    c_time = datetime.datetime.now().strftime("%y-%m-%d-%H-%M-%S-")
-    errorfile      = errorprefix   + '_' + os.path.basename(filename)
-    logfile        = 'LogFile' + '_' + os.path.basename(filename)
+    c_time         = datetime.datetime.now().strftime("%y-%m-%d-%H-%M-%S-")
+    errorfile      = c_time + '_' + errorprefix   + '_' + os.path.basename(filename)
+    logfile        = c_time + '_' + 'LogFile' + '_' + os.path.basename(filename)
     
     lockerrorsfile = 'RECORDLOCKS' + '_' + os.path.basename(filename)
     

@@ -20,7 +20,6 @@ import Billing
 import BillingDet
 import Order
 import OrderDet
-import Release
 import Quote
 import QuoteDet
 import Order
@@ -112,7 +111,7 @@ def lambda_handler(key):
         object_name = "Account"
         ex_id = "E2_Customer_Key__c"
         
-        header = "CSV_Row_Num_del,TotalRows_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
+        header = "CSV_Row_Num_del,Ship_To_Contact__c,BillingStreet,SecondLineOfStreet_del,BillingCity,BillingState,BillingPostalCode,Phone,Website,Name,Customer_Code__c,E2_Customer_Key__c,PreviousModDate_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LoadForCompany_del".split(",")          
         
         Customer.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -169,7 +168,7 @@ def lambda_handler(key):
         object_name = "WorkOrder"
         ex_id = "Order_Number__c"
         
-        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c,Account.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c_del,AccountName__r.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id,'Serial',runtype,os.environ["ClientName"])
@@ -225,7 +224,7 @@ def lambda_handler(key):
         object_name = "Opportunity"
         ex_id = "E2_Quote_Key__c"
         
-        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Lookup to USER_del,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
+        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Quote_Entered_By__c,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
@@ -511,6 +510,19 @@ try:
         file_lst = os.listdir(source)     
         for file in file_lst:
                os.remove(file)
+               
+        #Remove All LogFile files from the Output folder
+        source = os.environ.get("op_path")
+
+        file_lst = os.listdir(source)
+        #print(file_lst)         
+        for file in file_lst:
+            if "LogFile" in file:
+                #print('Remove ' + file )   
+                os.remove(source + "/" + file)
+
+                    
+               
                            
     else:
         

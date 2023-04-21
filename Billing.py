@@ -49,6 +49,7 @@ def logic_to_apply(row):
                         row["Invoice_Date__c"] = datetime.datetime.strptime(row["Invoice_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
                         #print('Successfully used the 4 digit format!')
                 except ValueError:
+                    #If it reaches here the date is already in a valid format
                     print("Date already in valid format! *" + row["Invoice_Date__c"] + "*")
                         
 
