@@ -17,7 +17,7 @@ import errorLog
 def logic_to_apply(row):
 
     #The List Of fields we have unique logic for...
-    theColumnList =	["RecordTypeId","Quote_Date__c","CloseDate"]
+    theColumnList =	["RecordTypeId","Owner"]
 
     for columnname in theColumnList:
 
@@ -31,8 +31,11 @@ def logic_to_apply(row):
             else:
                 row["RecordTypeId"] = os.environ['StandardOppRTID'] 
             	                
+        elif columnname == 'Owner':
+            row["OwnerId"] = os.environ['RecordOwnerId']
+        
 
-        if columnname == 'Quote_Date__c':
+        elif columnname == 'Quote_Date__c':
             #*****************************************************************
             # Date Transformations...
             #***************************************************************** 					   											

@@ -18,7 +18,7 @@ def set_env_var():
     os.environ['client_id']           = "3MVG9ux34Ig8G5epuXWEQpQ7Gz_zuuv2Soyr2ZwaDScXJyqC1EqxbHYqUZfZ7Ftgstaq_G0gfHorcViPUeX1a"
     os.environ['client_secret']       = "A10B5FBDBB8FF0B968BA8B44C32267F45477F3B23EA738B941D83038759E3476"
     os.environ['username']            = "aliasadmin@desertpowder.com"
-    os.environ['password']            = "Welcome2Alias"
+    os.environ['password']            = "Welcome2Alias!"
     os.environ['host']                = "https://desertcoatingsolutions.my.salesforce.com/"
     os.environ['security_token']      = ""	
     os.environ['DesertRTID']          = "012Dn000000F74NIAS"	
@@ -27,6 +27,9 @@ def set_env_var():
     os.environ['StandardContactRTID'] = "012Dn000000F74TIAS"	
     os.environ['DesertOppRTID']       = "012Dn000000F74cIAC"	
     os.environ['StandardOppRTID']     = "012Dn000000F74JIAS"	
+    
+    #Set Owner to Josh
+    os.environ['RecordOwnerId']       = '005Dn0000044OGHIA2'   
                 
     #print('Config variables...')
     #print('****************************************')

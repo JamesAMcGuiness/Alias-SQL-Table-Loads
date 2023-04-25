@@ -18,7 +18,7 @@ def logic_to_apply(row):
 
     #print(row)
     #The List Of fields we have unique logic for...
-    theColumnList =	["Contact_del","RecordTypeId"]
+    theColumnList =	["Contact_del","RecordTypeId","Owner"]
 
     for columnname in theColumnList:
 
@@ -37,12 +37,15 @@ def logic_to_apply(row):
         #**************************************************************************************
         # Set correct RecordTypeId
         #**************************************************************************************   
-        if columnname == 'RecordTypeId':
+        elif columnname == 'RecordTypeId':
             #print('We have setup logic for this field: ' + columnname)		
             if row["LoadForCompany_del"] == 'DESERT':
                 row["RecordTypeId"] = os.environ['DesertContactRTID']
             else:
                 row["RecordTypeId"] = os.environ['StandardContactRTID']
+                
+        elif columnname == 'Owner':
+            row["OwnerId"] = os.environ['RecordOwnerId']
         
 
 

@@ -210,7 +210,7 @@ def lambda_handler(key):
         object_name = "QuoteDet__c"
         ex_id = "QuoteDet_ID__c"
         
-        header = "CSV_Row_Num_del,Item_Number__c,Part_Number_Description__c,Quantity__c,Price__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
+        header = "CSV_Row_Num_del,Item_Number__c,Part_Number_Description__c,Quantity__c,Quantity_2__c,Quantity_3__c,Quantity_4__c,Quantity_5__c,Quantity_6__c,Quantity_7__c,Quantity_8__c,Price__c,Price_2__c,Price_3__c,Price_4__c,Price_5__c,Price_6__c,Price_7__c,Price_8__c,Job_Number__c,Job_Notes__c,Quote_Number__c,Status_del,Name,QuoteDet_ID__c,Quote_Header__r.E2_Quote_Key__c,Product2Id_del,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,loadforcompany_del".split(",")
         
         QuoteDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])

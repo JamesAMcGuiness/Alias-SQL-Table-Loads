@@ -1,0 +1,23 @@
+Ship To Load: 
+    1. (We need to clean up where we have the same Customer defined to more than 1 Shipping Address )
+
+Work Order Load: 
+    1. What to load for FOB?.. There is no FOB field in Sql Server 
+
+Billing Load:
+    1. Should Sub Total be a sum of the Billing Detail rows? (Sum the Amount value in Salesforce?)
+    2. Balance Due - Use SalesForce formula (Total - Amt Due)
+
+Quote Load:
+1. How to determine the StageName value (Currently hardcoded to Quote)
+2. 'DateENT' is not a valid value for the type Quote_Date__c
+3. 'NULL' is not a valid value for the CloseDate 
+
+Quote Detail Load:
+1. Cleanup should be that we make sure every Quote has an existing Customer (CustCode) value
+2. What to do about Qty1 thru Qty8, Price1 thru Price8, do we just sum up the values?
+3. Is Status of EXP/PEND/WON ok for this or should we be getting the status from somewhere else?
+
+
+
+    

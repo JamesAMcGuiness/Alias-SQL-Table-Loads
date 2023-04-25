@@ -17,7 +17,7 @@ import errorLog
 def logic_to_apply(row):
 
     #The List Of fields we have unique logic for...
-    theColumnList =	["RecordTypeId"]
+    theColumnList =	["RecordTypeId","Owner"]
 
     for columnname in theColumnList:
 
@@ -31,6 +31,12 @@ def logic_to_apply(row):
             else:
                 row["RecordTypeId"] = os.environ['StandardRTID'] 
             	                
+
+        elif columnname == 'Owner':
+            row["OwnerId"] = os.environ['RecordOwnerId']
+            #print('Just Set owner to' + row["OwnerId"])
+
+
         else:
             print('We have not setup logic for this field: ' + columnname)			
 

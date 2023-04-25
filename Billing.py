@@ -17,7 +17,7 @@ import errorLog
 def logic_to_apply(row):
 
     #The List Of fields we have unique logic for...
-    theColumnList =	["Invoice_Status__c","Invoice_Date__c","Paid_to_Date__c"]
+    theColumnList =	["Invoice_Status__c","Paid_to_Date__c"]
 
     for columnname in theColumnList:
 
@@ -36,21 +36,21 @@ def logic_to_apply(row):
         #**************************************************************************************
         #                              Invoice_Date__c
         #**************************************************************************************   
-        if columnname == 'Invoice_Date__c':
+        #if columnname == 'Invoice_Date__c':
             
-            try:
+            #try:
 
-                if row["Invoice_Date__c"] != None and row["Invoice_Date__c"] != '': 
-                    row["Invoice_Date__c"] = datetime.datetime.strptime(row["Invoice_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
-            except ValueError:
+            #    if row["Invoice_Date__c"] != None and row["Invoice_Date__c"] != '': 
+            #        row["Invoice_Date__c"] = datetime.datetime.strptime(row["Invoice_Date__c"], "%m/%d/%y").strftime("%Y-%m-%d")
+            #except ValueError:
             
-                try:
-                    if row["Invoice_Date__c"] != None and row["Invoice_Date__c"] != '': 
-                        row["Invoice_Date__c"] = datetime.datetime.strptime(row["Invoice_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-                        #print('Successfully used the 4 digit format!')
-                except ValueError:
-                    #If it reaches here the date is already in a valid format
-                    print("Date already in valid format! *" + row["Invoice_Date__c"] + "*")
+            #    try:
+            #        if row["Invoice_Date__c"] != None and row["Invoice_Date__c"] != '': 
+            #            row["Invoice_Date__c"] = datetime.datetime.strptime(row["Invoice_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
+            #            #print('Successfully used the 4 digit format!')
+            #    except ValueError:
+            #        #If it reaches here the date is already in a valid format
+            #        #print("Date already in valid format! *" + row["Invoice_Date__c"] + "*")
                         
 
         #**************************************************************************************

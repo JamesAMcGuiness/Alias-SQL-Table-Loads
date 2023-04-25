@@ -1,1 +1,1 @@
-﻿,ItemNo,PartNo,Qty1,Price1,JobNo,JobNotes,QuoteNo,Status,Name,QuoteDet_ID,LookupValForOpp,WorkCode,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
+﻿,ItemNo,PartNo,Qty1,Qty2,Qty3,Qty4,Qty5,Qty6,Qty7,Qty8,Price1,Price2,Price3,Price4,Price5,Price6,Price7,Price8,JobNo,JobNotes,QuoteNo,Status,Name,QuoteDet_ID,LookupValForOpp,WorkCode,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
