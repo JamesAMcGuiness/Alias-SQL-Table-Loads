@@ -1,0 +1,2 @@
+﻿Error,,Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
+INVALID_FIELD:Foreign key external ID: dcs_6960 not found for field E2_Customer_Key__c in entity Account:--,26,Steven Harris, , ,,480-215-1377,Buyer,,DCS_7116,2023-04-26,27,Y,2023-04-26 09:44:05.573,DCS_Contact.csv,DCS_6960,DESERT

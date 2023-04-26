@@ -126,7 +126,7 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             #        print("Date ValueERROR for payout__Statement_Date__c! *" + row["payout__Statement_Date__c"] + "*")
 			
             count = count + 1
-            print(count)
+            
             disbursals.append(row)
             if (count / 10000) == 1:
                 batches.append(post_batch_salesforce(disbursals, bulk, job))
@@ -150,9 +150,9 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         theFilePath = os.environ.get("op_path") + '\Trigger.txt'
 
         #Create error file if not     
-        print('Done, about to caLL ERROR_LOG')
+        #print('Done, about to caLL ERROR_LOG')
         errorLog.error_log(bulk, job, batches, filename, "ERROR", "SUCCESS",runtype,"utf-8-sig")
-        print('jUST BACK FROM ERROR_LOG')
+        #print('jUST BACK FROM ERROR_LOG')
 
         #with open(theFilePath,'w') as csvFile:
         #        writer = csv.writer(csvFile)

@@ -1,0 +1,2 @@
+﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+INVALID_FIELD:Foreign key external ID: dcs_6960 not found for field E2_Customer_Key__c in entity Account:--,8,Janus Custom Building Products,Janus Custom Building Products,"7500 E. Pinnacle Peak Rd 

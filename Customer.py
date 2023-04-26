@@ -34,7 +34,7 @@ def logic_to_apply(row):
 
         elif columnname == 'Owner':
             row["OwnerId"] = os.environ['RecordOwnerId']
-            #print('Just Set owner to' + row["OwnerId"])
+            print('Just Set owner to' + row["OwnerId"])
 
 
         else:
