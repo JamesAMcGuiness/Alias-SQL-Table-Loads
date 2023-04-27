@@ -19,7 +19,7 @@ def error_log(bulk, job, batches, filename, errorprefix, successprefix,runtype,f
     errorfile      = c_time + '_' + errorprefix   + '_' + os.path.basename(filename)
     logfile        = c_time + '_' + 'LogFile' + '_' + os.path.basename(filename)
     
-    lockerrorsfile = 'RECORDLOCKS' + '_' + os.path.basename(filename)
+    lockerrorsfile = c_time + '_' + 'RECORDLOCKS' + '_' + os.path.basename(filename)
     
 	
     logfile        = os.environ['op_path'] + '\\' + 'logs' + '\\' + logfile    

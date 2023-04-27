@@ -224,10 +224,14 @@ def lambda_handler(key):
         object_name = "Opportunity"
         ex_id = "E2_Quote_Key__c"
         
-        header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Quote_Entered_By__c,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
-        
+        if "Insert" in key:
+            insertorupdate =  'I'
+            header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Quote_Entered_By__c,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
+        else:
+            insertorupdate =  'U'
+            header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Quote_Entered_By__c,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName_del,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"],insertorupdate)
 
     # Running for Logfile
     
@@ -407,7 +411,7 @@ try:
         #print(file_lst)        
         
         #List the files in the desired load order
-        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv','BillingDet.csv','Quote.csv','QuoteDet.csv']
+        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv','BillingDet.csv','Quote_Insert.csv','Quote_Update.csv','QuoteDet.csv']
 
         #For each SQLFile defined, look for that file in the input folder
         for objtype in SQLFiles:

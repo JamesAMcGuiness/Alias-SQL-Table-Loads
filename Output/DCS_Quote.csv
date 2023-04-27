@@ -1,1 +1,2 @@
 ﻿,QUOTE_TO,Addr1,Addr2,City,st,Zip,QuoteNo,DateENT,E2_Customer_Key,EntBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,E2_Quote_Key,RecordTypeId,Name,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
+0,Flowserve Corporation,5310 Taneytown Pike,,Taneytown,MD,21787,DCS_20932,2023-04-26,DCS_4940,tbutkowski,,Keith Greni Jr.,,NET 60,410-756-2602,,Formula for Total??,DCS_20932, ,Flowserve Corporation - 20932,2023-08-24,1,Y,2023-04-26 13:00:10.897,DCS_Quote.csv,2023-04-26,DESERT

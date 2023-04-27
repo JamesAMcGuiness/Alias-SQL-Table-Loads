@@ -30,6 +30,21 @@ def set_env_var():
     
     #Set Owner to Josh
     os.environ['RecordOwnerId']       = '005Dn0000044OGHIA2'   
+             
+             
+    #SQL Server 
+    
+    
+    os.environ['SQLServerDriver']           = '{ODBC Driver 17 for SQL Server}'        
+    os.environ['SQLServerHost']             =  'DPC-APP02'       
+    os.environ['SQLServerDesertDatabase']   = 'DCS-Shop'       
+    os.environ['SQLServerStandardDatabase'] = 'SCC-Shop'       
+    os.environ['SQLServerUser']             = 'sa'
+    os.environ['SQLServerPassword']         = 'E2@DesertPC'
+            
+    
+    
+    
                 
     #print('Config variables...')
     #print('****************************************')

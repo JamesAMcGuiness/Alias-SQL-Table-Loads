@@ -88,7 +88,7 @@ def post_batch_salesforce(disbursals, bulk, job):
     return batch
 
 
-def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tusername, tpassword, tsecurity_token, tclient_id,key, tobject_name, theader, tex_id, concurrency_type,runtype,client=''):
+def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tusername, tpassword, tsecurity_token, tclient_id,key, tobject_name, theader, tex_id, concurrency_type,runtype,client='',insertorupdate=''):
 
     bulk = SalesforceBulk(host=thost, sessionId=tsessionId, sandbox=tsandbox,
         username=tusername,
@@ -99,8 +99,13 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
     print('In salesforce_connect_and_upload for Quote')						
     print('****************************************************')						  
 
-    job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
-    
+    #Need to run the Quote load twice, once for INSERT and once for UPDATE because Status is a required field on an INSERT and we don't want to overlay an existing Status with 
+    #hardcode value of 'Quote' which is what we are storing for all INSERTS.
+    if (insertorupdate == 'I'):
+        job = bulk.create_insert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
+    else:
+        job = bulk.create_upsert_job(object_name = tobject_name, external_id_name=tex_id, concurrency=concurrency_type)
+        
     print(job)
 
     thedate    = datetime.datetime.now()
