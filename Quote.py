@@ -124,8 +124,12 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
         disbursals = []
         batches    = []    
         count      = 1
+        ignr_head = True
         
         for row in reader:
+            if ignr_head:
+                ignr_head = False
+                continue
 			
             ############################## To apply any special logic for this client #########################################################################
             logic_to_apply(row)

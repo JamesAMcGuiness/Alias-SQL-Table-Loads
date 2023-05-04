@@ -145,64 +145,8 @@ def lambda_handler(key):
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
 
 
-    # Running for OrderDet (Work Order Line Item)
-    elif "OrderDet" in key: 
-        print('***************************************')    
-        print('Running for OrderDet....')
-
-        head, filename = os.path.split(key)
-        object_name = "WorkOrderLineItem"
-        ex_id = "OrderDetId__c"
-        
-        header = "CSV_Row_Num_del,Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
-        
-        OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
-
-# Running for Order (Work Order)
-    elif "Order" in key: 
-        print('***************************************')    
-        print('Running for Order....')
-
-        head, filename = os.path.split(key)
-        object_name = "WorkOrder"
-        ex_id = "Order_Number__c"
-        
-        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c_del,AccountName__r.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
-        
-        Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id,'Serial',runtype,os.environ["ClientName"])
-    
-
-    elif "BillingDet" in key: 
-        print('***************************************')    
-        print('Running for Billing Detail....')
-
-        head, filename = os.path.split(key)
-        object_name = "BillingDet__c"
-        ex_id = "BillingDet_ID__c"
-        header = "CSV_Row_Num_del,Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
-        
-        BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
-
-
-    elif "Billing" in key: 
-        print('***************************************')    
-        print('Running for Billing....')
-
-        head, filename = os.path.split(key)
-        object_name = "Billing__c"
-        ex_id = "E2_Invoice__c"
-        
-        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
-        
-        Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
-        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
-
-
     # Running for QuoteLine        
-    elif "QuoteDet" in key: 
+    elif "Quote_Det" in key: 
         print('***************************************')    
         print('Running for Quote Detail....')
 
@@ -232,6 +176,63 @@ def lambda_handler(key):
             header = "CSV_Row_Num_del,Quote_TO__c,Custom_Street__c,Custom_Street_2__c_del,Custom_City__c,Custom_State__c,Custom_Zip__c,Quote_Number__c,Quote_Date__c,Account.E2_Customer_Key__c,Quote_Entered_By__c,Ship_Via__c,Contact_Name__c,Inquiry__c,TermsCode_del,Phone__c,FAX__c,Amount_del,E2_Quote_Key__c,RecordTypeId,Name,StageName_del,CloseDate,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del,LoadForCompany_del".split(",")
         Quote.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"],insertorupdate)
+
+
+    # Running for OrderDet (Work Order Line Item)
+    elif "Order_Det" in key: 
+        print('***************************************')    
+        print('Running for OrderDet....')
+
+        head, filename = os.path.split(key)
+        object_name = "WorkOrderLineItem"
+        ex_id = "OrderDetId__c"
+        
+        header = "CSV_Row_Num_del,Quantity_del,UnitPrice_del,Description,Revision_del,JobNumber_del,Status,Quote Numbner_del,OrderDetID__c,WorkOrder.Order_Number__c,AssetID_del,PricebookEntryID_del,Product_WorkCode__r.Work_Code__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        OrderDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
+# Running for Order (Work Order)
+    elif "Order" in key: 
+        print('***************************************')    
+        print('Running for Order....')
+
+        head, filename = os.path.split(key)
+        object_name = "WorkOrder"
+        ex_id = "Order_Number__c"
+        
+        header = "CSV_Row_Num_del,Sold_To_Account__c,Ship_To_Account__c,Street,Street_del,City,State,PostalCode,Order_Number__c,Order_Date__c,AccountName__c_del,P_O_Number__c,Ship_Via__c,TermCode_Del,FOB__c_del,AccountName__r.E2_Customer_Key__c,E2_Customer_Key__c,Quote_Number__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        Order.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id,'Serial',runtype,os.environ["ClientName"])
+    
+
+    elif "Billing_Det" in key: 
+        print('***************************************')    
+        print('Running for Billing Detail....')
+
+        head, filename = os.path.split(key)
+        object_name = "BillingDet__c"
+        ex_id = "BillingDet_ID__c"
+        header = "CSV_Row_Num_del,Quantity__c,Unit_Price__c,Amount__c,Invoice__r.Invoice_Number__c,Part_Description__c,Part_Number__c,Packing_List_Number__c,Revision__c,P_O_Number__c,BillingDet_ID__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        BillingDet.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
+
+    elif "Billing" in key: 
+        print('***************************************')    
+        print('Running for Billing....')
+
+        head, filename = os.path.split(key)
+        object_name = "Billing__c"
+        ex_id = "E2_Invoice__c"
+        
+        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        
+        Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
+        client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])
+
 
     # Running for Logfile
     
@@ -411,7 +412,7 @@ try:
         #print(file_lst)        
         
         #List the files in the desired load order
-        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Order.csv','OrderDet.csv','Billing.csv','BillingDet.csv','Quote_Insert.csv','Quote_Update.csv','QuoteDet.csv']
+        SQLFiles = ['Customer.csv','Contact.csv','ShipTo.csv','Quote_Insert.csv','Quote_Update.csv','Quote_Det.csv','Order.csv','Order_Det.csv','Billing.csv','Billing_Det.csv']
 
         #For each SQLFile defined, look for that file in the input folder
         for objtype in SQLFiles:

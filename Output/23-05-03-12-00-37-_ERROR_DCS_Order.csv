@@ -1,0 +1,2 @@
+﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+FIELD_INTEGRITY_EXCEPTION:Order Date: invalid date: Wed Jul 21 00:00:00 GMT 9019:Order_Date__c --,3035 S. 35th Ave",,Phoenix,AZ,85009,DCS_88600,2023-05-02,Quality Iron Design,,N/A,NET 30,FOB???,DCS_3484,DCS_3484,,2,Y,2023-05-03 09:00:08.117,DCS_Order.csv,2023-05-03

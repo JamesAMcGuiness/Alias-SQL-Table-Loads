@@ -102,9 +102,9 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             #    try:
             #        if row["Order_Date__c"] != None and row["Order_Date__c"] != '': 
             #            row["Order_Date__c"] = datetime.datetime.strptime(row["Order_Date__c"], "%m/%d/%Y").strftime("%Y-%m-%d")
-            #            #print('Successfully used the 4 digit format!')
+                        #print('Successfully used the 4 digit format!')
             #    except ValueError:
-            #        print("Date ValueERROR for Order_Date__c! *" + row["Order_Date__c"] + "*")
+            #        print("Date for Order_Date__c is valid *" + row["Order_Date__c"] + "*")
 			
             count = count + 1
             disbursals.append(row)

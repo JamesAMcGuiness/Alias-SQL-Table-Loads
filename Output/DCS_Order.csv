@@ -1,1 +1,3 @@
 ﻿,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+0,S Diamond Steel,S Diamond Steel,"4205 W Lower Buckeye Rd
+",,Phoenix,AZ,85009,DCS_71309,9019-07-21,S Diamond Steel,219281,N/A,NET 30,FOB???,DCS_3863,DCS_3863,,1,Y,2023-05-04 08:00:09.350,DCS_Order.csv,2022-11-10

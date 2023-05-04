@@ -1,0 +1,2 @@
+﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+INVALID_FIELD:Foreign key external ID: dcs_6961 not found for field E2_Customer_Key__c in entity Account:--,22,PH Builders,PH Builders,,,,  ,,DCS_88620,2023-05-01,PH Builders,,,DUE ON RECEI,FOB???,DCS_6716,DCS_6716,,23,Y,2023-05-02 05:00:08.280,DCS_Order.csv,2023-05-01
