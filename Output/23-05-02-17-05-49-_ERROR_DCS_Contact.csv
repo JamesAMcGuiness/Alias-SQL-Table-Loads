@@ -1,2 +1,0 @@
-﻿Error,,Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
-INVALID_FIELD:Foreign key external ID: dcs_6966 not found for field E2_Customer_Key__c in entity Account:--,13,Antonio Ramirez, , ,,928-955-9400,Buyer,,DCS_7136,2023-05-02,14,Y,2023-05-02 14:05:42.590,DCS_Contact.csv,DCS_6966,DESERT

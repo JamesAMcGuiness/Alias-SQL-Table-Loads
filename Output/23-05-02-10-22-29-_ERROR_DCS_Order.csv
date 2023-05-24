@@ -1,2 +1,0 @@
-﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
-INVALID_FIELD:Foreign key external ID: dcs_6961 not found for field E2_Customer_Key__c in entity Account:--,0,Huish Outdoors,Huish Outdoors,1540 North 2200 West,,Salt Lake City,UT,84116,DCS_88458,2023-04-20,Huish Outdoors,,,DUE ON RECEI,FOB???,DCS_6961,DCS_6961,,1,Y,2023-05-02 07:22:18.733,DCS_Order.csv,2023-05-01

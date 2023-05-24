@@ -1,2 +1,0 @@
-﻿Error,,ItemNo,PartNo,Qty1,Qty2,Qty3,Qty4,Qty5,Qty6,Qty7,Qty8,Price1,Price2,Price3,Price4,Price5,Price6,Price7,Price8,JobNo,JobNotes,QuoteNo,Status,Name,QuoteDet_ID,LookupValForOpp,WorkCode,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
-INVALID_FIELD:Foreign key external ID: scc_15396 not found for field E2_Quote_Key__c in entity Opportunity:--,Apply one coat of She",SCC_42723,SCC_15391,LIQUID,7,Y,2023-04-21 16:18:20.200,SCC_QuoteDet.csv,2023-04-21,DESERT

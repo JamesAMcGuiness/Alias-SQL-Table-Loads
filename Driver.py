@@ -228,7 +228,7 @@ def lambda_handler(key):
         object_name = "Billing__c"
         ex_id = "E2_Invoice__c"
         
-        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,Account_Name__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
+        header = "CSV_Row_Num_del,Sold_To__c,Ship_To__c,Street__c,Street_2__c_del,City__c,State__c,Zip_Postal_Code__c,Invoice_Number__c,Invoice_Date__c,Name,Work_Code__c,TermsCode_del,SubTotal_del,Sales_Tax__c,Shipping_Charges__c,Invoice_Total__c,Paid_to_Date__c,BalanceDue_del,E2_Customer_Key__c,Account__r.E2_Customer_Key__c,DateEnt_del,Invoice_Status__c,Quote_ID__c_del,E2_Invoice__c,RowNum_Of_Source_File_del,Loaded_From_Python_Process__c,LoadDate_del,Source_File_del,LastModDate_del".split(",")          
         
         Billing.salesforce_connect_and_upload(filename, host, sessionId, sandbox, username, password, security_token,
         client_id, key, object_name, header, ex_id, ProcessingMode,runtype,os.environ["ClientName"])

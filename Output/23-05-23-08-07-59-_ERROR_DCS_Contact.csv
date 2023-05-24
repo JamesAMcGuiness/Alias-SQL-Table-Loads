@@ -1,0 +1,2 @@
+﻿Error,,Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
+INVALID_FIELD:Foreign key external ID: dcs_6998 not found for field E2_Customer_Key__c in entity Account:--,3,Dan Ward, , ,DWW@weldmac.com,(619) 433-6652,Estimating,,DCS_7214,,4,Y,2023-05-23 05:07:21.983,DCS_Contact.csv,DCS_6998,DESERT

@@ -121,6 +121,9 @@ def salesforce_connect_and_upload(filename, thost, tsessionId, tsandbox, tuserna
             #print(row)
             count = count + 1
             disbursals.append(row)
+            print('Row to add is ') 
+            print(row)
+            print('*********************************************************************************')
             if (count / 10000) == 1:
                 batches.append(post_batch_salesforce(disbursals, bulk, job))
                 count = 1

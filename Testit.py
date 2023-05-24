@@ -8,17 +8,12 @@ from simple_salesforce import Salesforce, SalesforceLogin, SFType
 
 def getLatestRunDate(myQuery):
     qryResult = sf.query(myQuery)
+        
+    print('****************************************************')
+    print('The last run load for this object was: ' + qryResult['records'][0]['LastModifiedDate'])
+    print('****************************************************')
     
-    df       = pd.DataFrame(qryResult['records'])
-    strval   = str(df["LastModifiedDate"])
-    strstrip = strval[1:24]
-       
-    
-    #print('****************************************************')
-    #print('The last run load for this object was: ' + strstrip)
-    #print('****************************************************')
-    
-    return strstrip
+    return str(qryResult['records'][0]['LastModifiedDate'])
 
 #Get Config vars
 Client_Config.set_env_var()
@@ -54,28 +49,17 @@ connSCC = pyodbc.connect(driver=mySQLServerDriver,host=mySQLServerHost, database
 #print(connDCS)
 #print(connSCC)
 
-
-
-
-#DCS Quote Load
-myQuery           = """Select LastModifiedDate from Opportunity Where E2_Quote_Key__c like 'DCS_%' and Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1""" 
+#DCS Work Order Load
+myQuery           = """Select LastModifiedDate from WorkOrder Where E2_Customer_Key__c like 'DCS_%' and Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1"""
 LastRunDate = getLatestRunDate(myQuery)
-sqlQuery="SELECT q.CustDesc as 'QUOTE_TO',q.Addr1,q.Addr2,q.City,q.st,q.Zip,'DCS_' + q.QuoteNo as QuoteNo,CONVERT(nvarchar,q.DateEnt, 23) as DateENT,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,q.EntBy,q.ShipVia,q.ContactName,q.InqNum,q.TermsCode,q.Phone,q.FAX,'Formula for Total??' as Total,'DCS_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,' ' as RecordTypeId,q.CustDesc + ' - ' + q.QuoteNo as Name,'Quote' as StageName,CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'DCS_Quote.csv' as Source_File,	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM Quote q, CustCode cc Where q.CustCode = cc.CustCode and q.CustCode is not null" + " AND q.LastModDate > " + "'"+ LastRunDate + "'" + "order by E2_Quote_Key"
+
+sqlQuery="SELECT o.CustDesc as SoldTo,o.ShipToName,o.ShipAddr1,o.ShipAddr2,o.ShipCity,o.ShipSt,o.ShipZIP,'DCS_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,CONVERT(nvarchar,DateENT, 23) as DateENT,o.CustDesc as Customer,o.PONum,o.ShipVia,o.TermsCode,'FOB???' as FOB,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2,o.QuoteNo,row_number() over(order by(cc.CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Order.csv' as Source_File,CONVERT(nvarchar,o.LastModDate, 23) as PreviousModDate From Orders o, CustCode cc Where o.CustCode = cc.CustCode" + " AND (CONVERT(VARCHAR,o.LastModDate,127) > " + "'"+ LastRunDate + "'" + " or CONVERT(VARCHAR,o.DateEnt,127) > " + "'"+ LastRunDate + "'" + ")"
+#print(sqlQuery)
+
+#sqlQuery="SELECT o.CustDesc as SoldTo,o.ShipToName,o.ShipAddr1,o.ShipAddr2,o.ShipCity,o.ShipSt, o.ShipZIP,'DCS_' + CONVERT(varchar(100), o.OrderNo) as OrderNo,CONVERT(nvarchar,DateENT, 23) as DateENT, o.CustDesc as Customer,o.PONum,o.ShipVia,o.TermsCode,'FOB???' as FOB, 'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key, 'DCS_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key2, o.QuoteNo,row_number() over(order by(cc.CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython, GetDate() as LoadDate,'DCS_Order.csv' as Source_File, o.LastModDate as PreviousModDate  From Orders o, CustCode cc Where o.CustCode = cc.CustCode  AND (CONVERT(VARCHAR,o.LastModDate,127) > '2023-05-18T14:45:18.000+0000' or CONVERT(VARCHAR,o.DateEnt,127) > '2023-05-18T14:45:18.000+0000')"
 
 df = pd.read_sql(sql=sqlQuery, con=connDCS)
-df.to_csv('DCS_Quote_Insert.csv',encoding="utf-8-sig")
-df.to_csv('DCS_Quote_Update.csv',encoding="utf-8-sig")
-
-
-#SCC Quote Load
-myQuery           = """Select LastModifiedDate from Opportunity Where E2_Quote_Key__c like 'SCC_%' and Loaded_From_Python_Process__c = 'Y' and LastModifiedDate <> null order by LastModifiedDate desc limit 1""" 
-LastRunDate = getLatestRunDate(myQuery)
-sqlQuery="SELECT q.CustDesc as 'QUOTE_TO',q.Addr1,q.Addr2,q.City,q.st,q.Zip,'SCC_' + q.QuoteNo as QuoteNo,CONVERT(nvarchar,q.DateEnt, 23) as DateENT,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,q.EntBy,q.ShipVia,q.ContactName,q.InqNum,q.TermsCode,q.Phone,q.FAX,'Formula for Total??' as Total,'SCC_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,' ' as RecordTypeId,q.CustDesc + ' - ' + q.QuoteNo as Name,'Quote' as StageName,CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_Quote.csv' as Source_File,	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM Quote q, CustCode cc Where q.CustCode = cc.CustCode and q.CustCode is not null" + " AND q.LastModDate > " + "'"+ LastRunDate + "'" + "order by E2_Quote_Key"
-#sqlQuery="SELECT q.CustDesc as 'QUOTE_TO',q.Addr1,q.Addr2,q.City,q.st,q.Zip,'SCC_' + q.QuoteNo as QuoteNo,CONVERT(nvarchar,q.DateEnt, 23) as DateENT,'SCC_' + CONVERT(varchar(100), cc.CustCode_ID) as E2_Customer_Key,q.QuotedBy,q.ShipVia,q.ContactName,q.InqNum,q.TermsCode,q.Phone,q.FAX,'Formula for Total??' as Total,'SCC_' + CONVERT(nvarchar,QuoteNo) as E2_Quote_Key,' ' as RecordTypeId,q.CustDesc + ' - ' + q.QuoteNo as Name,'Quote' as StageName,CONVERT(nvarchar,q.ExpireDate, 23) as CloseDate,row_number() over(order by(q.Quote_ID)) as RowNum_Of_Source_File,	  'Y' as LoadedByPython,	  GetDate() as LoadDate,	  'SCC_Quote.csv' as Source_File,	  CONVERT(nvarchar,q.LastModDate, 23) as PreviousModDate,'DESERT' as LoadForCompany FROM Quote q, CustCode cc Where q.CustCode = cc.CustCode and q.CustCode is not null" + " order by E2_Quote_Key"
-df = pd.read_sql(sql=sqlQuery, con=connSCC)
-df.to_csv('SCC_Quote_Insert.csv',encoding="utf-8-sig")
-df.to_csv('SCC_Quote_Update.csv',encoding="utf-8-sig")
-
+df.to_csv('DCS_Order.csv',encoding="utf-8-sig")
 
 
 

@@ -1,3 +1,0 @@
-﻿Error,,QtyOrdered,UnitPrice,PartDesc,Revision,JobNo,Status,QuoteNo,OrderDet_ID,LookupValToOrder,DummyAssetID,DummyPriceBookID,WorkCode,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
-INVALID_FIELD:Foreign key external ID: scc_2601 not found for field Order_Number__c in entity WorkOrder:--,5,7,461.6,"Surface preparation will be prepared according to SSPC SP6
-INVALID_FIELD:Foreign key external ID: scc_2600 not found for field Order_Number__c in entity WorkOrder:--,17,1,96.6,,,2592-02,Closed,???,SCC_159567,SCC_2592,02iDn000000AXurIAG,01uDn000003d5aFIAQ,LIQUID,18,Y,2023-04-21 16:18:17.807,SCC_OrderDet.csv,2023-04-21

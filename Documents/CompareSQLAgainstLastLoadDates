@@ -1,0 +1,64 @@
+
+--CustCode 
+SELECT *  FROM [DCS-Shop].[dbo].[CustCode] 
+WHERE CONVERT(VARCHAR,LastModDate,127) > DCSAccountLastRunDate or CONVERT(VARCHAR,EnterDate,127) >  DCSAccountLastRunDate 
+
+--ShipTo
+SELECT * FROM ShipTo st, CustCode cc 
+WHERE st.CustCode = cc.CustCode AND (CONVERT(VARCHAR,st.LastModDate,127) > DCSAccountLastRunDate or 
+CONVERT(VARCHAR,st.EnterDate,127) > DCSAccountLastRunDate) 
+
+--Contacts
+SELECT * FROM Contacts c, CustCode cc 
+WHERE c.code = cc.custcode and c.Contact > '' 
+AND (CONVERT(VARCHAR,c.LastModDate,127) >  LastRunDate or 
+CONVERT(VARCHAR,c.EnterDate,127) > LastRunDate)
+
+--Orders
+SELECT * From Orders o, CustCode cc 
+Where o.CustCode = cc.CustCode 
+AND (CONVERT(VARCHAR,o.LastModDate,127) > LastRunDate or CONVERT(VARCHAR,o.DateEnt,127) > LastRunDate)
+
+--OrderDet
+SELECT * From OrderDet od WHERE CONVERT(VARCHAR,od.LastModDate,127) > LastRunDate
+
+--Billing
+SELECT *  From Billing b, CustCode cc 
+Where b.CustCode = cc.CustCode AND (CONVERT(VARCHAR,b.LastModDate,127) > LastRunDate 
+or CONVERT(VARCHAR,b.DateEnt,127) > LastRunDate)
+
+--BillingDet
+SELECT *  FROM BillingDet bd
+WHERE CONVERT(VARCHAR,bd.LastModDate,127) > LastRunDate
+
+--Quote
+SELECT *  
+FROM Quote q, CustCode cc 
+Where q.CustCode = cc.CustCode and q.CustCode is not null 
+AND (CONVERT(VARCHAR,q.LastModDate,127) > LastRunDate 
+or CONVERT(VARCHAR,q.DateEnt,127) > LastRunDate)
+
+--QuoteDet
+SELECT * FROM QuoteDet qd
+WHERE CONVERT(VARCHAR,qd.LastModDate,127) > LastRunDate 
+
+
+
+
+
+
+
+
+
+
+
+  EnterDate: 2023-05-22 16:12:31.833
+  LastModDate: NULL
+  LastModDate In Salesforce: 2023-05-22T17:30:28.000+0000
+
+
+
+  SELECT CONVERT(VARCHAR,EnterDate,127) as d1, '2023-05-22T17:30:28.000+0000' as sfdate, replace(replace(APContact,char(10),''),char(13),'') as APContact,replace(replace(replace(replace(BAddr1,char(10),''),char(13),''),'#',''),',','|') as BAddr1,replace(replace(replace(replace(BAddr2,char(10),''),char(13),''),'#',''),',','|') as BAddr2,BCity,BState,BZIPCode,Phone,Website,replace(replace(replace(CustName,char(10),''),char(13),''),',','|') as CustName,replace(replace(replace(CustCode,char(10),''),char(13),''),',','|') as CustCode,'DCS_' + CONVERT(varchar(100), CustCode_ID) as CustCode_ID,CONVERT(nvarchar,LastModDate, 23) as PreviousModDate,row_number() over(order by(CustCode_ID)) as RowNum_Of_Source_File,'Y' as LoadedByPython,GetDate() as LoadDate,'DCS_Customer.csv' as Source_File,'DESERT' as LoadForCompany FROM CustCode " + " WHERE CONVERT(VARCHAR,LastModDate,127) > '2023-05-22T17:30:28.000+0000' or CONVERT(VARCHAR,EnterDate,127) > '2023-05-22T17:30:28.000+0000' or CustCode_ID = '6998' ORDER BY CustCode_ID
+
+
+

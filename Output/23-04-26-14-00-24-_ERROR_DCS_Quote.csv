@@ -1,3 +1,0 @@
-﻿Error,,QUOTE_TO,Addr1,Addr2,City,st,Zip,QuoteNo,DateENT,E2_Customer_Key,EntBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,E2_Quote_Key,RecordTypeId,Name,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
-INVALID_FIELD:Failed to deserialize field at col 6. Due to  'DateENT' is not a valid value for the type xsd:date:Quote_Date__c --,0,Flowserve Corporation,5310 Taneytown Pike,,Taneytown,MD,21787,DCS_20932,2023-04-26,DCS_4940,tbutkowski,,Keith Greni Jr.,,NET 60,410-756-2602,,Formula for Total??,DCS_20932, ,Flowserve Corporation - 20932,2023-08-24,1,Y,2023-04-26 11:00:11.313,DCS_Quote.csv,2023-04-26,DESERT
-REQUIRED_FIELD_MISSING:Required fields are missing: [StageName]:StageName --,

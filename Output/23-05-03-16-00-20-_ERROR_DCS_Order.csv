@@ -1,2 +1,0 @@
-﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
-FIELD_INTEGRITY_EXCEPTION:Order Date: invalid date: Wed Jul 21 00:00:00 GMT 9019:Order_Date__c --,0,S Diamond Steel,S Diamond Steel,"4205 W Lower Buckeye Rd

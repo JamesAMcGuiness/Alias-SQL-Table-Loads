@@ -1,0 +1,5 @@
+﻿Error,,QUOTE_TO,Addr1,Addr2,City,st,Zip,QuoteNo,DateENT,E2_Customer_Key,EntBy,ShipVia,ContactName,InqNum,TermsCode,Phone,FAX,Total,E2_Quote_Key,RecordTypeId,Name,StageName,CloseDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate,LoadForCompany
+REQUIRED_FIELD_MISSING:Required fields are missing: [StageName  CloseDate]:StageName CloseDate --,69,Metal-weld Specialties,"8137 N. 83rd Ave
+INVALID_FIELD:Foreign key external ID: dcs_6996 not found for field E2_Customer_Key__c in entity Account:--,130,Southwest Metalsmiths,"5026 E. Beverly Rd
+INVALID_FIELD:Foreign key external ID: dcs_6996 not found for field E2_Customer_Key__c in entity Account:--,",,Phownix,AZ,85044,DCS_10150,2014-11-13,DCS_4110,JAMBROSON,,,,NET 30,(602) 438-8577,(602) 438-8579,Formula for Total??,DCS_10150, ,Southwest Metalsmiths - 10150,Quote,2014-12-13,133,Y,2023-05-19 16:53:14.330,DCS_Quote.csv,,DESERT
+INVALID_FIELD:Foreign key external ID: dcs_6996 not found for field E2_Customer_Key__c in entity Account:--,606,Super Radiator Coils,"2610 S. 21st Street

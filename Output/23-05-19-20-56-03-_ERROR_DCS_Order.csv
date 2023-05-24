@@ -1,0 +1,2 @@
+﻿Error,,SoldTo,ShipToName,ShipAddr1,ShipAddr2,ShipCity,ShipSt,ShipZIP,OrderNo,DateENT,Customer,PONum,ShipVia,TermsCode,FOB,E2_Customer_Key,E2_Customer_Key2,QuoteNo,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,PreviousModDate
+FIELD_INTEGRITY_EXCEPTION:Order Date: invalid date: Wed Jul 21 00:00:00 GMT 9019:Order_Date__c --,",,Phoenix,AZ,85034,DCS_63663,2018-05-25,Finn,None Attach,N/A,NET 30,FOB???,DCS_1379,DCS_1379,,20134,Y,2023-05-19 16:51:45.237,DCS_Order.csv,2018-06-11

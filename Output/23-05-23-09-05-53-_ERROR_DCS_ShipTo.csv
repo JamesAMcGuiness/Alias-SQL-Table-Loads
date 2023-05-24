@@ -1,0 +1,47 @@
+﻿Error,,SAddr1,SAddr2,SCity,SState,SZipCode,ShipContact,ShipToName,ShipTo_ID,E2_Customer_Key,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --,911,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3118:E2_Customer_Key__c --,916,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --,",,,,,Jim Pilato,,1389,DCS_2023,,1210,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4117:E2_Customer_Key__c --,1211,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --,1390,"PO Box 1267
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4696:E2_Customer_Key__c --,",,Chandler,AZ,85244,David Salonic,Kerwin Bros. Painting,1576,DCS_2391,2019-01-14,1391,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --,",,,,,,,1623,DCS_2458,,1437,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_185:E2_Customer_Key__c --,1437,"( Employee )
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --,1457,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2757:E2_Customer_Key__c --,",,,,,,,1649,DCS_2494,,1458,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --,1844,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3208:E2_Customer_Key__c --,",,,,,(602) 688-0230,,2063,DCS_3210,,1845,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --,1867,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2842:E2_Customer_Key__c --,",,,,,Pablo Celiz,,2088,DCS_3238,,1868,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --,1895,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2309:E2_Customer_Key__c --,",,,,,,,2117,DCS_3281,,1896,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --,1919,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_4249:E2_Customer_Key__c --,",,,,,Ken Peak,Peak Boost,2141,DCS_3322,,1920,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --,1965,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_1706:E2_Customer_Key__c --,",,,,,Robert Brenner,,2190,DCS_3703,,1966,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --,1966,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2514:E2_Customer_Key__c --,",,,,,,,2191,DCS_3705,,1967,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --,Bob Sanders",Bob Sanders,Phoenix,AZ,85005,Bob Sanders,R K Sanders,2310,DCS_3495,,2077,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_950:E2_Customer_Key__c --,2077,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --,",,,,,,,2313,DCS_3497,,2079,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2694:E2_Customer_Key__c --,2079,"5037 N. 54th Avenue, Ste.1
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --,",,,,,Ramin Salari,,2318,DCS_3508,,2084,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_423:E2_Customer_Key__c --,2084,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,2278,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,",,,,,,,2530,DCS_3987,,2279,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3391:E2_Customer_Key__c --,2279,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --,2282,"3636 N. Scottsdale Rd.
+DUPLICATE_VALUE:Duplicate external id specified: dcs_2293:E2_Customer_Key__c --,",,Scottsdale,AZ,,John Casale,Salty Senorita,2534,DCS_3881,,2283,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --,2339,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_3670:E2_Customer_Key__c --,",,,,,Shorty,,2597,DCS_4033,,2340,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --,",,Scottsdale,AZ,85251,Nicole Schwartz,Sprinkles Cupcakes,2664,DCS_4137,,2395,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_96:E2_Customer_Key__c --,2395,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --,2573,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5100:E2_Customer_Key__c --,",,,,,Jorge,Todds,2862,DCS_4397,,2575,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --,2710,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_5401:E2_Customer_Key__c --,",,,,,Wl Foster,,3020,DCS_4708,,2719,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --,3399,"
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6738:E2_Customer_Key__c --,",,,  ,,,Thomas Pierson,3832,DCS_4359,,3400,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6958:E2_Customer_Key__c --,3514,"Walk - In
+DUPLICATE_VALUE:Duplicate external id specified: dcs_6958:E2_Customer_Key__c --,",,,  ,,,Gerson Espinoza,3993,DCS_1513,,3515,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv
+REQUIRED_FIELD_MISSING:Required fields are missing: [Name]:Name --,",,,  ,,,Chrysa Robertson,4025,DCS_786,,3534,N,2023-05-23 06:00:12.827,DCS_ShipTo.csv

@@ -1,2 +1,0 @@
-﻿Error,,Contact,FirstName,LastName,EMail,Phone,Title,Cell_Phone,Contacts_ID,PreviousModDate,RowNum_Of_Source_File,LoadedByPython,LoadDate,Source_File,CustCode_ID,LoadForCompany
-INVALID_FIELD:Foreign key external ID: dcs_6961 not found for field E2_Customer_Key__c in entity Account:--,15,Nick Hollis, , ,nick.hollis@huishoutdoors.com,510-909-6340,Brand Manager,,DCS_7118,2023-05-01,16,Y,2023-05-02 05:00:07.673,DCS_Contact.csv,DCS_6961,DESERT
